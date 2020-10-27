@@ -2,21 +2,20 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
-    <title>2semester timetable</title>
+    <title>Timetable 2.1.1</title>
     <style>
 
       body {
 
-        background-color : #02173C;        /* 背景色：瑠璃色 */
-        background-image : url( "img/bg/1440_900_20120223032123223025.jpg" );  /* 背景画像 */
-        background-position : top center;  /* 背景画像の位置 */
-        background-repeat : no-repeat;     /* 背景画像のリピート */
-        background-attachment : fixed;     /* スクロール時の背景画像を固定 */
-        background-size : cover;           /* 画面全体に表示 */
+        background-color : #02173C;
+        background-image : url( "img/bg/1440_900_20120223032123223025.jpg" );
+        background-position : top center;
+        background-repeat : no-repeat;
+        background-attachment : fixed;     /* hold bgimg when scroll */
+        background-size : cover;
 
-        color : #E5B217;                   /* 文字色 金色ラブリッチェ */
+        color : #E5B217;
         font-family : "SourceHanCodeJP-Light", sans-serif, monospace, serif;
-        /* text-align : center;               /* 中央揃え */
       }
 
       div.htmlWrap {
@@ -87,7 +86,7 @@
         font-weight : bold;
       }
 
-      /* background img */
+      /* subject cell background img */
       td {
 
         position : relative;
@@ -107,12 +106,100 @@
         opacity : 0.217;
       }
 
+      div.bg.cb {
+
+        width : 40%;
+        height : 100%;
+        position : absolute;
+        top : 0;
+        left : 30%;
+        background : url( "img/text/2DCADtext-2DCAD2Grade-guideBook.jpg" );
+        background-size : cover;
+        opacity : 0.217;
+      }
+
+      div.bg.bs {
+
+        width : 20%;
+        height : 100%;
+        position : absolute;
+        top : 0;
+        left : 40%;
+        background : url( "img/text/businessSoft_MOS-PPT2016-textExercise.png" );
+        background-size : cover;
+        opacity : 0.217;
+      }
+
+      div.bg.cc {
+
+        width : 40%;
+        height : 100%;
+        position : absolute;
+        top : 0;
+        left : 30%;
+        background : url( "img/text/colorCoordinate_text-ColorMaster.png" );
+        background-size : cover;
+        opacity : 0.217;
+      }
+
+      div.bg.cbex {
+
+        width : 76%;
+        height : 100%;
+        position : absolute;
+        top : 0;
+        left : 12%;
+        background : url( "img/text/iPad.jpg" );
+        background-size : cover;
+        opacity : 0.217;
+      }
+
+      div.bg.emI {
+
+        width : 40%;
+        height : 100%;
+        position : absolute;
+        top : 0;
+        left : 30%;
+        background : url( "img/text/employmentMeasuresText_interviewMeasures-businessManner.png" );
+        background-size : cover;
+        opacity : 0.217;
+      }
+
+      div.bg.em {
+
+        width : 40%;
+        height : 100%;
+        position : absolute;
+        top : 0;
+        left : 30%;
+        background : url( "img/text/employmentMeasuresText_SPI.png" );
+        background-size : cover;
+        opacity : 0.217;
+      }
+
+      div.bg.threeDcad.N-Ito {
+
+      }
+
+      div.bg.threeDcad.colTwo {
+
+        width : 38%;
+        height : 100%;
+        position : absolute;
+        top : 0;
+        left : 30%;
+        background : url( "img/text/iPad.jpg" );
+        background-size : cover;
+        opacity : 0.217;
+      }
+
     </style>
   </head>
 
   <body>
     <div class="htmlWrap">
-      <h1>Timetable 2.1.0</h1>
+      <h1>Timetable 2.1.1</h1>
       <table class="timetable second semester">
         <tr class="schoolTime">
           <th rowspan="2" class="botDouble"></th>
@@ -214,7 +301,7 @@
         <tr>
           <th class="weekday">Thu</th>
           <td>
-            <div class="bg em"></div>
+            <div class="bg emI"></div>
             <div class="bsubject bold">Employment measures I</div>
             <div class="room">900 room</div>
             <div class="teacher">Mr. Takahashi</div>
@@ -229,7 +316,7 @@
           </td>
           <td class="breakTime">Recess</td>
           <td>
-            <div class="bg 3dcad"></div>
+            <div class="bg threeDcad N-Ito"></div>
             <div class="subject bold">3DCAD practice I</div>
             <div class="room">409 room</div>
             <div class="teacher">Ms. N.Ito</div>
@@ -255,7 +342,7 @@
         <tr>
           <th class="weekday">Fri</th>
           <td colspan="2">
-            <div class="bg 3dcad"></div>
+            <div class="bg threeDcad colTwo"></div>
             <div class="bsubject bold">3DCAD practicee I</div>
             <div class="room">409 room</div>
             <div class="teacher">Mr. Takahashi</div>

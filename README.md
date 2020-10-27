@@ -15,3 +15,8 @@ This is the timetable for the mechanical CAD design department.
   <li>language to English</li>
   <li>change text font</li>
 </ul>
+
+### 2.1.1
+<ul>
+  <li>Add textbook image to timetable cell</li>
+</ul>
