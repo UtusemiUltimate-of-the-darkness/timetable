@@ -9,27 +9,25 @@
       body {
 
         background-color : #02173C;        /* 背景色：瑠璃色 */
-        background-image : url( "../../lib/systemRelated/wallPaper/backgroundPicture/空の境界/1440_900_20120223032123223025.jpg" );  /* 背景画像 */
+        background-image : url( "img/bg/1440_900_20120223032123223025.jpg" );  /* 背景画像 */
         background-position : top center;  /* 背景画像の位置 */
         background-repeat : no-repeat;     /* 背景画像のリピート */
         background-attachment : fixed;     /* スクロール時の背景画像を固定 */
         background-size : cover;           /* 画面全体に表示 */
 
         color : #E5B217;                   /* 文字色 金色ラブリッチェ */
-        /* font-family : "Apple-Chancery", cursive, "ヒラギノ明朝 ProN W3", serif;  /* 文字フォント */
+        font-family : "SourceHanCodeJP-Light", sans-serif, monospace, serif;
         /* text-align : center;               /* 中央揃え */
       }
 
       div.htmlWrap {
 
-        /* border : solid 1px red; */
-        margin : auto;
-        width : 90%;
-        padding : 1em;
-        /*text-align: center;*/
+        background-color : rgba( 02, 17, 60 , 0.5 );
+        margin : 0;
+        font-size : 0.8em;
       }
 
-      h2 {
+      h1 {
 
         text-align : center;
       }
@@ -57,8 +55,8 @@
       table tr td {
 
         min-width : 220px;
-        /*min-height : 200px;*/
-        padding : 2% 0;
+        height : 77px;
+        padding : 2em 0.3em;
         border : solid 1px #E5B217;
       }
 
@@ -70,9 +68,19 @@
         border-bottom : double 3px #E5B217;
       }
 
+      table tr td div.teacher {
+
+        display : none;
+      }
+
+      table tr td div.text-tool {
+
+        display : none;
+      }
+
       .breakTime {
 
-        min-width : 150px;
+        min-width : 110px;
       }
 
       .bold {
@@ -85,7 +93,7 @@
 
   <body>
     <div class="htmlWrap">
-      <h2>2 semester timetable</h2>
+      <h1>Timetable 2.1.0</h1>
       <table class="timetable second semester">
         <tr class="schoolTime">
           <th rowspan="2" class="botDouble"></th>
@@ -95,6 +103,7 @@
           <th>3</th>
           <th>4</th>
           <th>5</th>
+          <th>6</th>
         </tr>
         <tr class="time range">
           <th>09:00 - 10:10</th>
@@ -103,89 +112,135 @@
           <th>12:35 - 13:45</th>
           <th>14:00 - 15:10</th>
           <th>15:25 - 16:35</th>
+          <th>16:50 - 18:00</th>
         </tr>
         <tr>
           <th class="weekday">Mon</th>
           <td>
-            <div class="subject bold">CAD理論</div>
-            <div class="room">409教室</div>
+            <div class="subject bold">CAD theory</div>
+            <div class="room">409 room</div>
+            <div class="teacher">Mr. Takahashi</div>
+            <div class="text-tool"></div>
           </td>
           <td>
-            <div class="sjubject bold">機械工学I</div>
-            <div class="room">1107教室</div>
+            <div class="sjubject bold">Mechanical Engineering I</div>
+            <div class="room">1107 room</div>
+            <div class="teacher">Mr. Takahashi</div>
+            <div class="text-tool"></div>
           </td>
-          <td class="breakTime">昼休み</td>
+          <td class="breakTime">Recess</td>
           <td>
             <div class="subject bold">Computer Basics</div>
-            <div class="room">409教室</div>
+            <div class="room">409 room</div>
+            <div class="teacher">Mr. Takahashi</div>
+            <div class="text-tool"></div>
           </td>
-          <td colspan="2"></td>
+          <td colspan="3"></td>
         </tr>
         <tr>
           <th class="weekday">Tue</th>
           <td colspan="3"></td>
           <td colspan="2">
             <div class="subject bold">Business Soft</div>
-            <div class="room">409教室</div>
+            <div class="room">409 room</div>
+            <div class="teacher">Ms. Maruyama</div>
+            <div class="text-tool"></div>
           </td>
           <td>
-            <div class="bsubject bold">機械工学I</div>
-            <div class="room">1107 / 409教室</div>
+            <div class="sjubject bold">Mechanical Engineering I</div>
+            <div class="room">1107 room</div>
+            <div class="teacher">Mr. Takahashi</div>
+            <div class="text-tool"></div>
           </td>
+          <td></td>
         </tr>
         <tr>
           <th class="weekday">Wed</th>
           <td>
-            <div class="bsubject bold">CAD実習</div>
-            <div class="room">409教室</div>
+            <div class="bsubject bold">CAD practice</div>
+            <div class="room">409 room</div>
+            <div class="teacher">Ms. N.Ito</div>
+            <div class="text-tool"></div>
           </td>
           <td>
             <div class="subject bold">Color cordinate</div>
-            <div class="room">1107 / 903教室</div>
+            <div class="room">1107 / 903 room</div>
+            <div class="teacher">Ms. N.Ito</div>
+            <div class="text-tool"></div>
           </td>
-          <td class="breakTime">昼休み</td>
+          <td class="breakTime">Recess</td>
           <td>
             <div class="subject bold">Computer Basics Ex</div>
-            <div class="room">411教室</div>
+            <div class="room">411 room</div>
+            <div class="teacher">Ms. Maruyama</div>
+            <div class="text-tool"></div>
           </td>
           <td>
-            <div class="subject bold">CAD実習</div>
-            <div class="room">409教室</div>
+            <div class="subject bold">CAD practice</div>
+            <div class="room">409 room</div>
+            <div class="teacher">Ms. N.Ito</div>
+            <div class="text-tool"></div>
           </td>
-          <td></td>
+          <td colspan="2"></td>
         </tr>
         <tr>
           <th class="weekday">Thu</th>
           <td>
-            <div class="bsubject bold">修飾対策I</div>
-            <div class="room">900教室</div>
+            <div class="bsubject bold">Employment measures I</div>
+            <div class="room">900 room</div>
+            <div class="teacher">Mr. Takahashi</div>
+            <div class="text-tool"></div>
           </td>
           <td>
-            <div class="subject bold">CAD実習</div>
-            <div class="room">409教室</div>
+            <div class="subject bold">CAD practice</div>
+            <div class="room">409 room</div>
+            <div class="teacher">Ms. N.Ito</div>
+            <div class="text-tool"></div>
           </td>
-          <td class="breakTime">昼休み</td>
+          <td class="breakTime">Recess</td>
           <td>
-            <div class="subject bold">3DCAD実習I</div>
-            <div class="room">409教室</div>
+            <div class="subject bold">3DCAD practice I</div>
+            <div class="room">409 room</div>
+            <div class="teacher">Ms. N.Ito</div>
+            <div class="text-tool"></div>
           </td>
           <td>
-            <div class="subject bold">工業数学</div>
-            <div class="room">901教室</div>
+            <div class="subject bold">Engineering mathematics</div>
+            <div class="room">901 room</div>
+            <div class="teacher">Mr. Okazaki</div>
+            <div class="text-tool"></div>
           </td>
           <td></td>
+          <td>
+            <div class="subject bold">CG Appication first</div>
+            <div class="room">room</div>
+            <div class="teacher">Mr.</div>
+            <div class="text-tool"></div>
+            <div class="start">11/5 start</div>
+          </td>
         </tr>
         <tr>
           <th class="weekday">Fri</th>
           <td colspan="2">
-            <div class="bsubject bold">3DCAD実習I</div>
-            <div class="room">409教室</div>
+            <div class="bsubject bold">3DCAD practicee I</div>
+            <div class="room">409 room</div>
+            <div class="teacher">Mr. Takahashi</div>
+            <div class="text-tool"></div>
           </td>
-          <td class="breakTime">昼休み</td>
+          <td class="breakTime">Recess</td>
           <td></td>
           <td colspan="2">
-            <div class="subject bold">図学</div>
-            <div class="room">903教室</div>
+            <div class="subject bold">Descriptive geometry</div>
+            <div class="room">903 room</div>
+            <div class="teacher">Mr. K.Ito</div>
+            <div class="text-tool"></div>
+          </td>
+          <td>
+            <div class="subject bold">CG Appication first</div>
+            <div class="room">room</div>
+            <div class="teacher">Mr.</div>
+            <div class="text-tool"></div>
+            <div class="start">11/5 start</div>
           </td>
         </tr>
 
