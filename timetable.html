@@ -5,7 +5,6 @@
     <title>2semester timetable</title>
     <style>
 
-      /* ----------------- ページ全体の設定 ----------------- */
       body {
 
         background-color : #02173C;        /* 背景色：瑠璃色 */
@@ -88,6 +87,26 @@
         font-weight : bold;
       }
 
+      /* background img */
+      td {
+
+        position : relative;
+      }
+      .bg.cadT {
+      }
+
+      div.bg.me {
+
+        width : 40%;
+        height : 100%;
+        position : absolute;
+        top : 0;
+        left : 30%;
+        background : url( "img/text/mechanicalEngineering.jpg" );
+        background-size : cover;
+        opacity : 0.217;
+      }
+
     </style>
   </head>
 
@@ -117,12 +136,14 @@
         <tr>
           <th class="weekday">Mon</th>
           <td>
+            <div class="bg cadT"></div>
             <div class="subject bold">CAD theory</div>
             <div class="room">409 room</div>
             <div class="teacher">Mr. Takahashi</div>
             <div class="text-tool"></div>
           </td>
           <td>
+            <div class="bg me"></div>
             <div class="sjubject bold">Mechanical Engineering I</div>
             <div class="room">1107 room</div>
             <div class="teacher">Mr. Takahashi</div>
@@ -130,6 +151,7 @@
           </td>
           <td class="breakTime">Recess</td>
           <td>
+            <div class="bg cb"></div>
             <div class="subject bold">Computer Basics</div>
             <div class="room">409 room</div>
             <div class="teacher">Mr. Takahashi</div>
@@ -141,12 +163,14 @@
           <th class="weekday">Tue</th>
           <td colspan="3"></td>
           <td colspan="2">
+            <div class="bg bs"></div>
             <div class="subject bold">Business Soft</div>
             <div class="room">409 room</div>
             <div class="teacher">Ms. Maruyama</div>
             <div class="text-tool"></div>
           </td>
           <td>
+            <div class="bg me"></div>
             <div class="sjubject bold">Mechanical Engineering I</div>
             <div class="room">1107 room</div>
             <div class="teacher">Mr. Takahashi</div>
@@ -157,12 +181,14 @@
         <tr>
           <th class="weekday">Wed</th>
           <td>
+            <div class="bg cadP"></div>
             <div class="bsubject bold">CAD practice</div>
             <div class="room">409 room</div>
             <div class="teacher">Ms. N.Ito</div>
             <div class="text-tool"></div>
           </td>
           <td>
+            <div class="bg cc"></div>
             <div class="subject bold">Color cordinate</div>
             <div class="room">1107 / 903 room</div>
             <div class="teacher">Ms. N.Ito</div>
@@ -170,12 +196,14 @@
           </td>
           <td class="breakTime">Recess</td>
           <td>
+            <div class="bg cbex"></div>
             <div class="subject bold">Computer Basics Ex</div>
             <div class="room">411 room</div>
             <div class="teacher">Ms. Maruyama</div>
             <div class="text-tool"></div>
           </td>
           <td>
+            <div class="bg cadP"></div>
             <div class="subject bold">CAD practice</div>
             <div class="room">409 room</div>
             <div class="teacher">Ms. N.Ito</div>
@@ -186,12 +214,14 @@
         <tr>
           <th class="weekday">Thu</th>
           <td>
+            <div class="bg em"></div>
             <div class="bsubject bold">Employment measures I</div>
             <div class="room">900 room</div>
             <div class="teacher">Mr. Takahashi</div>
             <div class="text-tool"></div>
           </td>
           <td>
+            <div class="bg cadP"></div>
             <div class="subject bold">CAD practice</div>
             <div class="room">409 room</div>
             <div class="teacher">Ms. N.Ito</div>
@@ -199,12 +229,14 @@
           </td>
           <td class="breakTime">Recess</td>
           <td>
+            <div class="bg 3dcad"></div>
             <div class="subject bold">3DCAD practice I</div>
             <div class="room">409 room</div>
             <div class="teacher">Ms. N.Ito</div>
             <div class="text-tool"></div>
           </td>
           <td>
+            <div class="bg em"></div>
             <div class="subject bold">Engineering mathematics</div>
             <div class="room">901 room</div>
             <div class="teacher">Mr. Okazaki</div>
@@ -212,6 +244,7 @@
           </td>
           <td></td>
           <td>
+            <div class="bg cgApp"></div>
             <div class="subject bold">CG Appication first</div>
             <div class="room">room</div>
             <div class="teacher">Mr.</div>
@@ -222,6 +255,7 @@
         <tr>
           <th class="weekday">Fri</th>
           <td colspan="2">
+            <div class="bg 3dcad"></div>
             <div class="bsubject bold">3DCAD practicee I</div>
             <div class="room">409 room</div>
             <div class="teacher">Mr. Takahashi</div>
@@ -230,12 +264,14 @@
           <td class="breakTime">Recess</td>
           <td></td>
           <td colspan="2">
+            <div class="bg dg"></div>
             <div class="subject bold">Descriptive geometry</div>
             <div class="room">903 room</div>
             <div class="teacher">Mr. K.Ito</div>
             <div class="text-tool"></div>
           </td>
           <td>
+            <div class="bg cgApp"></div>
             <div class="subject bold">CG Appication first</div>
             <div class="room">room</div>
             <div class="teacher">Mr.</div>
