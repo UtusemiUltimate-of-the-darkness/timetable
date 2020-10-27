@@ -20,3 +20,9 @@ This is the timetable for the mechanical CAD design department.
 <ul>
   <li>Add textbook image to timetable cell</li>
 </ul>
+
+### 2.2.0
+<ul>
+  <li>Add online timetable ( 1027-1102 )</li>
+  <li>Change table position ( to center ) </li>
+</ul>

@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
-    <title>Timetable 2.1.1</title>
+    <title>Timetable 2.2.0</title>
     <style>
 
       body {
@@ -34,7 +34,12 @@
 
         border : solid 2px #E5B217;
         border-collapse : collapse;
-        margin : 1em;
+        margin : auto;
+      }
+
+      table.timetable.second.semester {
+
+        margin-bottom : 5em;
       }
 
       table tr th,
@@ -194,12 +199,34 @@
         opacity : 0.217;
       }
 
+      /* online timetable (1027 - 1102) */
+      h2 {
+
+        text-align : center;
+      }
+
+      table.timetable.online {
+
+        margin-bottom : 5em;
+      }
+
+      table.timetable.online div.room {
+
+        display : none;
+      }
+
+      table.timetable.online div.teacher {
+
+        display : block;
+      }
+
     </style>
   </head>
 
   <body>
     <div class="htmlWrap">
-      <h1>Timetable 2.1.1</h1>
+      <h1>Timetable 2.2.0</h1>
+      <h2>Main</h2>
       <table class="timetable second semester">
         <tr class="schoolTime">
           <th rowspan="2" class="botDouble"></th>
@@ -366,7 +393,121 @@
             <div class="start">11/5 start</div>
           </td>
         </tr>
+      </table>  <!-- 2semester timetable -->
 
+      <h2>online timetable ( 10/27 - 11/02 Provisional )</h2>
+      <table class="online timetable">
+        <tr class="schoolTime">
+          <th rowspan="2" class="botDouble"></th>
+          <th>1</th>
+          <th>2</th>
+          <th>break</th>
+          <th>3</th>
+          <th>4</th>
+          <th>5</th>
+        </tr>
+        <tr class="time range">
+          <th>09:00 - 10:10</th>
+          <th>10:25 - 11:35</th>
+          <th class="breakTime">11:35 - 12:35</th>
+          <th>12:35 - 13:45</th>
+          <th>14:00 - 15:10</th>
+          <th>15:25 - 16:35</th>
+        </tr>
+        <tr>
+          <th class="weekday">Mon</th>
+          <td>
+            <div class="bg cb"></div>
+            <div class="subject bold">computer basics</div>
+            <div class="room">409 room</div>
+            <div class="teacher">Mr. Takahashi</div>
+            <div class="text-tool"></div>
+          </td>
+          <td>
+            <div class="bg me"></div>
+            <div class="sjubject bold">Mechanical Engineering I</div>
+            <div class="room">1107 room</div>
+            <div class="teacher">Mr. Takahashi</div>
+            <div class="text-tool"></div>
+          </td>
+          <td colspan="4"></td>
+        </tr>
+        <tr>
+          <th class="weekday">Tue</th>
+          <td colspan="3"></td>
+          <td>
+            <div class="bg me"></div>
+            <div class="subject bold">Mechanical Engineering I</div>
+            <div class="room">409 room</div>
+            <div class="teacher">Mr. Takahashi</div>
+            <div class="text-tool"></div>
+          </td>
+          <td colspan="2"></td>
+        </tr>
+        <tr>
+          <th class="weekday">Wed</th>
+          <td></td>
+          <td>
+            <div class="bg cc"></div>
+            <div class="subject bold">Color cordinate</div>
+            <div class="room">1107 / 903 room</div>
+            <div class="teacher">Ms. N.Ito</div>
+            <div class="text-tool"></div>
+          </td>
+          <td class="breakTime">Recess</td>
+          <td>
+            <div class="bg cbex"></div>
+            <div class="subject bold">Computer Basics Ex</div>
+            <div class="room">411 room</div>
+            <div class="teacher">Ms. Maruyama</div>
+            <div class="text-tool"></div>
+          </td>
+          <td>
+            <div class="bg cadP"></div>
+            <div class="subject bold">CAD practice</div>
+            <div class="room">409 room</div>
+            <div class="teacher">Ms. N.Ito</div>
+            <div class="text-tool"></div>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <th class="weekday">Thu</th>
+          <td>
+            <div class="bg emI"></div>
+            <div class="bsubject bold">Employment measures I</div>
+            <div class="room">900 room</div>
+            <div class="teacher">Mr. Takahashi</div>
+            <div class="text-tool"></div>
+          </td>
+          <td>
+            <div class="bg cadP"></div>
+            <div class="subject bold">CAD practice</div>
+            <div class="room">409 room</div>
+            <div class="teacher">Ms. N.Ito</div>
+            <div class="text-tool"></div>
+          </td>
+          <td colspan="4"></td>
+        </tr>
+        <tr>
+          <th class="weekday">Fri</th>
+          <td colspan="3"></td>
+          <td>
+            <div class="bg threeDcad"></div>
+            <div class="bsubject bold">3DCAD practicee I</div>
+            <div class="room">409 room</div>
+            <div class="teacher">Mr. Takahashi</div>
+            <div class="text-tool"></div>
+          </td>
+          <td>
+            <div class="bg dg"></div>
+            <div class="subject bold">Descriptive geometry</div>
+            <div class="room">903 room</div>
+            <div class="teacher">Mr. K.Ito</div>
+            <div class="text-tool"></div>
+          </td>
+          <td></td>
+        </tr>
       </table>
     </div>  <!-- htmlWrap -->
 
