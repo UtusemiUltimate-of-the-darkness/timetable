@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>2semester timetable</title>
+    <style>
+
+      /* ----------------- ページ全体の設定 ----------------- */
+      body {
+
+        background-color : #02173C;        /* 背景色：瑠璃色 */
+        background-image : url( "../../lib/systemRelated/wallPaper/backgroundPicture/空の境界/1440_900_20120223032123223025.jpg" );  /* 背景画像 */
+        background-position : top center;  /* 背景画像の位置 */
+        background-repeat : no-repeat;     /* 背景画像のリピート */
+        background-attachment : fixed;     /* スクロール時の背景画像を固定 */
+        background-size : cover;           /* 画面全体に表示 */
+
+        color : #E5B217;                   /* 文字色 金色ラブリッチェ */
+        /* font-family : "Apple-Chancery", cursive, "ヒラギノ明朝 ProN W3", serif;  /* 文字フォント */
+        /* text-align : center;               /* 中央揃え */
+      }
+
+      div.htmlWrap {
+
+        /* border : solid 1px red; */
+        margin : auto;
+        width : 90%;
+        padding : 1em;
+        /*text-align: center;*/
+      }
+
+      h2 {
+
+        text-align : center;
+      }
+
+      table {
+
+        border : solid 2px #E5B217;
+        border-collapse : collapse;
+        margin : 1em;
+      }
+
+      table tr th,
+      table tr td {
+
+        border : solid 1px #E5B217;
+        text-align : center;
+      }
+
+      table tr:not(.schoolTime) th {
+
+        width : 50px;
+        border : solid 2px #E5B217;
+      }
+
+      table tr td {
+
+        min-width : 220px;
+        /*min-height : 200px;*/
+        padding : 2% 0;
+        border : solid 1px #E5B217;
+      }
+
+      table tr.time.range,
+      table .botDouble {
+
+        border-spacing : 0 0;
+        border-right : solid 2px #E5B217;
+        border-bottom : double 3px #E5B217;
+      }
+
+      .breakTime {
+
+        min-width : 150px;
+      }
+
+      .bold {
+
+        font-weight : bold;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="htmlWrap">
+      <h2>2 semester timetable</h2>
+      <table class="timetable second semester">
+        <tr class="schoolTime">
+          <th rowspan="2" class="botDouble"></th>
+          <th>1</th>
+          <th>2</th>
+          <th>break</th>
+          <th>3</th>
+          <th>4</th>
+          <th>5</th>
+        </tr>
+        <tr class="time range">
+          <th>09:00 - 10:10</th>
+          <th>10:25 - 11:35</th>
+          <th class="breakTime">11:35 - 12:35</th>
+          <th>12:35 - 13:45</th>
+          <th>14:00 - 15:10</th>
+          <th>15:25 - 16:35</th>
+        </tr>
+        <tr>
+          <th class="weekday">Mon</th>
+          <td>
+            <div class="subject bold">CAD理論</div>
+            <div class="room">409教室</div>
+          </td>
+          <td>
+            <div class="sjubject bold">機械工学I</div>
+            <div class="room">1107教室</div>
+          </td>
+          <td class="breakTime">昼休み</td>
+          <td>
+            <div class="subject bold">Computer Basics</div>
+            <div class="room">409教室</div>
+          </td>
+          <td colspan="2"></td>
+        </tr>
+        <tr>
+          <th class="weekday">Tue</th>
+          <td colspan="3"></td>
+          <td colspan="2">
+            <div class="subject bold">Business Soft</div>
+            <div class="room">409教室</div>
+          </td>
+          <td>
+            <div class="bsubject bold">機械工学I</div>
+            <div class="room">1107 / 409教室</div>
+          </td>
+        </tr>
+        <tr>
+          <th class="weekday">Wed</th>
+          <td>
+            <div class="bsubject bold">CAD実習</div>
+            <div class="room">409教室</div>
+          </td>
+          <td>
+            <div class="subject bold">Color cordinate</div>
+            <div class="room">1107 / 903教室</div>
+          </td>
+          <td class="breakTime">昼休み</td>
+          <td>
+            <div class="subject bold">Computer Basics Ex</div>
+            <div class="room">411教室</div>
+          </td>
+          <td>
+            <div class="subject bold">CAD実習</div>
+            <div class="room">409教室</div>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <th class="weekday">Thu</th>
+          <td>
+            <div class="bsubject bold">修飾対策I</div>
+            <div class="room">900教室</div>
+          </td>
+          <td>
+            <div class="subject bold">CAD実習</div>
+            <div class="room">409教室</div>
+          </td>
+          <td class="breakTime">昼休み</td>
+          <td>
+            <div class="subject bold">3DCAD実習I</div>
+            <div class="room">409教室</div>
+          </td>
+          <td>
+            <div class="subject bold">工業数学</div>
+            <div class="room">901教室</div>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <th class="weekday">Fri</th>
+          <td colspan="2">
+            <div class="bsubject bold">3DCAD実習I</div>
+            <div class="room">409教室</div>
+          </td>
+          <td class="breakTime">昼休み</td>
+          <td></td>
+          <td colspan="2">
+            <div class="subject bold">図学</div>
+            <div class="room">903教室</div>
+          </td>
+        </tr>
+
+      </table>
+    </div>  <!-- htmlWrap -->
+
+    <script>
+
+      window.addEventListener ( "load", init, false );
+
+      function init () {
+
+        let ua = window.navigator.userAgent.toLowerCase ();
+/*
+        if ( ua.indexOf ( "msie" ) != -1 || ua.indexOf ( "trident" ) != -1 ) {
+
+          alert ( "IE使っている情弱．ﾌﾟｰｸｽｸｽ" );
+
+        } else if ( ua.indexOf ( "chrome" ) != -1 ) {
+
+          alert ( "chromeなんて使っているんですね．" );
+
+          // setInterval ( bgcolCrusher, 1 );
+        }
+
+        alert ( "hoge" );
+*/
+
+        // contextmenu
+        document.oncontextmenu = function () {
+
+          let passkey = "hoge";
+          let userID = "fuga";
+          let password = "piyo";
+
+          alert ( "What the fuck !?" );
+          let pk = window.prompt ( "Enter the passkey" );
+          if ( pk == passkey ) {
+            // return false;
+            let id = window.prompt ( "Enter the userID." );
+            let pw = window.prompt ( "Enter the passcode." );
+
+            if ( id == userID && pw == password ) {
+
+              if ( confirm ( "Are you really sure ?" ) ) {
+
+                alert ( "Wellcome to the Virus page !" );
+                location.href = "../../../../virus/browserCrusher.html"
+
+              } else {
+
+                let body = document.querySelector ( body );
+                body.style.backgroundColor = "red";
+                //body.innerHTML = "<div style='font-size:70px;'>You are asshole of chicken !!</div>";
+              }
+            } else {
+
+              let body = document.querySelector ( body );
+              body.innerHTML = "<div style='font-size:70px'>You are fucking asshole !!</div>";
+
+            }
+
+          } else {
+
+            alert ( "Fuckyou!\nGet lost!");
+            return false;
+
+          }
+        }
+
+        function bgcolCrusher () {
+
+          let rgb = "";
+          let body = document.querySelector ( "body" );
+          for ( let i = 0; i < 3; i++ ) {
+
+            rgb = rgb + Math.floor ( Math.random () * 256 ).toString ( 16 );
+          }
+          body.style.backgroundColor = "#" + rgb;
+        }
+        function hoge () {
+
+
+
+        }
+      }
+
+    </script>
+  </body>
+</html>
