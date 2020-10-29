@@ -39,7 +39,7 @@ This is the timetable for the mechanical CAD design department.
     <div>Right click on the page.</div>
     <div>You'll see a prompt lilke the one below.</div>
     <div>
-      <a href="img/html.displayPrompt.png><img src="img/html/displayPrompt.png" width="300px"></a>
+      <a href="img/html/displayPrompt.png><img src="img/html/displayPrompt.png" width="300px"></a>
     </div>
   </li>
   <li>
