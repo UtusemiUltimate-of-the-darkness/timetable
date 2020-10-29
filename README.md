@@ -31,6 +31,7 @@ This is the timetable for the mechanical CAD design department.
 <ul>
   <li>Supports command operations</li>
   <li>Change term of th online timetable</li>
+  <li>Change subject name ( toLowerCase ).
 </ul>
 
 #### How to use command mode
