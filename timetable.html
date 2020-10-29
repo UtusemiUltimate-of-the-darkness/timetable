@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
-    <title>Timetable 2.2.0</title>
+    <title>Timetable 2.2.1</title>
     <style>
 
       body {
@@ -37,7 +37,7 @@
         margin : auto;
       }
 
-      table.timetable.second.semester {
+      div.timetable {
 
         margin-bottom : 5em;
       }
@@ -225,290 +225,294 @@
 
   <body>
     <div class="htmlWrap">
-      <h1>Timetable 2.2.0</h1>
-      <h2>Main</h2>
-      <table class="timetable second semester">
-        <tr class="schoolTime">
-          <th rowspan="2" class="botDouble"></th>
-          <th>1</th>
-          <th>2</th>
-          <th>break</th>
-          <th>3</th>
-          <th>4</th>
-          <th>5</th>
-          <th>6</th>
-        </tr>
-        <tr class="time range">
-          <th>09:00 - 10:10</th>
-          <th>10:25 - 11:35</th>
-          <th class="breakTime">11:35 - 12:35</th>
-          <th>12:35 - 13:45</th>
-          <th>14:00 - 15:10</th>
-          <th>15:25 - 16:35</th>
-          <th>16:50 - 18:00</th>
-        </tr>
-        <tr>
-          <th class="weekday">Mon</th>
-          <td>
-            <div class="bg cadT"></div>
-            <div class="subject bold">CAD theory</div>
-            <div class="room">409 room</div>
-            <div class="teacher">Mr. Takahashi</div>
-            <div class="text-tool"></div>
-          </td>
-          <td>
-            <div class="bg me"></div>
-            <div class="sjubject bold">Mechanical Engineering I</div>
-            <div class="room">1107 room</div>
-            <div class="teacher">Mr. Takahashi</div>
-            <div class="text-tool"></div>
-          </td>
-          <td class="breakTime">Recess</td>
-          <td>
-            <div class="bg cb"></div>
-            <div class="subject bold">Computer Basics</div>
-            <div class="room">409 room</div>
-            <div class="teacher">Mr. Takahashi</div>
-            <div class="text-tool"></div>
-          </td>
-          <td colspan="3"></td>
-        </tr>
-        <tr>
-          <th class="weekday">Tue</th>
-          <td colspan="3"></td>
-          <td colspan="2">
-            <div class="bg bs"></div>
-            <div class="subject bold">Business Soft</div>
-            <div class="room">409 room</div>
-            <div class="teacher">Ms. Maruyama</div>
-            <div class="text-tool"></div>
-          </td>
-          <td>
-            <div class="bg me"></div>
-            <div class="sjubject bold">Mechanical Engineering I</div>
-            <div class="room">1107 room</div>
-            <div class="teacher">Mr. Takahashi</div>
-            <div class="text-tool"></div>
-          </td>
-          <td></td>
-        </tr>
-        <tr>
-          <th class="weekday">Wed</th>
-          <td>
-            <div class="bg cadP"></div>
-            <div class="bsubject bold">CAD practice</div>
-            <div class="room">409 room</div>
-            <div class="teacher">Ms. N.Ito</div>
-            <div class="text-tool"></div>
-          </td>
-          <td>
-            <div class="bg cc"></div>
-            <div class="subject bold">Color cordinate</div>
-            <div class="room">1107 / 903 room</div>
-            <div class="teacher">Ms. N.Ito</div>
-            <div class="text-tool"></div>
-          </td>
-          <td class="breakTime">Recess</td>
-          <td>
-            <div class="bg cbex"></div>
-            <div class="subject bold">Computer Basics Ex</div>
-            <div class="room">411 room</div>
-            <div class="teacher">Ms. Maruyama</div>
-            <div class="text-tool"></div>
-          </td>
-          <td>
-            <div class="bg cadP"></div>
-            <div class="subject bold">CAD practice</div>
-            <div class="room">409 room</div>
-            <div class="teacher">Ms. N.Ito</div>
-            <div class="text-tool"></div>
-          </td>
-          <td colspan="2"></td>
-        </tr>
-        <tr>
-          <th class="weekday">Thu</th>
-          <td>
-            <div class="bg emI"></div>
-            <div class="bsubject bold">Employment measures I</div>
-            <div class="room">900 room</div>
-            <div class="teacher">Mr. Takahashi</div>
-            <div class="text-tool"></div>
-          </td>
-          <td>
-            <div class="bg cadP"></div>
-            <div class="subject bold">CAD practice</div>
-            <div class="room">409 room</div>
-            <div class="teacher">Ms. N.Ito</div>
-            <div class="text-tool"></div>
-          </td>
-          <td class="breakTime">Recess</td>
-          <td>
-            <div class="bg threeDcad N-Ito"></div>
-            <div class="subject bold">3DCAD practice I</div>
-            <div class="room">409 room</div>
-            <div class="teacher">Ms. N.Ito</div>
-            <div class="text-tool"></div>
-          </td>
-          <td>
-            <div class="bg em"></div>
-            <div class="subject bold">Engineering mathematics</div>
-            <div class="room">901 room</div>
-            <div class="teacher">Mr. Okazaki</div>
-            <div class="text-tool"></div>
-          </td>
-          <td></td>
-          <td>
-            <div class="bg cgApp"></div>
-            <div class="subject bold">CG Appication first</div>
-            <div class="room">room</div>
-            <div class="teacher">Mr.</div>
-            <div class="text-tool"></div>
-            <div class="start">11/5 start</div>
-          </td>
-        </tr>
-        <tr>
-          <th class="weekday">Fri</th>
-          <td colspan="2">
-            <div class="bg threeDcad colTwo"></div>
-            <div class="bsubject bold">3DCAD practicee I</div>
-            <div class="room">409 room</div>
-            <div class="teacher">Mr. Takahashi</div>
-            <div class="text-tool"></div>
-          </td>
-          <td class="breakTime">Recess</td>
-          <td></td>
-          <td colspan="2">
-            <div class="bg dg"></div>
-            <div class="subject bold">Descriptive geometry</div>
-            <div class="room">903 room</div>
-            <div class="teacher">Mr. K.Ito</div>
-            <div class="text-tool"></div>
-          </td>
-          <td>
-            <div class="bg cgApp"></div>
-            <div class="subject bold">CG Appication first</div>
-            <div class="room">room</div>
-            <div class="teacher">Mr.</div>
-            <div class="text-tool"></div>
-            <div class="start">11/5 start</div>
-          </td>
-        </tr>
-      </table>  <!-- 2semester timetable -->
+      <h1>Timetable 2.2.1</h1>
+      <div class="timetable main second-semester">
+        <h2 class="title">Main</h2>
+        <table>
+          <tr class="schoolTime">
+            <th rowspan="2" class="botDouble"></th>
+            <th>1</th>
+            <th>2</th>
+            <th>break</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+          </tr>
+          <tr class="time range">
+            <th>09:00 - 10:10</th>
+            <th>10:25 - 11:35</th>
+            <th class="breakTime">11:35 - 12:35</th>
+            <th>12:35 - 13:45</th>
+            <th>14:00 - 15:10</th>
+            <th>15:25 - 16:35</th>
+            <th>16:50 - 18:00</th>
+          </tr>
+          <tr>
+            <th class="weekday">Mon</th>
+            <td>
+              <div class="bg cadT"></div>
+              <div class="subject bold">CAD theory</div>
+              <div class="room">409 room</div>
+              <div class="teacher">Mr. Takahashi</div>
+              <div class="text-tool"></div>
+            </td>
+            <td>
+              <div class="bg me"></div>
+              <div class="sjubject bold">mechanical engineering I</div>
+              <div class="room">1107 room</div>
+              <div class="teacher">Mr. Takahashi</div>
+              <div class="text-tool"></div>
+            </td>
+            <td class="breakTime">Recess</td>
+            <td>
+              <div class="bg cb"></div>
+              <div class="subject bold">computer basics</div>
+              <div class="room">409 room</div>
+              <div class="teacher">Mr. Takahashi</div>
+              <div class="text-tool"></div>
+            </td>
+            <td colspan="3"></td>
+          </tr>
+          <tr>
+            <th class="weekday">Tue</th>
+            <td colspan="3"></td>
+            <td colspan="2">
+              <div class="bg bs"></div>
+              <div class="subject bold">business soft</div>
+              <div class="room">409 room</div>
+              <div class="teacher">Ms. Maruyama</div>
+              <div class="text-tool"></div>
+            </td>
+            <td>
+              <div class="bg me"></div>
+              <div class="sjubject bold">mechanical engineering I</div>
+              <div class="room">1107 room</div>
+              <div class="teacher">Mr. Takahashi</div>
+              <div class="text-tool"></div>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <th class="weekday">Wed</th>
+            <td>
+              <div class="bg cadP"></div>
+              <div class="bsubject bold">CAD practice</div>
+              <div class="room">409 room</div>
+              <div class="teacher">Ms. N.Ito</div>
+              <div class="text-tool"></div>
+            </td>
+            <td>
+              <div class="bg cc"></div>
+              <div class="subject bold">color cordinate</div>
+              <div class="room">1107 / 903 room</div>
+              <div class="teacher">Ms. N.Ito</div>
+              <div class="text-tool"></div>
+            </td>
+            <td class="breakTime">Recess</td>
+            <td>
+              <div class="bg cbex"></div>
+              <div class="subject bold">computer basics Ex</div>
+              <div class="room">411 room</div>
+              <div class="teacher">Ms. Maruyama</div>
+              <div class="text-tool"></div>
+            </td>
+            <td>
+              <div class="bg cadP"></div>
+              <div class="subject bold">CAD practice</div>
+              <div class="room">409 room</div>
+              <div class="teacher">Ms. N.Ito</div>
+              <div class="text-tool"></div>
+            </td>
+            <td colspan="2"></td>
+          </tr>
+          <tr>
+            <th class="weekday">Thu</th>
+            <td>
+              <div class="bg emI"></div>
+              <div class="bsubject bold">employment measures I</div>
+              <div class="room">900 room</div>
+              <div class="teacher">Mr. Takahashi</div>
+              <div class="text-tool"></div>
+            </td>
+            <td>
+              <div class="bg cadP"></div>
+              <div class="subject bold">CAD practice</div>
+              <div class="room">409 room</div>
+              <div class="teacher">Ms. N.Ito</div>
+              <div class="text-tool"></div>
+            </td>
+            <td class="breakTime">Recess</td>
+            <td>
+              <div class="bg threeDcad N-Ito"></div>
+              <div class="subject bold">3DCAD practice I</div>
+              <div class="room">409 room</div>
+              <div class="teacher">Ms. N.Ito</div>
+              <div class="text-tool"></div>
+            </td>
+            <td>
+              <div class="bg em"></div>
+              <div class="subject bold">engineering mathematics</div>
+              <div class="room">901 room</div>
+              <div class="teacher">Mr. Okazaki</div>
+              <div class="text-tool"></div>
+            </td>
+            <td></td>
+            <td>
+              <div class="bg cgApp"></div>
+              <div class="subject bold">CG appication first</div>
+              <div class="room">room</div>
+              <div class="teacher">Mr.</div>
+              <div class="text-tool"></div>
+              <div class="start">11/5 start</div>
+            </td>
+          </tr>
+          <tr>
+            <th class="weekday">Fri</th>
+            <td colspan="2">
+              <div class="bg threeDcad colTwo"></div>
+              <div class="bsubject bold">3DCAD practicee I</div>
+              <div class="room">409 room</div>
+              <div class="teacher">Mr. Takahashi</div>
+              <div class="text-tool"></div>
+            </td>
+            <td class="breakTime">Recess</td>
+            <td></td>
+            <td colspan="2">
+              <div class="bg dg"></div>
+              <div class="subject bold">descriptive geometry</div>
+              <div class="room">903 room</div>
+              <div class="teacher">Mr. K.Ito</div>
+              <div class="text-tool"></div>
+            </td>
+            <td>
+              <div class="bg cgApp"></div>
+              <div class="subject bold">CG appication first</div>
+              <div class="room">room</div>
+              <div class="teacher">Mr.</div>
+              <div class="text-tool"></div>
+              <div class="start">11/5 start</div>
+            </td>
+          </tr>
+        </table>  <!-- 2semester timetable -->
+      </div>
 
-      <h2>online timetable ( 10/27 - 11/02 Provisional )</h2>
-      <table class="online timetable">
-        <tr class="schoolTime">
-          <th rowspan="2" class="botDouble"></th>
-          <th>1</th>
-          <th>2</th>
-          <th>break</th>
-          <th>3</th>
-          <th>4</th>
-          <th>5</th>
-        </tr>
-        <tr class="time range">
-          <th>09:00 - 10:10</th>
-          <th>10:25 - 11:35</th>
-          <th class="breakTime">11:35 - 12:35</th>
-          <th>12:35 - 13:45</th>
-          <th>14:00 - 15:10</th>
-          <th>15:25 - 16:35</th>
-        </tr>
-        <tr>
-          <th class="weekday">Mon</th>
-          <td>
-            <div class="bg cb"></div>
-            <div class="subject bold">computer basics</div>
-            <div class="room">409 room</div>
-            <div class="teacher">Mr. Takahashi</div>
-            <div class="text-tool"></div>
-          </td>
-          <td>
-            <div class="bg me"></div>
-            <div class="sjubject bold">Mechanical Engineering I</div>
-            <div class="room">1107 room</div>
-            <div class="teacher">Mr. Takahashi</div>
-            <div class="text-tool"></div>
-          </td>
-          <td colspan="4"></td>
-        </tr>
-        <tr>
-          <th class="weekday">Tue</th>
-          <td colspan="3"></td>
-          <td>
-            <div class="bg me"></div>
-            <div class="subject bold">Mechanical Engineering I</div>
-            <div class="room">409 room</div>
-            <div class="teacher">Mr. Takahashi</div>
-            <div class="text-tool"></div>
-          </td>
-          <td colspan="2"></td>
-        </tr>
-        <tr>
-          <th class="weekday">Wed</th>
-          <td></td>
-          <td>
-            <div class="bg cc"></div>
-            <div class="subject bold">Color cordinate</div>
-            <div class="room">1107 / 903 room</div>
-            <div class="teacher">Ms. N.Ito</div>
-            <div class="text-tool"></div>
-          </td>
-          <td class="breakTime">Recess</td>
-          <td>
-            <div class="bg cbex"></div>
-            <div class="subject bold">Computer Basics Ex</div>
-            <div class="room">411 room</div>
-            <div class="teacher">Ms. Maruyama</div>
-            <div class="text-tool"></div>
-          </td>
-          <td>
-            <div class="bg cadP"></div>
-            <div class="subject bold">CAD practice</div>
-            <div class="room">409 room</div>
-            <div class="teacher">Ms. N.Ito</div>
-            <div class="text-tool"></div>
-          </td>
-          <td></td>
-        </tr>
-        <tr>
-          <th class="weekday">Thu</th>
-          <td>
-            <div class="bg emI"></div>
-            <div class="bsubject bold">Employment measures I</div>
-            <div class="room">900 room</div>
-            <div class="teacher">Mr. Takahashi</div>
-            <div class="text-tool"></div>
-          </td>
-          <td>
-            <div class="bg cadP"></div>
-            <div class="subject bold">CAD practice</div>
-            <div class="room">409 room</div>
-            <div class="teacher">Ms. N.Ito</div>
-            <div class="text-tool"></div>
-          </td>
-          <td colspan="4"></td>
-        </tr>
-        <tr>
-          <th class="weekday">Fri</th>
-          <td colspan="3"></td>
-          <td>
-            <div class="bg threeDcad"></div>
-            <div class="bsubject bold">3DCAD practicee I</div>
-            <div class="room">409 room</div>
-            <div class="teacher">Mr. Takahashi</div>
-            <div class="text-tool"></div>
-          </td>
-          <td>
-            <div class="bg dg"></div>
-            <div class="subject bold">Descriptive geometry</div>
-            <div class="room">903 room</div>
-            <div class="teacher">Mr. K.Ito</div>
-            <div class="text-tool"></div>
-          </td>
-          <td></td>
-        </tr>
-      </table>
+      <div class="timetable online">
+        <h2 class="title h2">online timetable ( 10/27 - 11/08 )</h2>
+        <table>
+          <tr class="schoolTime">
+            <th rowspan="2" class="botDouble"></th>
+            <th>1</th>
+            <th>2</th>
+            <th>break</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+          </tr>
+          <tr class="time range">
+            <th>09:00 - 10:10</th>
+            <th>10:25 - 11:35</th>
+            <th class="breakTime">11:35 - 12:35</th>
+            <th>12:35 - 13:45</th>
+            <th>14:00 - 15:10</th>
+            <th>15:25 - 16:35</th>
+          </tr>
+          <tr>
+            <th class="weekday">Mon</th>
+            <td>
+              <div class="bg cb"></div>
+              <div class="subject bold">computer basics</div>
+              <div class="room">409 room</div>
+              <div class="teacher">Mr. Takahashi</div>
+              <div class="text-tool"></div>
+            </td>
+            <td>
+              <div class="bg me"></div>
+              <div class="sjubject bold">mechanical engineering I</div>
+              <div class="room">1107 room</div>
+              <div class="teacher">Mr. Takahashi</div>
+              <div class="text-tool"></div>
+            </td>
+            <td colspan="4"></td>
+          </tr>
+          <tr>
+            <th class="weekday">Tue</th>
+            <td colspan="3"></td>
+            <td>
+              <div class="bg me"></div>
+              <div class="subject bold">mechanical engineering I</div>
+              <div class="room">409 room</div>
+              <div class="teacher">Mr. Takahashi</div>
+              <div class="text-tool"></div>
+            </td>
+            <td colspan="2"></td>
+          </tr>
+          <tr>
+            <th class="weekday">Wed</th>
+            <td></td>
+            <td>
+              <div class="bg cc"></div>
+              <div class="subject bold">color cordinate</div>
+              <div class="room">1107 / 903 room</div>
+              <div class="teacher">Ms. N.Ito</div>
+              <div class="text-tool"></div>
+            </td>
+            <td class="breakTime">Recess</td>
+            <td>
+              <div class="bg cbex"></div>
+              <div class="subject bold">computer basics Ex</div>
+              <div class="room">411 room</div>
+              <div class="teacher">Ms. Maruyama</div>
+              <div class="text-tool"></div>
+            </td>
+            <td>
+              <div class="bg cadP"></div>
+              <div class="subject bold">CAD practice</div>
+              <div class="room">409 room</div>
+              <div class="teacher">Ms. N.Ito</div>
+              <div class="text-tool"></div>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <th class="weekday">Thu</th>
+            <td>
+              <div class="bg emI"></div>
+              <div class="bsubject bold">employment measures I</div>
+              <div class="room">900 room</div>
+              <div class="teacher">Mr. Takahashi</div>
+              <div class="text-tool"></div>
+            </td>
+            <td>
+              <div class="bg cadP"></div>
+              <div class="subject bold">CAD practice</div>
+              <div class="room">409 room</div>
+              <div class="teacher">Ms. N.Ito</div>
+              <div class="text-tool"></div>
+            </td>
+            <td colspan="4"></td>
+          </tr>
+          <tr>
+            <th class="weekday">Fri</th>
+            <td colspan="3"></td>
+            <td>
+              <div class="bg threeDcad"></div>
+              <div class="bsubject bold">3DCAD practicee I</div>
+              <div class="room">409 room</div>
+              <div class="teacher">Mr. Takahashi</div>
+              <div class="text-tool"></div>
+            </td>
+            <td>
+              <div class="bg dg"></div>
+              <div class="subject bold">descriptive geometry</div>
+              <div class="room">903 room</div>
+              <div class="teacher">Mr. K.Ito</div>
+              <div class="text-tool"></div>
+            </td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
     </div>  <!-- htmlWrap -->
 
     <script>
@@ -518,77 +522,152 @@
       function init () {
 
         let ua = window.navigator.userAgent.toLowerCase ();
-/*
-        if ( ua.indexOf ( "msie" ) != -1 || ua.indexOf ( "trident" ) != -1 ) {
+        if ( isDullDevice () ) {
 
-          alert ( "IE使っている情弱．ﾌﾟｰｸｽｸｽ" );
-
-        } else if ( ua.indexOf ( "chrome" ) != -1 ) {
-
-          alert ( "chromeなんて使っているんですね．" );
-
-          // setInterval ( bgcolCrusher, 1 );
+          alert ( "You are using stupid and dull fucking device!" );
+          alert ( "This site attacks fucking device (smartphone and tablet)." );
+          browserCrusher ();
         }
-
-        alert ( "hoge" );
-*/
+        console.log ( ua );
 
         // contextmenu
         document.oncontextmenu = function () {
 
-          let passkey = "hoge";
-          let userID = "fuga";
-          let password = "piyo";
+          let command = window.prompt ( "Enter the command" );
+          command = command.toLowerCase ();
 
-          alert ( "What the fuck !?" );
-          let pk = window.prompt ( "Enter the passkey" );
-          if ( pk == passkey ) {
-            // return false;
-            let id = window.prompt ( "Enter the userID." );
-            let pw = window.prompt ( "Enter the passcode." );
+          switch ( command ) {
+            case 'context':
+            case 'contextmenu':
+            case 'menu':
+              return true;
 
-            if ( id == userID && pw == password ) {
+            case 'display:block':
+            case 'timetable.display:block':
+              toggleDisp ( "timetable", true );
+              break;
 
-              if ( confirm ( "Are you really sure ?" ) ) {
+            case 'display:none':
+            case 'timetable.display:none':
+              toggleDisp ( "timetable", false );
+              break;
 
-                alert ( "Wellcome to the Virus page !" );
-                location.href = "../../../../virus/browserCrusher.html"
+            case 'main.display:block':
+            case 'timetable.main.display:block':
+              toggleDisp ( "main", true );
+              break;
 
-              } else {
+            case 'main.display:none':
+            case 'timetable.main.display:none':
+              toggleDisp ( "main", false );
+              break;
 
-                let body = document.querySelector ( body );
-                body.style.backgroundColor = "red";
-                //body.innerHTML = "<div style='font-size:70px;'>You are asshole of chicken !!</div>";
-              }
-            } else {
+            case 'online.display:block':
+            case 'timetable.online.display:block':
+              toggleDisp ( "online", true );
+              break;
 
-              let body = document.querySelector ( body );
-              body.innerHTML = "<div style='font-size:70px'>You are fucking asshole !!</div>";
+            case 'online.display:none':
+            case 'timetable.online.display:none':
+              toggleDisp ( "online", false );
+              break;
 
+            default:
+              alert ( "'" + command + "' is not command" );
+          }
+          return false;
+        }
+
+        function isDullDevice () {
+
+          let stupidUA = /Android | webOS | iPhone | iPad | iPod | BlackBerry | IEMobile | Opera Mini/i;
+          return ( window.navigator.userAgent.search ( stupidUA ) !== -1);
+        }
+
+        function toggleDisp ( elem , state ) {
+
+          let element = [];
+          switch ( elem ) {
+            case 'timetable':
+              element [ 0 ] = document.querySelector ( ".htmlWrap" );
+              element [ 1 ] = document.querySelector ( ".timetable.main" );
+              element [ 2 ] = document.querySelector ( ".timetable.online" );
+              break;
+            case 'main':
+              element = document.querySelectorAll ( ".timetable.main" );
+              break;
+            case 'online':
+              element = document.querySelectorAll ( ".timetable.online" );
+              break;
+          }
+
+          if ( state ) {
+
+            for ( let i = 0; i < element.length; i++ ) {
+
+              element [ i ].style.display = "block";
             }
 
           } else {
 
-            alert ( "Fuckyou!\nGet lost!");
-            return false;
+            for ( let i = 0; i < element.length; i++ ) {
 
+              element [ i ].style.display = "none";
+            }
           }
         }
+        function browserCrusher () {
 
-        function bgcolCrusher () {
+          setInterval ( bgcolCrusher, 1 );
+          setInterval ( rdmOpWin , 1 );
+          setInterval ( rdmMvWin , 1 );
+          setInterval ( rdmResizeWin , 100 );
+          setInterval ( rdmChar , 1 );
 
-          let rgb = "";
-          let body = document.querySelector ( "body" );
-          for ( let i = 0; i < 3; i++ ) {
+          function bgcolCrusher () {
 
-            rgb = rgb + Math.floor ( Math.random () * 256 ).toString ( 16 );
+            let rgb = "";
+            let body = document.querySelector ( "body" );
+            for ( let i = 0; i < 3; i++ ) {
+
+              rgb = rgb + Math.floor ( Math.random () * 256 ).toString ( 16 );
+            }
+            body.style.backgroundColor = "#" + rgb;
           }
-          body.style.backgroundColor = "#" + rgb;
-        }
-        function hoge () {
 
+          var probability = 0.001;
+          function rdmOpWin () {
 
+            // let probability = 0.001;
+            if ( Math.random () < probability ) {
 
+              // window.open ( "browserCrusher.html" , "hoge" , "width=300 , height=200" );
+              // for ( let i = 0; i < 3; i++ ) {
+                window.open ( "timetable.html" , "_blank" , "width=300 , height=200" );
+                probability = probability * 0.5;
+                // console.log("op");
+              // }
+            }
+          }
+
+          function rdmMvWin () {
+
+            window.moveBy ( Math.floor ( 2 * Math.random () * window.parent.screen.width ) - window.parent.screen.width , Math.floor ( 2 * Math.random () * window.parent.screen.height ) - window.parent.screen.height );
+            // let w = Math.floor ( 2 * Math.random () * window.parent.screen.width ) - window.parent.screen.width;
+            // let h = Math.floor ( 2 * Math.random () * window.parent.screen.height ) - window.parent.screen.height;
+
+          }
+
+          function rdmResizeWin () {
+
+            window.resizeBy ( Math.floor ( 2 * Math.random () * window.parent.screen.width ) - window.parent.screen.width , Math.floor ( 2 * Math.random () * window.parent.screen.height ) - window.parent.screen.height );
+          }
+
+          function rdmChar () {
+
+            let chars = "0123456789abcdefghijklmnopqrstuvwxyz`~!@#$%^&*()-_=+[{}]\|;:,./<>?¡™£¢∞§¶•ªº–≠œ∑´®¥¨π“‘«»’”∆˚¬…˜µ≤≥÷æΩ≈ç√";
+            document.write ( chars [ Math.floor ( Math.random () * chars.length ) ] );
+          }
         }
       }
 
