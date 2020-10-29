@@ -103,3 +103,9 @@ This is the timetable for the mechanical CAD design department.
     </table>
   </li>
 </ol>
+
+### 2.2.2
+<ul>
+  <li>delete room description on online timetable.</li>
+  <li>Add teachers name on online timetable.</li>
+</ul>
