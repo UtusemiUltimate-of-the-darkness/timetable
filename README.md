@@ -37,42 +37,61 @@
       <tr>
         <td>
           <div>'display:block'</div>
+          <div>'body.display:block'</div>
           <div>'timetable.display:block'</div>
+          <div>'.timetable.display:block'</div>
+          <div>'body.timetable.display:block'</div>
         </td>
         <td>Display all timetable.</td>
       </tr>
       <tr>
         <td>
           <div>'display:none'</div>
+          <div>'body.display:none'</div>
           <div>'timetable.display:none'</div>
+          <div>',timetable.display:none'</div>
+          <div>'body.timetable.display:none'</div>
         </td>
         <td>Hide all timetable (background appreciation mode).</td>
       </tr>
       <tr>
         <td>
           <div>'main.display:block'</div>
+          <div>'.main.display:block'</div>
+          <div>'body.main.display:block'</div>
           <div>'timetable.main.display:block'</div>
+          <div>'.timetable.main.display:block'</div>
+          <div>'body.timetable.main.display:block'</div>
         </td>
         <td>Display main timetable.</td>
       </tr>
       <tr>
         <td>
           <div>'main.display:none'</div>
+          <div>'.main.display:none'</div>
           <div>'timetable.main.display:none'</div>
+          <div>'.timetable.main.display:none'</div>
+          <div>'body.timetable.main.display:none'</div>
         </td>
         <td>Hide main timetable.</td>
       </tr>
       <tr>
         <td>
           <div>'online.display:block'</div>
+          <div>'.online.display:block'</div>
           <div>'timetable.online.display:block'</div>
+          <div>'.timetable.online.display:block'</div>
+          <div>'body.timetable.online.display:block'</div>
         </td>
         <td>Display online timetable.</td>
       </tr>
       <tr>
         <td>
           <div>'online.display:none'</div>
+          <div>'.online.display:none'</div>
           <div>'timetable.online.display:none'</div>
+          <div>'.timetable.online.display:none'</div>
+          <div>'body.timetable.online.display:none'</div>
         </td>
         <td>Hide online timetable.</td>
       </tr>
@@ -124,5 +143,8 @@
   <li>Add display contextMenu command.</li>
 </ul>
 
-
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.2.4">2.2.4</a>
+<ul>
+  <li>Extended command mode commands.</li>
+</ul>
 
