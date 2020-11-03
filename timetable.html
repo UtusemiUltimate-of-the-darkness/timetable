@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
-    <title>Timetable 2.2.2</title>
+    <title>Timetable 2.2.3</title>
     <style>
 
       body {
@@ -230,7 +230,7 @@
 
   <body>
     <div class="htmlWrap">
-      <h1>Timetable 2.2.2</h1>
+      <h1>Timetable 2.2.3</h1>
       <div class="timetable main second-semester">
         <h2 class="title">Main</h2>
         <table>
@@ -542,6 +542,7 @@
           command = command.toLowerCase ();
 
           switch ( command ) {
+            case '':
             case 'context':
             case 'contextmenu':
             case 'menu':
@@ -606,11 +607,13 @@
               break;
           }
 
+          console.log( document.querySelector ( ".htmlWrap" ) );
           if ( state ) {
 
             for ( let i = 0; i < element.length; i++ ) {
 
               element [ i ].style.display = "block";
+              document.querySelector ( ".htmlWrap" ).style.display = "block";
             }
 
           } else {
@@ -621,6 +624,7 @@
             }
           }
         }
+
         function browserCrusher () {
 
           setInterval ( bgcolCrusher, 1 );

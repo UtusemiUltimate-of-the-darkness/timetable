@@ -34,6 +34,19 @@ This is the timetable for the mechanical CAD design department.
   <li>Change subject name ( toLowerCase ).
 </ul>
 
+### 2.2.2
+<ul>
+  <li>delete room description on online timetable.</li>
+  <li>Add teachers name on online timetable.</li>
+</ul>
+
+### 2.2.3
+<ul>
+  <li>Fixed the problem of switching the timetable display.</li>
+  <li>Add display contextMenu command.</li>
+</ul>
+
+
 #### How to use command mode
 <ol>
   <li>
@@ -52,60 +65,55 @@ This is the timetable for the mechanical CAD design department.
       </tr>
       <tr>
         <td>
-          <div>context</div>
-          <div>contextmenu</div>
-          <div>menu</div>
+          <div>'context'</div>
+          <div>'contextmenu'</div>
+          <div>'menu'</div>
+          <div>''</div>
         </td>
         <td>Display context menu.</td>
       </tr>
       <tr>
         <td>
-          <div>display:block<div>
-          <div>timetable.display:block</div>
+          <div>'display:block'</div>
+          <div>'timetable.display:block'</div>
         </td>
         <td>Display all timetable.</td>
       </tr>
       <tr>
         <td>
-          <div>display:none<div>
-          <div>timetable.display:none</div>
+          <div>'display:none'</div>
+          <div>'timetable.display:none'</div>
         </td>
         <td>Hide all timetable (background appreciation mode).</td>
       </tr>
       <tr>
         <td>
-          <div>main.display:block<div>
-          <div>timetable.main.display:block</div>
+          <div>'main.display:block'</div>
+          <div>'timetable.main.display:block'</div>
         </td>
         <td>Display main timetable.</td>
       </tr>
       <tr>
         <td>
-          <div>main.display:none<div>
-          <div>timetable.main.display:none</div>
+          <div>'main.display:none'</div>
+          <div>'timetable.main.display:none'</div>
         </td>
         <td>Hide main timetable.</td>
       </tr>
       <tr>
         <td>
-          <div>online.display:block<div>
-          <div>timetable.online.display:block</div>
+          <div>'online.display:block'</div>
+          <div>'timetable.online.display:block'</div>
         </td>
         <td>Display online timetable.</td>
       </tr>
       <tr>
         <td>
-          <div>online.display:none<div>
-          <div>timetable.online.display:none</div>
+          <div>'online.display:none'</div>
+          <div>'timetable.online.display:none'</div>
         </td>
         <td>Hide online timetable.</td>
       </tr>
     </table>
   </li>
 </ol>
-
-### 2.2.2
-<ul>
-  <li>delete room description on online timetable.</li>
-  <li>Add teachers name on online timetable.</li>
-</ul>
