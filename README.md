@@ -94,31 +94,31 @@
   <li>change text font</li>
 </ul>
 
-#### 2.1.1
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.1.1">2.1.1</a>
 <ul>
   <li>Add textbook image to timetable cell background</li>
 </ul>
 
-#### 2.2.0
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.2.0">2.2.0</a>
 <ul>
   <li>Add online timetable ( 1027-1102 )</li>
   <li>Change table position ( to center ) </li>
 </ul>
 
-#### 2.2.1
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.2.1">2.2.1</a>
 <ul>
   <li>Supports command operations</li>
   <li>Change term of th online timetable</li>
   <li>Change subject name ( toLowerCase ).
 </ul>
 
-#### 2.2.2
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.2.2">2.2.2</a>
 <ul>
   <li>delete room description on online timetable.</li>
   <li>Add teachers name on online timetable.</li>
 </ul>
 
-#### 2.2.3
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.2.3">2.2.3</a>
 <ul>
   <li>Fixed the problem of switching the timetable display.</li>
   <li>Add display contextMenu command.</li>
