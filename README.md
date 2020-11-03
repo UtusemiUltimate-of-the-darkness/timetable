@@ -87,7 +87,7 @@
   <li>timetable of 2semester</li>
 </ul>
 
-#### 2.1.0
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.1.0">2.1.0</a>
 <ul>
   <li>Add background image</li>
   <li>language to English</li>
