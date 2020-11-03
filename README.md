@@ -1,53 +1,15 @@
-# timetable
+# Timetable
 
-This is the timetable for the mechanical CAD design department.
+<div>This is the timetable for the mechanical CAD design department.</div>
 
-## version info
+## How to use this Timetable
+<ol>
+  <li>Download your favorite version of the zip file <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/releases">here</a>.</li>
+  <li>Unzip downloaded zip file on your favorite place.</li>
+  <li>Open the html files in the unzipped folder in your browser.</li>
+</ol>
 
-### 2.0.0
-<ul>
-  <li>timetable of 2semester</li>
-</ul>
-
-### 2.1.0
-<ul>
-  <li>Add background image</li>
-  <li>language to English</li>
-  <li>change text font</li>
-</ul>
-
-### 2.1.1
-<ul>
-  <li>Add textbook image to timetable cell background</li>
-</ul>
-
-### 2.2.0
-<ul>
-  <li>Add online timetable ( 1027-1102 )</li>
-  <li>Change table position ( to center ) </li>
-</ul>
-
-### 2.2.1
-<ul>
-  <li>Supports command operations</li>
-  <li>Change term of th online timetable</li>
-  <li>Change subject name ( toLowerCase ).
-</ul>
-
-### 2.2.2
-<ul>
-  <li>delete room description on online timetable.</li>
-  <li>Add teachers name on online timetable.</li>
-</ul>
-
-### 2.2.3
-<ul>
-  <li>Fixed the problem of switching the timetable display.</li>
-  <li>Add display contextMenu command.</li>
-</ul>
-
-
-#### How to use command mode
+### How to use command mode
 <ol>
   <li>
     <div>Right click on the page.</div>
@@ -117,3 +79,50 @@ This is the timetable for the mechanical CAD design department.
     </table>
   </li>
 </ol>
+
+### version info
+
+### 2.0.0
+<ul>
+  <li>timetable of 2semester</li>
+</ul>
+
+### 2.1.0
+<ul>
+  <li>Add background image</li>
+  <li>language to English</li>
+  <li>change text font</li>
+</ul>
+
+### 2.1.1
+<ul>
+  <li>Add textbook image to timetable cell background</li>
+</ul>
+
+### 2.2.0
+<ul>
+  <li>Add online timetable ( 1027-1102 )</li>
+  <li>Change table position ( to center ) </li>
+</ul>
+
+### 2.2.1
+<ul>
+  <li>Supports command operations</li>
+  <li>Change term of th online timetable</li>
+  <li>Change subject name ( toLowerCase ).
+</ul>
+
+### 2.2.2
+<ul>
+  <li>delete room description on online timetable.</li>
+  <li>Add teachers name on online timetable.</li>
+</ul>
+
+### 2.2.3
+<ul>
+  <li>Fixed the problem of switching the timetable display.</li>
+  <li>Add display contextMenu command.</li>
+</ul>
+
+
+
