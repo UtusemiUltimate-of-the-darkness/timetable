@@ -82,43 +82,43 @@
 
 ### version info
 
-### 2.0.0
+#### 2.0.0
 <ul>
   <li>timetable of 2semester</li>
 </ul>
 
-### 2.1.0
+#### 2.1.0
 <ul>
   <li>Add background image</li>
   <li>language to English</li>
   <li>change text font</li>
 </ul>
 
-### 2.1.1
+#### 2.1.1
 <ul>
   <li>Add textbook image to timetable cell background</li>
 </ul>
 
-### 2.2.0
+#### 2.2.0
 <ul>
   <li>Add online timetable ( 1027-1102 )</li>
   <li>Change table position ( to center ) </li>
 </ul>
 
-### 2.2.1
+#### 2.2.1
 <ul>
   <li>Supports command operations</li>
   <li>Change term of th online timetable</li>
   <li>Change subject name ( toLowerCase ).
 </ul>
 
-### 2.2.2
+#### 2.2.2
 <ul>
   <li>delete room description on online timetable.</li>
   <li>Add teachers name on online timetable.</li>
 </ul>
 
-### 2.2.3
+#### 2.2.3
 <ul>
   <li>Fixed the problem of switching the timetable display.</li>
   <li>Add display contextMenu command.</li>
