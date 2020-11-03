@@ -13,7 +13,7 @@
 <ol>
   <li>
     <div>Right click on the page.</div>
-    <div>You'll see a prompt lilke the one below.</div>
+    <div>You'll see a prompt like the one below.</div>
     <div>
       <img src="img/html/displayPrompt.png" width="500px">
     </div>
