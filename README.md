@@ -148,3 +148,7 @@
   <li>Extended command mode commands.</li>
 </ul>
 
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.2.5">2.2.5</a>
+<ul>
+  <li>Removed class start date for CG appication first.</li>
+</ul>
