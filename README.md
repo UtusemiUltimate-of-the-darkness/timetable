@@ -153,3 +153,8 @@
   <li>Removed class start date for CG appication first.</li>
   <li>Fixed the list of commands in README.</li>
 </ul>
+
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.3.0">2.3.0</a>
+<ul>
+  <li>Removed online timetable.</li>
+</ul>
