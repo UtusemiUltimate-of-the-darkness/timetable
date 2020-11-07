@@ -49,7 +49,7 @@
           <div>'display:none'</div>
           <div>'body.display:none'</div>
           <div>'timetable.display:none'</div>
-          <div>',timetable.display:none'</div>
+          <div>'.timetable.display:none'</div>
           <div>'body.timetable.display:none'</div>
         </td>
         <td>Hide all timetable (background appreciation mode).</td>
@@ -151,4 +151,5 @@
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.2.5">2.2.5</a>
 <ul>
   <li>Removed class start date for CG appication first.</li>
+  <li>Fixed the list of commands in README.</li>
 </ul>
