@@ -4,7 +4,11 @@
 
 ## How to use this Timetable
 <ol>
-  <li>Download your favorite version of the zip file <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/releases">here</a>.</li>
+  <li>
+    Download your favorite version of the zip file <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/releases">here</a>.<br>
+    Or run the following in a terminal:
+    <code>$ git clone https://github.com/UtusemiUltimate-of-the-darkness/timetable.git</code>
+  </li>
   <li>Unzip downloaded zip file on your favorite place.</li>
   <li>Open the html files in the unzipped folder in your browser.</li>
 </ol>
