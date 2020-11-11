@@ -125,6 +125,7 @@
 
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.3.1">2.3.1</a>
 <ul>
+  <li>Changed room name to bold.</li>
   <li>Display teacher's name.</li>
   <li>Display textbooks and tools.</li>
 </ul>
