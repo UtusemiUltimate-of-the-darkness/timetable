@@ -122,3 +122,9 @@
   <li>Removed online timetable.</li>
   <li>Fixed the list of commands in README.</li>
 </ul>
+
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.3.1">2.3.1</a>
+<ul>
+  <li>Display teacher's name.</li>
+  <li>Display textbooks and tools.</li>
+</ul>

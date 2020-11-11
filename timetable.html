@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="img/icon/icon.jpg">
-    <title>Timetable 2.3.0</title>
+    <title>Timetable 2.3.1</title>
     <style>
 
       body {
@@ -72,12 +72,22 @@
         border-bottom : double 3px #E5B217;
       }
 
+      div.timetable table tr td div.subject {
+
+        font-size : 1.05em;
+      }
+
       div.timetable.main table tr td div.teacher {
 
-        display : none;
+        display : block;
       }
 
       table tr td div.text-tool {
+
+        display : block;
+      }
+
+      div.timetable.main table tr td div.text-tool.none {
 
         display : none;
       }
@@ -92,6 +102,11 @@
         min-width : 110px;
       }
 
+      div.timetable table tr td div.subject {
+
+        font-size : em;
+      }
+
       .bold {
 
         font-weight : bold;
@@ -102,6 +117,7 @@
 
         position : relative;
       }
+
       .bg.cadT {
       }
 
@@ -241,7 +257,7 @@
 
   <body>
     <div class="htmlWrap">
-      <h1>Timetable 2.3.0</h1>
+      <h1>Timetable 2.3.1</h1>
       <div class="timetable main second-semester">
         <h2 class="title">Main</h2>
         <table>
@@ -271,14 +287,14 @@
               <div class="subject bold">CAD theory</div>
               <div class="room">409 room</div>
               <div class="teacher">Mr. Takahashi</div>
-              <div class="text-tool"></div>
+              <div class="text-tool none"></div>
             </td>
             <td>
               <div class="bg me"></div>
-              <div class="sjubject bold">mechanical engineering I</div>
+              <div class="subject bold">mechanical engineering I</div>
               <div class="room">1107 room</div>
               <div class="teacher">Mr. Takahashi</div>
-              <div class="text-tool"></div>
+              <div class="text-tool">text:絵とき機械工学</div>
             </td>
             <td class="breakTime">Recess</td>
             <td>
@@ -286,7 +302,7 @@
               <div class="subject bold">computer basics</div>
               <div class="room">409 room</div>
               <div class="teacher">Mr. Takahashi</div>
-              <div class="text-tool"></div>
+              <div class="text-tool">text:CAD利用技術者試験公式ガイドブック</div>
             </td>
             <td colspan="3"></td>
           </tr>
@@ -298,14 +314,14 @@
               <div class="subject bold">business soft</div>
               <div class="room">409 room</div>
               <div class="teacher">Ms. Maruyama</div>
-              <div class="text-tool"></div>
+              <div class="text-tool">text:よくわかるMOS PowerPoint2016</div>
             </td>
             <td>
               <div class="bg me"></div>
               <div class="sjubject bold">mechanical engineering I</div>
               <div class="room">1107 room</div>
               <div class="teacher">Mr. Takahashi</div>
-              <div class="text-tool"></div>
+              <div class="text-tool">text:絵とき機械工学</div>
             </td>
             <td></td>
           </tr>
@@ -313,17 +329,17 @@
             <th class="weekday">Wed</th>
             <td>
               <div class="bg cadP"></div>
-              <div class="bsubject bold">CAD practice</div>
+              <div class="subject bold">CAD practice</div>
               <div class="room">409 room</div>
               <div class="teacher">Ms. N.Ito</div>
-              <div class="text-tool"></div>
+              <div class="text-tool none"></div>
             </td>
             <td>
               <div class="bg cc"></div>
               <div class="subject bold">color cordinate</div>
               <div class="room">1107 / 903 room</div>
               <div class="teacher">Ms. N.Ito</div>
-              <div class="text-tool"></div>
+              <div class="text-tool">text:Color Master BASIC</div>
             </td>
             <td class="breakTime">Recess</td>
             <td>
@@ -331,14 +347,14 @@
               <div class="subject bold">computer basics Ex</div>
               <div class="room">411 room</div>
               <div class="teacher">Ms. Maruyama</div>
-              <div class="text-tool"></div>
+              <div class="text-tool">text:iPad</div>
             </td>
             <td>
               <div class="bg cadP"></div>
               <div class="subject bold">CAD practice</div>
               <div class="room">409 room</div>
               <div class="teacher">Ms. N.Ito</div>
-              <div class="text-tool"></div>
+              <div class="text-tool none"></div>
             </td>
             <td colspan="2"></td>
           </tr>
@@ -346,17 +362,17 @@
             <th class="weekday">Thu</th>
             <td>
               <div class="bg emI"></div>
-              <div class="bsubject bold">employment measures I</div>
+              <div class="subject bold">employment measures I</div>
               <div class="room">900 room</div>
               <div class="teacher">Mr. Takahashi</div>
-              <div class="text-tool"></div>
+              <div class="text-tool">text:面接対策＆ビジネスマナー</div>
             </td>
             <td>
               <div class="bg cadP"></div>
               <div class="subject bold">CAD practice</div>
               <div class="room">409 room</div>
               <div class="teacher">Ms. N.Ito</div>
-              <div class="text-tool"></div>
+              <div class="text-tool none"></div>
             </td>
             <td class="breakTime">Recess</td>
             <td>
@@ -364,14 +380,14 @@
               <div class="subject bold">3DCAD practice I</div>
               <div class="room">409 room</div>
               <div class="teacher">Ms. N.Ito</div>
-              <div class="text-tool"></div>
+              <div class="text-tool none"></div>
             </td>
             <td>
               <div class="bg em"></div>
               <div class="subject bold">engineering mathematics</div>
               <div class="room">901 room</div>
               <div class="teacher">Mr. Okazaki</div>
-              <div class="text-tool"></div>
+              <div class="text-tool">text:聞いたらわかったSPI</div>
             </td>
             <td></td>
             <td>
@@ -379,7 +395,7 @@
               <div class="subject bold">CG appication first</div>
               <div class="room">407 room</div>
               <div class="teacher">Mr.</div>
-              <div class="text-tool"></div>
+              <div class="text-tool">text:print</div>
               <div class="start">11/5 start</div>
             </td>
           </tr>
@@ -387,10 +403,10 @@
             <th class="weekday">Fri</th>
             <td colspan="2">
               <div class="bg threeDcad colTwo"></div>
-              <div class="bsubject bold">3DCAD practicee I</div>
+              <div class="subject bold">3DCAD practicee I</div>
               <div class="room">409 room</div>
               <div class="teacher">Mr. Takahashi</div>
-              <div class="text-tool"></div>
+              <div class="text-tool none"></div>
             </td>
             <td class="breakTime">Recess</td>
             <td></td>
@@ -399,14 +415,14 @@
               <div class="subject bold">descriptive geometry</div>
               <div class="room">903 room</div>
               <div class="teacher">Mr. K.Ito</div>
-              <div class="text-tool"></div>
+              <div class="text-tool">tools:Drufting set</div>
             </td>
             <td>
               <div class="bg cgApp"></div>
               <div class="subject bold">CG appication first</div>
               <div class="room">407 room</div>
               <div class="teacher">Mr.</div>
-              <div class="text-tool"></div>
+              <div class="text-tool">text:print</div>
               <div class="start">11/5 start</div>
             </td>
           </tr>
