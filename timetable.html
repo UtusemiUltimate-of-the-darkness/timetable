@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="img/icon/icon.jpg">
-    <title>Timetable 2.3.1</title>
+    <title>Timetable 2.3.2</title>
     <style>
 
       body {
@@ -257,12 +257,34 @@
         display : block;
       }
 
+      @media print {
+
+        * {
+
+          background : none;
+          background-color : transparent;
+          color : block
+        }
+
+        div.htmlWrap h1,
+        div.htmlWrap h2.title,
+        div.timetable table,
+        div.timetable table tr th,
+        div.timetable table tr td,
+        div.timetable table tr.time.range,
+        table .botDouble {
+
+          border-color : #000000;
+          color : #000000;
+        }
+      }
+
     </style>
   </head>
 
   <body>
     <div class="htmlWrap">
-      <h1>Timetable 2.3.1</h1>
+      <h1>Timetable 2.3.2</h1>
       <div class="timetable main second-semester">
         <h2 class="title">Main</h2>
         <table>

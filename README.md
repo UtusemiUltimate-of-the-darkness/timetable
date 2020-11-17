@@ -129,3 +129,8 @@
   <li>Display teacher's name.</li>
   <li>Display textbooks and tools.</li>
 </ul>
+
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.3.2">2.3.2</a>
+<ul>
+  <li>Print style settings.</li>
+</ul>
