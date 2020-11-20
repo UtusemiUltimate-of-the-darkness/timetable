@@ -134,3 +134,8 @@
 <ul>
   <li>Print style settings.</li>
 </ul>
+
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.3.3">2.3.3</a>
+<ul>
+  <li>View limited users on smartphone and tablet.</li>
+</ul>

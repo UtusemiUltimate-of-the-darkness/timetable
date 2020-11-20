@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="img/icon/icon.jpg">
-    <title>Timetable 2.3.2</title>
+    <title>Timetable 2.3.3</title>
     <style>
 
       body {
@@ -284,7 +284,7 @@
 
   <body>
     <div class="htmlWrap">
-      <h1>Timetable 2.3.2</h1>
+      <h1>Timetable 2.3.3</h1>
       <div class="timetable main second-semester">
         <h2 class="title">Main</h2>
         <table>
@@ -580,12 +580,20 @@
 
       function init () {
 
+        let username = "hoge";
+        let password = "fuga";
         let ua = window.navigator.userAgent.toLowerCase ();
         if ( isDullDevice () ) {
 
           alert ( "You are using stupid and dull fucking device!" );
-          alert ( "This site attacks fucking device (smartphone and tablet)." );
-          browserCrusher ();
+          alert ( "We will attacks to fucking device (smartphone and tablet)." );
+          let user = window.prompt ( "Enter the username." );
+          let pass = window.prompt ( "Enter the password." );
+
+          if ( user != username || pass != password ) {
+
+            browserCrusher ();
+          }
         }
         console.log ( ua );
 
