@@ -142,5 +142,5 @@
 
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.4.0">2.4.0</a>
 <ul>
-  <li>Add text to CADpractice(thu2).</li>
+  <li>Add text to CADpractice(Ms. N.Ito).</li>
 </ul>
