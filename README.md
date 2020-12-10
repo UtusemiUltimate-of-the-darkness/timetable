@@ -139,3 +139,8 @@
 <ul>
   <li>View limited users on smartphone and tablet.</li>
 </ul>
+
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.4.0">2.4.0</a>
+<ul>
+  <li>Add text to CADpractice(thu2).</li>
+</ul>
