@@ -62,63 +62,30 @@
 
 ### version info
 
-#### 2.0.0
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.4.2">2.4.2</a>
 <ul>
-  <li>timetable of 2semester</li>
+  <li>Display the background of each cell when printing.</li>
+  <li>Adjusting the height of each cell.</li>
 </ul>
 
-#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.1.0">2.1.0</a>
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.4.1">2.4.1</a>
 <ul>
-  <li>Add background image</li>
-  <li>language to English</li>
-  <li>change text font</li>
+  <li>Bug fixed (display text of wed4, thu2 and thu3).</li>
 </ul>
 
-#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.1.1">2.1.1</a>
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.4.0">2.4.0</a>
 <ul>
-  <li>Add textbook image to timetable cell background</li>
+  <li>Add text to CADpractice(Ms. N.Ito).</li>
 </ul>
 
-#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.2.0">2.2.0</a>
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.3.3">2.3.3</a>
 <ul>
-  <li>Add online timetable ( 1027-1102 )</li>
-  <li>Change table position ( to center ) </li>
+  <li>View limited users on smartphone and tablet.</li>
 </ul>
 
-#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.2.1">2.2.1</a>
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.3.2">2.3.2</a>
 <ul>
-  <li>Supports command operations</li>
-  <li>Change term of th online timetable</li>
-  <li>Change subject name ( toLowerCase ).
-</ul>
-
-#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.2.2">2.2.2</a>
-<ul>
-  <li>delete room description on online timetable.</li>
-  <li>Add teachers name on online timetable.</li>
-</ul>
-
-#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.2.3">2.2.3</a>
-<ul>
-  <li>Fixed the problem of switching the timetable display.</li>
-  <li>Add display contextMenu command.</li>
-</ul>
-
-#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.2.4">2.2.4</a>
-<ul>
-  <li>Extended command mode commands.</li>
-</ul>
-
-#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.2.5">2.2.5</a>
-<ul>
-  <li>Removed class start date for CG appication first.</li>
-  <li>Fixed the list of commands in README.</li>
-</ul>
-
-#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.3.0">2.3.0</a>
-<ul>
-  <li>Removed online timetable.</li>
-  <li>Fixed the list of commands in README.</li>
+  <li>Print style settings.</li>
 </ul>
 
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.3.1">2.3.1</a>
@@ -128,28 +95,74 @@
   <li>Display textbooks and tools.</li>
 </ul>
 
-#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.3.2">2.3.2</a>
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.3.0">2.3.0</a>
 <ul>
-  <li>Print style settings.</li>
+  <li>Removed online timetable.</li>
+  <li>Fixed the list of commands in README.</li>
 </ul>
 
-#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.3.3">2.3.3</a>
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.2.5">2.2.5</a>
 <ul>
-  <li>View limited users on smartphone and tablet.</li>
+  <li>Removed class start date for CG appication first.</li>
+  <li>Fixed the list of commands in README.</li>
 </ul>
 
-#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.4.0">2.4.0</a>
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.2.4">2.2.4</a>
 <ul>
-  <li>Add text to CADpractice(Ms. N.Ito).</li>
+  <li>Extended command mode commands.</li>
 </ul>
 
-#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.4.1">2.4.1</a>
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.2.3">2.2.3</a>
 <ul>
-  <li>Bug fixed (display text of wed4, thu2 and thu3).</li>
+  <li>Fixed the problem of switching the timetable display.</li>
+  <li>Add display contextMenu command.</li>
 </ul>
 
-#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.4.2">2.4.2</a>
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.2.2">2.2.2</a>
 <ul>
-  <li>Display the background of each cell when printing.</li>
-  <li>Adjusting the height of each cell.</li>
+  <li>delete room description on online timetable.</li>
+  <li>Add teachers name on online timetable.</li>
 </ul>
+
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.2.1">2.2.1</a>
+<ul>
+  <li>Supports command operations</li>
+  <li>Change term of th online timetable</li>
+  <li>Change subject name ( toLowerCase ).
+</ul>
+
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.2.0">2.2.0</a>
+<ul>
+  <li>Add online timetable ( 1027-1102 )</li>
+  <li>Change table position ( to center ) </li>
+</ul>
+
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.1.1">2.1.1</a>
+<ul>
+  <li>Add textbook image to timetable cell background</li>
+</ul>
+
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.1.0">2.1.0</a>
+<ul>
+  <li>Add background image</li>
+  <li>language to English</li>
+  <li>change text font</li>
+</ul>
+
+#### 2.0.0
+<ul>
+  <li>timetable of 2semester</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
