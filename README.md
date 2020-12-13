@@ -1,4 +1,7 @@
-# Timetable <div>This is the timetable for the mechanical CAD design department.</div> ## How to use this Timetable <ol>
+# Timetable
+<div>This is the timetable for the mechanical CAD design department.</div>
+## How to use this Timetable
+<ol>
   <li>
     Download your favorite version of the zip file <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/releases">here</a>.<br>
     Or run the following in a terminal:
