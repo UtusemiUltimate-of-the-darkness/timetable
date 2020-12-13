@@ -154,15 +154,3 @@
   <li>timetable of 2semester</li>
 </ul>
 
-
-
-
-
-
-
-
-
-
-
-
-
