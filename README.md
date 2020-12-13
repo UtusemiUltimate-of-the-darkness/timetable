@@ -148,4 +148,5 @@
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.4.2">2.4.2</a>
 <ul>
   <li>Display the background of each cell when printing.</li>
+  <li>Adjusting the height of each cell.</li>
 </ul>
