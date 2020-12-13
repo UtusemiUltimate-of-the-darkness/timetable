@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="img/icon/icon.jpg">
-    <title>Timetable 2.4.0</title>
+    <title>Timetable 2.4.1</title>
     <style>
 
       body {
@@ -271,11 +271,16 @@
 
       @media print {
 
-        * {
+        body {
 
           background : none;
           background-color : transparent;
           color : block
+        }
+
+        div.htmlWrap {
+
+          background-color : transparent;
         }
 
         div.htmlWrap h1,
@@ -289,6 +294,11 @@
           border-color : #000000;
           color : #000000;
         }
+
+        div.timetable table tr td div.bg {
+
+          display : block;
+        }
       }
 
     </style>
@@ -296,7 +306,7 @@
 
   <body>
     <div class="htmlWrap">
-      <h1>Timetable 2.4.0</h1>
+      <h1>Timetable 2.4.1</h1>
       <div class="timetable main second-semester">
         <h2 class="title">Main</h2>
         <table>
@@ -371,7 +381,7 @@
               <div class="subject bold">CAD practice</div>
               <div class="room">409 room</div>
               <div class="teacher">Ms. N.Ito</div>
-              <div class="text-tool none"></div>
+              <div class="text-tool">text:CAD利用技術者試験2次元1級公式ガイドブック</div>
             </td>
             <td>
               <div class="bg cc"></div>
@@ -393,7 +403,7 @@
               <div class="subject bold">CAD practice</div>
               <div class="room">409 room</div>
               <div class="teacher">Ms. N.Ito</div>
-              <div class="text-tool none"></div>
+              <div class="text-tool">text:CAD利用技術者試験2次元1級公式ガイドブック</div>
             </td>
             <td colspan="2"></td>
           </tr>
@@ -419,7 +429,7 @@
               <div class="subject bold">3DCAD practice I</div>
               <div class="room">409 room</div>
               <div class="teacher">Ms. N.Ito</div>
-              <div class="text-tool none"></div>
+              <div class="text-tool">text:CAD利用技術者試験2次元1級公式ガイドブック</div>
             </td>
             <td>
               <div class="bg em"></div>
@@ -434,7 +444,7 @@
               <div class="subject bold">CG appication first</div>
               <div class="room">407 room</div>
               <div class="teacher">Mr.Inoue</div>
-              <div class="text-tool">text:print</div>
+              <div class="text-tool none"></div>
               <div class="start">11/5 start</div>
             </td>
           </tr>
@@ -461,7 +471,7 @@
               <div class="subject bold">CG appication first</div>
               <div class="room">407 room</div>
               <div class="teacher">Mr.Inoue</div>
-              <div class="text-tool">text:print</div>
+              <div class="text-tool none"></div>
               <div class="start">11/5 start</div>
             </td>
           </tr>

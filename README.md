@@ -1,9 +1,4 @@
-# Timetable
-
-<div>This is the timetable for the mechanical CAD design department.</div>
-
-## How to use this Timetable
-<ol>
+# Timetable <div>This is the timetable for the mechanical CAD design department.</div> ## How to use this Timetable <ol>
   <li>
     Download your favorite version of the zip file <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/releases">here</a>.<br>
     Or run the following in a terminal:
@@ -143,4 +138,14 @@
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.4.0">2.4.0</a>
 <ul>
   <li>Add text to CADpractice(Ms. N.Ito).</li>
+</ul>
+
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.4.1">2.4.1</a>
+<ul>
+  <li>Bug fixed (display text of wed4, thu2 and thu3).</li>
+</ul>
+
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.4.2">2.4.2</a>
+<ul>
+  <li>Display the background of each cell when printing.</li>
 </ul>
