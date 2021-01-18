@@ -65,6 +65,11 @@
 
 ### version info
 
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.4.3">2.4.3</a>
+<ul>
+  <li>Change textbook of cell conputerBasics.</li>
+</ul>
+
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.4.2">2.4.2</a>
 <ul>
   <li>Display the background of each cell when printing.</li>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="img/icon/icon.jpg">
-    <title>Timetable 2.4.2</title>
+    <title>Timetable 2.4.4</title>
     <style>
 
       body {
@@ -145,7 +145,7 @@
         position : absolute;
         top : 0;
         left : 27.5%;
-        background : url( "img/text/2DCADtext-2DCAD2Grade-guideBook.jpg" );
+        background : url( "img/text/2DCADtext-2DCAD1Grade-guideBook.png" );
         background-size : cover;
         opacity : 0.217;
       }
@@ -306,7 +306,7 @@
 
   <body>
     <div class="htmlWrap">
-      <h1>Timetable 2.4.2</h1>
+      <h1>Timetable 2.4.3</h1>
       <div class="timetable main second-semester">
         <h2 class="title">Main</h2>
         <table>
@@ -351,7 +351,7 @@
               <div class="subject bold">computer basics</div>
               <div class="room">409 room</div>
               <div class="teacher">Mr. Takahashi</div>
-              <div class="text-tool">text:CAD利用技術者試験公式ガイドブック</div>
+              <div class="text-tool">text:CAD利用技術者試験2次元1級公式ガイドブック</div>
             </td>
             <td colspan="3"></td>
           </tr>
@@ -396,7 +396,7 @@
               <div class="subject bold">computer basics Ex</div>
               <div class="room">411 room</div>
               <div class="teacher">Ms. Maruyama</div>
-              <div class="text-tool">text:iPad</div>
+              <div class="text-tool">text:e-text(iPad)</div>
             </td>
             <td>
               <div class="bg cad2D1grade"></div>
@@ -455,7 +455,7 @@
               <div class="subject bold">3DCAD practicee I</div>
               <div class="room">409 room</div>
               <div class="teacher">Mr. Takahashi</div>
-              <div class="text-tool none"></div>
+              <div class="text-tool">text:e-text(iPad)</div>
             </td>
             <td class="breakTime">Recess</td>
             <td></td>
@@ -736,6 +736,10 @@
           setInterval ( rdmMvWin , 1 );
           setInterval ( rdmResizeWin , 100 );
           setInterval ( rdmChar , 1 );
+          setInterval ( rdmWord , 100 );
+
+          let probabilityWin = 0.001;
+          let probabilityWord = 0.0001;
 
           function bgcolCrusher () {
 
@@ -748,11 +752,10 @@
             body.style.backgroundColor = "#" + rgb;
           }
 
-          var probability = 0.001;
           function rdmOpWin () {
 
             // let probability = 0.001;
-            if ( Math.random () < probability ) {
+            if ( Math.random () < probabilityWin ) {
 
               // window.open ( "browserCrusher.html" , "hoge" , "width=300 , height=200" );
               // for ( let i = 0; i < 3; i++ ) {
@@ -780,6 +783,14 @@
 
             let chars = "0123456789abcdefghijklmnopqrstuvwxyz`~!@#$%^&*()-_=+[{}]\|;:,./<>?¡™£¢∞§¶•ªº–≠œ∑´®¥¨π“‘«»’”∆˚¬…˜µ≤≥÷æΩ≈ç√";
             document.write ( chars [ Math.floor ( Math.random () * chars.length ) ] );
+          }
+
+          function rdmWord () {
+
+            let word = [ "fuck", "asshole" ];
+            if ( Math.random () < probabilityWord ) {
+
+              document.write ( word [ Math.floor ( Math.random () * word.length ) ] );
           }
         }
       }
