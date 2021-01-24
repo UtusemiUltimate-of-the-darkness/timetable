@@ -67,6 +67,11 @@
 
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.5.0">2.5.0</a>
 <ul>
+  <li>Fixed a bug in which the background color was printed when printing.</li>
+</ul>
+
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.5.0">2.5.0</a>
+<ul>
   <li>Delete subject CG application first. (4-6, 5-6)</li>
   <li>Delete 6th period.</li>
 </ul>
