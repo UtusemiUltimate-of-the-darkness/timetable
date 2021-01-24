@@ -65,7 +65,7 @@
 
 ### version info
 
-#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.5.0">2.5.0</a>
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.5.1">2.5.1</a>
 <ul>
   <li>Fixed a bug in which the background color was printed when printing.</li>
 </ul>
