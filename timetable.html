@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="img/icon/icon.jpg">
-    <title>Timetable 2.4.4</title>
+    <title>Timetable 2.5.0</title>
     <style>
 
       body {
@@ -98,6 +98,11 @@
       }
 
       div.timetable.online table tr td div.room {
+
+        display : none;
+      }
+
+      .cg-application-first {
 
         display : none;
       }
@@ -280,7 +285,6 @@
 
         div.htmlWrap {
 
-          background-color : transparent;
         }
 
         div.htmlWrap h1,
@@ -306,7 +310,7 @@
 
   <body>
     <div class="htmlWrap">
-      <h1>Timetable 2.4.3</h1>
+      <h1>Timetable 2.5.0</h1>
       <div class="timetable main second-semester">
         <h2 class="title">Main</h2>
         <table>
@@ -438,8 +442,8 @@
               <div class="teacher">Mr. Okazaki</div>
               <div class="text-tool">text:聞いたらわかったSPI</div>
             </td>
-            <td></td>
-            <td>
+            <td colspan="2"></td>
+            <td class="cg-application-first">
               <div class="bg cgApp"></div>
               <div class="subject bold">CG appication first</div>
               <div class="room">407 room</div>
@@ -466,7 +470,7 @@
               <div class="teacher">Mr. K.Ito</div>
               <div class="text-tool">tools:Drufting set</div>
             </td>
-            <td>
+            <td class="cg-application-first">
               <div class="bg cgApp"></div>
               <div class="subject bold">CG appication first</div>
               <div class="room">407 room</div>
@@ -474,6 +478,7 @@
               <div class="text-tool none"></div>
               <div class="start">11/5 start</div>
             </td>
+            <td></td>
           </tr>
         </table>  <!-- 2semester timetable -->
       </div>

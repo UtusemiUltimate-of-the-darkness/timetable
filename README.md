@@ -65,6 +65,11 @@
 
 ### version info
 
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.5.0">2.5.0</a>
+<ul>
+  <li>Delete subject CG application first. (4-6, 5-6)</li>
+</ul>
+
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.4.3">2.4.3</a>
 <ul>
   <li>Change textbook of cell conputerBasics.</li>
