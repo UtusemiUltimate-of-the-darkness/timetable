@@ -65,6 +65,11 @@
 
 ### version info
 
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.0.0">3.0.0</a>
+<ul>
+  <li>timetable 3semester</li>
+</ul>
+
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/2.5.2">2.5.2</a>
 <ul>
   <li>Change text-tool of conputer basics(1-3).</li>
