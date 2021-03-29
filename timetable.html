@@ -6,184 +6,132 @@
     <title>Timetable 3.0.0</title>
     <style>
 
-      body {
+    body {
 
-        background-color : #02173C;
-        background-image : url( "img/bg/1440_900_20120223032123223025.jpg" );
-        background-position : top center;
-        background-repeat : no-repeat;
-        background-attachment : fixed;     /* hold bgimg when scroll */
-        background-size : cover;
+      background-color : #02173C;
+      background-image : url( "img/bg/1440_900_20120223032123223025.jpg" );
+      background-position : top center;
+      background-repeat : no-repeat;
+      background-attachment : fixed;     /* hold bgimg when scroll */
+      background-size : cover;
 
-        color : #E5B217;
-        font-family : "SourceHanCodeJP-Light", sans-serif, monospace, serif;
-      }
+      color : #E5B217;
+      font-family : "SourceHanCodeJP-Light", sans-serif, monospace, serif;
+    }
 
-      div.htmlWrap {
+    div.htmlWrap {
 
-        background-color : rgba( 02, 17, 60 , 0.5 );
-        margin : 0;
-        font-size : 0.8em;
-      }
+      background-color : rgba( 02, 17, 60 , 0.5 );
+      margin : 0;
+      font-size : 0.8em;
+    }
 
-      h1 {
+    h1 {
 
-        text-align : center;
-      }
+      text-align : center;
+    }
 
-      table {
+    h2.title {
 
-        border : solid 2px #E5B217;
-        border-collapse : collapse;
-        margin : auto;
-      }
+      text-align : center;
+    }
 
-      div.timetable {
+    table {
 
-        margin-bottom : 5em;
-      }
+      border : solid 2px #E5B217;
+      border-collapse : collapse;
+      margin : auto;
+    }
 
-      table tr th,
-      table tr td {
+    div.timetable {
 
-        border : solid 1px #E5B217;
-        text-align : center;
-      }
+      margin-bottom : 5em;
+    }
 
-      table tr:not(.schoolTime) th {
+    table tr th,
+    table tr td {
 
-        width : 50px;
-        border : solid 2px #E5B217;
-      }
+      border : solid 1px #E5B217;
+      text-align : center;
+    }
 
-      table tr td {
+    table tr:not(.schoolTime) th {
 
-        min-width : 220px;
-        height : 100px;
-        border : solid 1px #E5B217;
-      }
+      width : 50px;
+      border : solid 2px #E5B217;
+    }
 
-      table tr.time.range,
-      table .botDouble {
+    table tr td {
 
-        border-spacing : 0 0;
-        border-right : solid 2px #E5B217;
-        border-bottom : double 3px #E5B217;
-      }
+      min-width : 220px;
+      height : 100px;
+      padding : 2em 0.3em;
+      border : solid 1px #E5B217;
+    }
 
-      div.timetable table tr td div.subject {
+    table tr.time.range,
+    table .botDouble {
 
-        font-size : 1.05em;
-      }
+      border-spacing : 0 0;
+      border-right : solid 2px #E5B217;
+      border-bottom : double 3px #E5B217;
+    }
 
-      div.timetable.main table tr td div.teacher {
+    div.timetable table tr td div.subject {
 
-        display : block;
-      }
+      font-size : 1.05em;
+    }
 
-      div.timetable.main table tr td div.room {
+    div.timetable.main table tr td div.teacher {
 
-        font-weight : bold;
-      }
+      display : block;
+    }
 
-      table tr td div.text-tool {
+    div.timetable.main table tr td div.room {
 
-        display : block;
-      }
+      font-weight : bold;
+    }
 
-      div.timetable.main table tr td div.text-tool.none {
+    table tr td div.text-tool {
 
-        display : none;
-      }
+      display : block;
+    }
 
-      div.timetable.online table tr td div.room {
+    div.timetable.main table tr td div.text-tool.none {
 
-        display : none;
-      }
+      display : none;
+    }
 
-      .cg-application-first {
+    div.timetable.online table tr td div.room {
 
-        display : none;
-      }
+      display : none;
+    }
 
-      .breakTime {
+    .cg-application-first {
 
-        min-width : 110px;
-      }
+      display : none;
+    }
 
-      .bold {
+    .breakTime {
 
-        font-weight : bold;
-      }
+      min-width : 110px;
+    }
 
-      /* subject cell background img */
-      td {
+    div.timetable table tr td div.subject {
 
-        position : relative;
-      }
+      font-size : em;
+    }
 
-      div.timetable.main table tr td div.start {
+    .bold {
 
-        display : none;
-      }
+      font-weight : bold;
+    }
 
-      /* online timetable (1027 - 1108) */
-      div.timetable.online {
+    /* subject cell background img */
+    td {
 
-        display : none;
-      }
-
-      h2 {
-
-        text-align : center;
-      }
-
-      table.timetable.online {
-
-        margin-bottom : 5em;
-      }
-
-      table.timetable.online div.room {
-
-        display : none;
-      }
-
-      table.timetable.online div.teacher {
-
-        display : block;
-      }
-
-      @media print {
-
-        body {
-
-          background : none;
-          background-color : transparent;
-          color : block
-        }
-
-        div.htmlWrap {
-
-          background-color : transparent;
-        }
-
-        div.htmlWrap h1,
-        div.htmlWrap h2.title,
-        div.timetable table,
-        div.timetable table tr th,
-        div.timetable table tr td,
-        div.timetable table tr.time.range,
-        table .botDouble {
-
-          border-color : #000000;
-          color : #000000;
-        }
-
-        div.timetable table tr td div.bg {
-
-          display : block;
-        }
-      }
+      position : relative;
+    }
 
     </style>
   </head>
@@ -636,4 +584,3 @@
     </script>
   </body>
 </html>
-
