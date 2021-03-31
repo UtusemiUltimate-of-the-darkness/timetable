@@ -65,6 +65,11 @@
 
 ### version info
 
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.0.1">3.0.1</a>
+<ul>
+  <li>Add timetable of online version.</li>
+</ul>
+
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.0.0">3.0.0</a>
 <ul>
   <li>timetable 3semester ( template )</li>
