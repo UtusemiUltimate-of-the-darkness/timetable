@@ -66,7 +66,10 @@
           <div>'body.timetable.display:none'</div>
           <div>'body.timetable.style.display:none'</div>
         </td>
-        <td>Hide timetable (background appreciation mode).</td>
+        <td>
+          Hide timetable<br>
+          (background appreciation mode).
+        </td>
       </tr>
       <tr>
         <td>
