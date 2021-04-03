@@ -10,8 +10,8 @@
     Or run the following in a terminal:
     <pre><code>$ git clone https://github.com/UtusemiUltimate-of-the-darkness/timetable.git</code></pre>
   </li>
-  <li>Unzip downloaded zip file on your favorite place.</li>
-  <li>Open the html files in the unzipped folder in your browser.</li>
+  <li>Unzip downloaded zip file on your any place.</li>
+  <li>Open the html files in the unzipped folder on your browser.</li>
 </ol>
 
 ### How to use command mode
@@ -141,7 +141,8 @@
 
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.0.2">3.0.2</a>
 <ul>
-  <li>Add command variation.</li>
+  <li>Added command variation.</li>
+  <li>Changed description of 'How to use command mode' in README.md</li>
 </ul>
 
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.0.1">3.0.1</a>
