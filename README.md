@@ -142,7 +142,7 @@
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.0.2">3.0.2</a>
 <ul>
   <li>Added command variation.</li>
-  <li>Changed description of 'How to use command mode' in README.md</li>
+  <li>Changed description of 'How to use this Timetable' in README.md</li>
 </ul>
 
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.0.1">3.0.1</a>
