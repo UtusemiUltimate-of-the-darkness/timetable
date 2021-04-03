@@ -42,28 +42,104 @@
       <tr>
         <td>
           <div>'display:block'</div>
+          <div>'style.display:block'</div>
           <div>'body.display:block'</div>
+          <div>'body.style.display:block'</div>
           <div>'timetable.display:block'</div>
+          <div>'timetable.style.display:block'</div>
           <div>'.timetable.display:block'</div>
-          <div>'body.timetable.display:block'</div>
+          <div>'.timetable.style.display:block'</div>
+          <div>'body.timetable.style.display:block'</div>
         </td>
         <td>Display timetable.</td>
       </tr>
       <tr>
         <td>
           <div>'display:none'</div>
+          <div>'style.display:none'</div>
           <div>'body.display:none'</div>
+          <div>'body.style.display:none'</div>
           <div>'timetable.display:none'</div>
+          <div>'timetable.style.display:none'</div>
           <div>'.timetable.display:none'</div>
+          <div>'.timetable.style.display:none'</div>
           <div>'body.timetable.display:none'</div>
+          <div>'body.timetable.style.display:none'</div>
         </td>
         <td>Hide timetable (background appreciation mode).</td>
+      </tr>
+      <tr>
+        <td>
+          <div>'main.display:block'</div>
+          <div>'main.style.display:block'</div>
+          <div>'.main.display:block'</div>
+          <div>'.main.style.display:block'</div>
+          <div>'body.main.display:block'</div>
+          <div>'body.main.style.display:block'</div>
+          <div>'timetable.main.display:block'</div>
+          <div>'timetable.main.style.display:block'</div>
+          <div>'.timetable.main.display:block'</div>
+          <div>'.timetable.main.style.display:block'</div>
+          <div>'body.timetable.main.display:block'</div>
+          <div>'body.timetable.main.style.display:block'</div>
+        </td>
+        <td>Display main timetable.</td>
+      </tr>
+      <tr>
+        <td>
+          <div>'main.display:none'</div>
+          <div>'main.style.display:none'</div>
+          <div>'.main.display:none'</div>
+          <div>'.main.style.display:none'</div>
+          <div>'timetable.main.display:none'</div>
+          <div>'timetable.main.style.display:none'</div>
+          <div>'.timetable.main.display:none'</div>
+          <div>'.timetable.main.style.display:none'</div>
+          <div>'body.timetable.main.display:none'</div>
+          <div>'body.timetable.main.style.display:none'</div>
+        </td>
+        <td>Hide main timetable.</td>
+      </tr>
+      <tr>
+        <td>
+          <div>'online.display:block'</div>
+          <div>'online.style.display:block'</div>
+          <div>'.online.display:block'</div>
+          <div>'.online.style.display:block'</div>
+          <div>'timetable.online.display:block'</div>
+          <div>'timetable.online.style.display:block'</div>
+          <div>'.timetable.online.display:block'</div>
+          <div>'.timetable.online.style.display:block'</div>
+          <div>'body.timetable.online.display:block'</div>
+          <div>'body.timetable.online.style.display:block'</div>
+        </td>
+        <td>Display timetable of online.</td>
+      <tr>
+      <tr>
+        <td>
+          <div>'online.display:none'</div>
+          <div>'online.style.display:none'</div>
+          <div>'.online.display:none'</div>
+          <div>'.online.style.display:none'</div>
+          <div>'timetable.online.display:none'</div>
+          <div>'timetable.online.style.display:none'</div>
+          <div>'.timetable.online.display:none'</div>
+          <div>'.timetable.online.style.display:none'</div>
+          <div>'body.timetable.online.display:none'</div>
+          <div>'body.timetable.online.style.display:none'</div>
+        </td>
+        <td>Hide timetable of online</td>
       </tr>
     </table>
   </li>
 </ol>
 
 ### version info
+
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.0.2">3.0.2</a>
+<ul>
+  <li>Add command variation.</li>
+</ul>
 
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.0.1">3.0.1</a>
 <ul>
