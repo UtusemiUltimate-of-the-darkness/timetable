@@ -139,6 +139,11 @@
 
 ### version info
 
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.0.3">3.0.3</a>
+<ul>
+  <li>Changed page-title and body-title to auto-sync.</li>
+</ul>
+
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.0.2">3.0.2</a>
 <ul>
   <li>Added command variation.</li>
