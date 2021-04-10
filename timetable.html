@@ -789,19 +789,24 @@
           if ( ( today.getFullYear () == 2021 && today.getMonth () + 1 == 4 ) && today.getDate () < 15 ) {
 
             html.timetable.online.dom.style.display = "block";
+
+          } else {
+
+            html.timetable.online.dom.style.display = "none";
+            html.pageBreak.style.display = "none";
           }
 
           if ( printFrag ) {
 
             //html.htmlWrap.innerHTML = html.title + html.timetable.main.dom + html.pageBreak + html.timetable.online.dom;
             html.htmlWrap.insertBefore ( html.timetable.main.dom , html.timetable.online.dom );
+            html.htmlWrap.insertBefore ( html.pageBreak , html.timetable.online.dom );
 
           } else {
 
             // html.htmlWrap.innerHTML = html.title + html.timetable.online.dom + html.pageBreak + html.timetable.main.dom;
             html.htmlWrap.appendChild ( html.timetable.main.dom );
-
-            console.log ( htmlwrap );
+            html.htmlWrap.insertBefore ( html.pageBreak , html.timetable.main.dom );
           }
         }
 
