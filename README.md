@@ -37,7 +37,7 @@
           <div>'menu'</div>
           <div>''</div>
         </td>
-        <td>Display context menu.</td>
+        <td>Show context menu.</td>
       </tr>
       <tr>
         <td>
@@ -51,7 +51,7 @@
           <div>'.timetable.style.display:block'</div>
           <div>'body.timetable.style.display:block'</div>
         </td>
-        <td>Display timetable.</td>
+        <td>Show timetable.</td>
       </tr>
       <tr>
         <td>
@@ -86,7 +86,7 @@
           <div>'body.timetable.main.display:block'</div>
           <div>'body.timetable.main.style.display:block'</div>
         </td>
-        <td>Display main timetable.</td>
+        <td>Show main timetable.</td>
       </tr>
       <tr>
         <td>
@@ -116,7 +116,7 @@
           <div>'body.timetable.online.display:block'</div>
           <div>'body.timetable.online.style.display:block'</div>
         </td>
-        <td>Display timetable of online.</td>
+        <td>Show timetable of online.</td>
       <tr>
       <tr>
         <td>
@@ -133,11 +133,53 @@
         </td>
         <td>Hide timetable of online</td>
       </tr>
+      <tr>
+        <td>
+          <div>'print'</div>
+          <div>'display:print'</div>
+          <div>'style.display:print'</div>
+          <div>'body.display:print'</div>
+          <div>'body.style.display:print'</div>
+          <div>'timetable.display:print'</div>
+          <div>'timetable.style.display:print'</div>
+          <div>'.timetable.display:print'</div>
+          <div>'.timetable.style.display:print'</div>
+          <div>'body.timetable.display:print'</div>
+          <div>'body.timetable.style.display:print'</div>
+        </td>
+        <td>Show print mode</td>
+      </tr>
+      <tr>
+        <td>
+          <div>'disp'</div>
+          <div>'display'</div>
+          <div>'display:disp'</div>
+          <div>'display:display'</div>
+          <div>'style.display:display'</div>
+          <div>'body.display:display'</div>
+          <div>'body.style.display:display'</div>
+          <div>'timetable.display:display'</div>
+          <div>'timetable.style.display:display'</div>
+          <div>'.timetable.display:display'</div>
+          <div>'.timetable.style.display:display'</div>
+          <div>'body.timetable.display:display'</div>
+          <div>'body.timetable.style.display:display'</div>
+        </td>
+        <td>Show display mode</td>
+      </tr>
     </table>
   </li>
 </ol>
 
 ### version info
+
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.1.0">3.1.0</a>
+<ul>
+  <li>Updated online timetable.</li>
+  <li>Improved to automatic display switching of online timetable.</li>
+  <li>Implementation of display mode and print mode.</li>
+  <li>Added the command.</li>
+</ul>
 
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.0.3">3.0.3</a>
 <ul>
@@ -272,4 +314,3 @@
 <ul>
   <li>timetable of 2semester</li>
 </ul>
-

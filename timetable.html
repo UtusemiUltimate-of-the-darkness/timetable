@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="img/icon/icon.jpg">
-    <title>Timetable 3.0.3</title>
+    <title>Timetable 3.1.0</title>
     <style>
 
       body {
 
+        margin : 0;
         background-color : #02173C;
         background-image : url( "img/bg/1440_900_20120223032123223025.jpg" );
         background-position : top center;
@@ -63,8 +64,8 @@
 
       table tr td {
 
-        min-width : 220px;
-        height : 100px;
+        min-width : 16em;
+        height : 8em;
         padding : 2em 0.3em;
         border : solid 1px #E5B217;
       }
@@ -75,6 +76,11 @@
         border-spacing : 0 0;
         border-right : solid 2px #E5B217;
         border-bottom : double 3px #E5B217;
+      }
+
+      .breakTime {
+
+        min-width : 9em;
       }
 
       div.timetable table tr td div.subject {
@@ -107,19 +113,9 @@
         display : none;
       }
 
-      .cg-application-first {
-
-        display : none;
-      }
-
-      .breakTime {
-
-        min-width : 110px;
-      }
-
       div.timetable table tr td div.subject {
 
-        font-size : em;
+        font-size : 1em;
       }
 
       .bold {
@@ -134,15 +130,36 @@
       }
 
 
-      /* online timetable (1027 - 1108) */
+      /* online timetable (0412 - 0414) */
       div.timetable.online {
 
-        display : block;
+        display : none;
       }
 
-      table.timetable.online {
+      div.timetable.online table tr.time.range th:not(.breakTime) {
 
-        margin-bottom : 5em;
+        min-width: 16.45em;
+      }
+
+      div.timetable.online table tr.thu,
+      div.timetable.online table tr.fri {
+
+        display : none;
+      }
+      div.timetable.online table tr td.mon1 > div,
+      div.timetable.online table tr td.mon4,
+      div.timetable.online table tr td.mon5,
+      div.timetable.online table tr td.mon6,
+      div.timetable.online table tr td.tue1 > div,
+      div.timetable.online table tr td.tue4,
+      div.timetable.online table tr td.tue5,
+      div.timetable.online table tr td.tue6,
+      div.timetable.online table tr td.wed1 > div,
+      div.timetable.online table tr td.wed4,
+      div.timetable.online table tr td.wed5,
+      div.timetable.online table tr td.wed6 {
+
+        display : none;
       }
 
       table.timetable.online div.room {
@@ -198,7 +215,7 @@
 
   <body>
     <div class="htmlWrap">
-      <h1></h1>
+      <h1 class="title page-title"></h1>
       <div class="timetable main third-semester">
         <h2 class="title">Main</h2>
         <table>
@@ -223,14 +240,14 @@
           </tr>
           <tr class="mon">
             <th class="weekday">Mon</th>
-            <td>
+            <td class="mon1">
               <div class="bg"></div>
               <div class="subject bold">Mon1(1-1)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td>
+            <td class="mon2">
               <div class="bg"></div>
               <div class="subject bold">Mon2(1-2)</div>
               <div class="room"> room</div>
@@ -238,28 +255,28 @@
               <div class="text-tool"></div>
             </td>
             <td class="breakTime">Recess</td>
-            <td>
+            <td class="mon3">
               <div class="bg"></div>
               <div class="subject bold">Mon3(1-3)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td>
+            <td class="mon4">
               <div class="bg"></div>
               <div class="subject bold">Mon4(1-4)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td>
+            <td class="mon5">
               <div class="bg"></div>
               <div class="subject bold">Mon5(1-5)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td>
+            <td class="mon6">
               <div class="bg"></div>
               <div class="subject bold">Mon6(1-6)</div>
               <div class="room"> room</div>
@@ -269,14 +286,14 @@
           </tr>
           <tr class="tue">
             <th class="weekday">Tue</th>
-            <td>
+            <td class="tue1">
               <div class="bg"></div>
               <div class="subject bold">Tue1(2-1)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td>
+            <td class="tue2">
               <div class="bg"></div>
               <div class="subject bold">Tue2(2-2)</div>
               <div class="room"> room</div>
@@ -284,28 +301,28 @@
               <div class="text-tool"></div>
             </td>
             <td class="breakTime">Recess</td>
-            <td>
+            <td class="tue3">
               <div class="bg"></div>
               <div class="subject bold">Tue3(2-3)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td>
+            <td class="tue4">
               <div class="bg"></div>
               <div class="subject bold">Tue4(2-4)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td>
+            <td class="tue5">
               <div class="bg"></div>
               <div class="subject bold">Tue5(2-5)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td>
+            <td class="tue6">
               <div class="bg"></div>
               <div class="subject bold">Tue6(2-6)</div>
               <div class="room"> room</div>
@@ -315,14 +332,14 @@
           </tr>
           <tr class="wed">
             <th class="weekday">Wed</th>
-            <td>
+            <td class="wed1">
               <div class="bg"></div>
               <div class="subject bold">Wed1(3-1)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td>
+            <td class="wed2">
               <div class="bg"></div>
               <div class="subject bold">Wed2(3-2)</div>
               <div class="room"> room</div>
@@ -330,28 +347,28 @@
               <div class="text-tool"></div>
             </td>
             <td class="breakTime">Recess</td>
-            <td>
+            <td class="wed3">
               <div class="bg"></div>
               <div class="subject bold">Wed3(3-3)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td>
+            <td class="wed4">
               <div class="bg"></div>
               <div class="subject bold">Wed4(3-4)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td>
+            <td class="wed5">
               <div class="bg"></div>
               <div class="subject bold">Wed5(3-5)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td>
+            <td class="wed6">
               <div class="bg"></div>
               <div class="subject bold">Wed6(3-6)</div>
               <div class="room"> room</div>
@@ -361,14 +378,14 @@
           </tr>
           <tr class="thu">
             <th class="weekday">Thu</th>
-            <td>
+            <td class="thu1">
               <div class="bg"></div>
               <div class="subject bold">Thu1(4-1)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td>
+            <td class="thu2">
               <div class="bg"></div>
               <div class="subject bold">Thu2(4-2)</div>
               <div class="room"> room</div>
@@ -376,28 +393,28 @@
               <div class="text-tool"></div>
             </td>
             <td class="breakTime">Recess</td>
-            <td>
+            <td class="thu3">
               <div class="bg"></div>
               <div class="subject bold">Thu3(4-3)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td>
+            <td class="thu4">
               <div class="bg"></div>
               <div class="subject bold">Thu4(4-4)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td>
+            <td class="thu5">
               <div class="bg"></div>
               <div class="subject bold">Thu5(4-5)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td>
+            <td class="thu6">
               <div class="bg"></div>
               <div class="subject bold">Thu6(4-6)</div>
               <div class="room"> room</div>
@@ -407,14 +424,14 @@
           </tr>
           <tr class="fri">
             <th class="weekday">Fri</th>
-            <td>
+            <td class="fri1">
               <div class="bg"></div>
               <div class="subject bold">Fri1(5-1)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td>
+            <td class="fri2">
               <div class="bg"></div>
               <div class="subject bold">Fri2(5-2)</div>
               <div class="room"> room</div>
@@ -422,28 +439,28 @@
               <div class="text-tool"></div>
             </td>
             <td class="breakTime">Recess</td>
-            <td>
+            <td class="fri3">
               <div class="bg"></div>
               <div class="subject bold">Fri3(5-3)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td>
+            <td class="fri4">
               <div class="bg"></div>
               <div class="subject bold">Fri4(5-4)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td>
+            <td class="fri5">
               <div class="bg"></div>
               <div class="subject bold">Fri5(5-5)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td>
+            <td class="fri6">
               <div class="bg"></div>
               <div class="subject bold">Fri6(5-6)</div>
               <div class="room"> room</div>
@@ -463,8 +480,8 @@
             <th rowspan="2" class="botDouble"></th>
             <th>1</th>
             <th>2</th>
-            <th>break</th>
             <th>3</th>
+            <th>break</th>
             <th>4</th>
             <th>5</th>
             <th>6</th>
@@ -472,51 +489,51 @@
           <tr class="time range">
             <th>09:00 - 10:10</th>
             <th>10:25 - 11:35</th>
-            <th class="breakTime">11:35 - 12:35</th>
-            <th>12:35 - 13:45</th>
+            <th>11:50 - 13:00</th>
+            <th class="breakTime">13:00 - 14:00</th>
             <th>14:00 - 15:10</th>
             <th>15:25 - 16:35</th>
             <th>16:50 - 18:00</th>
           </tr>
           <tr class="mon">
-            <th class="weekday">Mon</th>
-            <td>
+            <th class="weekday">4/12<br>Mon</th>
+            <td class="mon1">
               <div class="bg"></div>
               <div class="subject bold">Mon1(1-1)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td>
+            <td class="mon2">
               <div class="bg"></div>
               <div class="subject bold">Mon2(1-2)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td class="breakTime">Recess</td>
-            <td>
+            <td class="mon3">
               <div class="bg"></div>
               <div class="subject bold">Mon3(1-3)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td>
+            <td class="breakTime">Recess</td>
+            <td class="mon4">
               <div class="bg"></div>
               <div class="subject bold">Mon4(1-4)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td>
+            <td class="mon5">
               <div class="bg"></div>
               <div class="subject bold">Mon5(1-5)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td>
+            <td class="mon6">
               <div class="bg"></div>
               <div class="subject bold">Mon6(1-6)</div>
               <div class="room"> room</div>
@@ -525,44 +542,44 @@
             </td>
           </tr>
           <tr class="tue">
-            <th class="weekday">Tue</th>
-            <td>
+            <th class="weekday">4/13<br>Tue</th>
+            <td class="tue1">
               <div class="bg"></div>
               <div class="subject bold">Tue1(2-1)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td>
+            <td class="tue2">
               <div class="bg"></div>
               <div class="subject bold">Tue2(2-2)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td class="breakTime">Recess</td>
-            <td>
+            <td class="tue3">
               <div class="bg"></div>
               <div class="subject bold">Tue3(2-3)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td>
+            <td class="breakTime">Recess</td>
+            <td class="tue4">
               <div class="bg"></div>
               <div class="subject bold">Tue4(2-4)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td>
+            <td class="tue5">
               <div class="bg"></div>
               <div class="subject bold">Tue5(2-5)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td>
+            <td class="tue6">
               <div class="bg"></div>
               <div class="subject bold">Tue6(2-6)</div>
               <div class="room"> room</div>
@@ -571,44 +588,44 @@
             </td>
           </tr>
           <tr class="wed">
-            <th class="weekday">Wed</th>
-            <td>
+            <th class="weekday">4/14<br>Wed</th>
+            <td class="wed1">
               <div class="bg"></div>
               <div class="subject bold">Wed1(3-1)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td>
+            <td class="wed2">
               <div class="bg"></div>
               <div class="subject bold">Wed2(3-2)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td class="breakTime">Recess</td>
-            <td>
+            <td class="wed3">
               <div class="bg"></div>
               <div class="subject bold">Wed3(3-3)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td>
+            <td class="breakTime">Recess</td>
+            <td class="wed4">
               <div class="bg"></div>
               <div class="subject bold">Wed4(3-4)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td>
+            <td class="wed5">
               <div class="bg"></div>
               <div class="subject bold">Wed5(3-5)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td>
+            <td class="wed6">
               <div class="bg"></div>
               <div class="subject bold">Wed6(3-6)</div>
               <div class="room"> room</div>
@@ -618,43 +635,43 @@
           </tr>
           <tr class="thu">
             <th class="weekday">Thu</th>
-            <td>
+            <td class="thu1">
               <div class="bg"></div>
               <div class="subject bold">Thu1(4-1)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td>
+            <td class="thu2">
               <div class="bg"></div>
               <div class="subject bold">Thu2(4-2)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td class="breakTime">Recess</td>
-            <td>
+            <td class="thu3">
               <div class="bg"></div>
               <div class="subject bold">Thu3(4-3)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td>
+            <td class="breakTime">Recess</td>
+            <td class="thu4">
               <div class="bg"></div>
               <div class="subject bold">Thu4(4-4)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td>
+            <td class="thu5">
               <div class="bg"></div>
               <div class="subject bold">Thu5(4-5)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td>
+            <td class="thu6">
               <div class="bg"></div>
               <div class="subject bold">Thu6(4-6)</div>
               <div class="room"> room</div>
@@ -664,43 +681,43 @@
           </tr>
           <tr class="fri">
             <th class="weekday">Fri</th>
-            <td>
+            <td class="fri1">
               <div class="bg"></div>
               <div class="subject bold">Fri1(5-1)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td>
+            <td class="fri2">
               <div class="bg"></div>
               <div class="subject bold">Fri2(5-2)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td class="breakTime">Recess</td>
-            <td>
+            <td class="fri3">
               <div class="bg"></div>
               <div class="subject bold">Fri3(5-3)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td>
+            <td class="breakTime">Recess</td>
+            <td class="fri4">
               <div class="bg"></div>
               <div class="subject bold">Fri4(5-4)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td>
+            <td class="fri5">
               <div class="bg"></div>
               <div class="subject bold">Fri5(5-5)</div>
               <div class="room"> room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td>
+            <td class="fri6">
               <div class="bg"></div>
               <div class="subject bold">Fri6(5-6)</div>
               <div class="room"> room</div>
@@ -722,6 +739,8 @@
         let bodyTitle = document.querySelector ( "div.htmlWrap h1" );
         bodyTitle.innerHTML = pageTitle.innerHTML;
 
+        set_timetable ( false );
+
         let username = "hoge";
         let password = "fuga";
         let ua = window.navigator.userAgent.toLowerCase ();
@@ -739,6 +758,52 @@
         }
 
         console.log ( ua );
+
+        function set_timetable ( printFrag ) {
+
+          let html = {
+            htmlWrap : document.querySelector ( "div.htmlWrap" ),
+            title : document.querySelector ( "h1.title.page-title" ),
+            pageBreak : document.querySelector ( "div.page-break" ),
+            timetable : {
+              main : {
+                dom : document.querySelector ( "div.timetable.main" ),
+              },
+              online : {
+                dom : document.querySelector ( "div.timetable.online" ),
+                domAll_breakTime : document.querySelectorAll ( "div.timetable.online tr td.breakTime" ),
+              },
+            }
+          };
+          let htmlwrap = document.querySelector ( "div.htmlWrap" );
+          let htmltitle = document.querySelector ( "h1.title.page-title" );
+
+          let today = new Date ();
+
+          for ( let i = 0; i < html.timetable.online.domAll_breakTime.length; i++ ) {
+
+            html.timetable.online.domAll_breakTime [ i ].innerHTML = "";
+            html.timetable.online.domAll_breakTime [ i ].colSpan = 4;
+          }
+
+          if ( ( today.getFullYear () == 2021 && today.getMonth () + 1 == 4 ) && today.getDate () < 15 ) {
+
+            html.timetable.online.dom.style.display = "block";
+          }
+
+          if ( printFrag ) {
+
+            //html.htmlWrap.innerHTML = html.title + html.timetable.main.dom + html.pageBreak + html.timetable.online.dom;
+            html.htmlWrap.insertBefore ( html.timetable.main.dom , html.timetable.online.dom );
+
+          } else {
+
+            // html.htmlWrap.innerHTML = html.title + html.timetable.online.dom + html.pageBreak + html.timetable.main.dom;
+            html.htmlWrap.appendChild ( html.timetable.main.dom );
+
+            console.log ( htmlwrap );
+          }
+        }
 
         // contextmenu
         document.oncontextmenu = function () {
@@ -763,6 +828,7 @@
             case 'body.timetable.display:block':
             case 'body.timetable.style.display:block':
               toggleDisp ( "timetable", true );
+              set_timetable ( false );
               break;
 
             case 'display:none':
@@ -831,6 +897,36 @@
             case 'body.timetable.online.style.display:none':
               toggleDisp ( "online", false );
               break;
+
+            case 'print':
+            case 'display:print':
+            case 'style.display:print':
+            case 'body.display:print':
+            case 'body.style.display:print':
+            case 'timetable.display:print':
+            case 'timetable.style.display:print':
+            case '.timetable.display:print':
+            case '.timetable.style.display:print':
+            case 'body.timetable.display:print':
+            case 'body.timetable.style.display:print':
+              set_timetable ( true );
+              break;
+
+              case 'disp':
+              case 'display':
+              case 'display:disp':
+              case 'display:display':
+              case 'style.display:display':
+              case 'body.display:display':
+              case 'body.style.display:display':
+              case 'timetable.display:display':
+              case 'timetable.style.display:display':
+              case '.timetable.display:display':
+              case '.timetable.style.display:display':
+              case 'body.timetable.display:display':
+              case 'body.timetable.style.display:display':
+                set_timetable ( false );
+                break;
 
             default:
               alert ( "'" + command + "' is not command" );
