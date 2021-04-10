@@ -32,10 +32,10 @@
       </tr>
       <tr>
         <td>
+          <div>''</div>
+          <div>'menu'</div>
           <div>'context'</div>
           <div>'contextmenu'</div>
-          <div>'menu'</div>
-          <div>''</div>
         </td>
         <td>Show context menu.</td>
       </tr>
