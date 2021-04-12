@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="img/icon/icon.jpg">
-    <title>Timetable 3.1.0</title>
+    <title>Timetable 3.2.0</title>
     <style>
 
       body {
@@ -772,6 +772,7 @@
               online : {
                 dom : document.querySelector ( "div.timetable.online" ),
                 domAll_breakTime : document.querySelectorAll ( "div.timetable.online tr td.breakTime" ),
+                subject : [ "Employment measures" , "CAD examination" ],
               },
             }
           };
@@ -784,6 +785,25 @@
 
             html.timetable.online.domAll_breakTime [ i ].innerHTML = "";
             html.timetable.online.domAll_breakTime [ i ].colSpan = 4;
+          }
+
+          for ( let wn = 0; wn < 5; wn++ ) {
+
+            for ( let st = 0; st < 7; st++ ) {
+
+              switch ( st ) {
+                case 2:
+                  document.querySelector ( "div.timetable.online table tbody" ).children [ wn + 2 ].children [ st ].children [ 1 ].innerHTML = html.timetable.online.subject [ 0 ];
+
+                  break;
+
+                case 3:
+                  document.querySelector ( "div.timetable.online table tbody" ).children [ wn + 2 ].children [ st ].children [ 1 ].innerHTML = html.timetable.online.subject [ 1 ];
+
+                default:
+
+              }
+            }
           }
 
           if ( ( today.getFullYear () == 2021 && today.getMonth () + 1 == 4 ) && today.getDate () < 15 ) {
