@@ -173,6 +173,11 @@
 
 ### version info
 
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.2.1">3.2.1</a>
+<ul>
+  <li>Changed subject name.</li>
+</ul>
+
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.2.0">3.2.0</a>
 <ul>
   <li>Add courses to online timetable.</li>
