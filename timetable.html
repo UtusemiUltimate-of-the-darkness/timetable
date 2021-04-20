@@ -83,6 +83,18 @@
         min-width : 9em;
       }
 
+      div.timetable table tr.schoolTime th.sixth,
+      div.timetable table tr.time.range th.sixth,
+      div.timetable table tr td.mon6,
+      div.timetable table tr td.mon6,
+      div.timetable table tr td.tue6,
+      div.timetable table tr td.wed6,
+      div.timetable table tr td.thu6,
+      div.timetable table tr td.fri6 {
+
+        display : none;
+      }
+
       div.timetable table tr td div.subject {
 
         font-size : 1.05em;
@@ -221,26 +233,26 @@
         <table>
           <tr class="schoolTime">
             <th rowspan="2" class="botDouble"></th>
-            <th>1</th>
-            <th>2</th>
-            <th>break</th>
-            <th>3</th>
-            <th>4</th>
-            <th>5</th>
-            <th>6</th>
+            <th class="first">1</th>
+            <th class="second">2</th>
+            <th class="third">3</th>
+            <th class="break">break</th>
+            <th class="fourth">4</th>
+            <th class="fifth">5</th>
+            <th class="sixth">6</th>
           </tr>
           <tr class="time range">
-            <th>09:00 - 10:10</th>
-            <th>10:25 - 11:35</th>
-            <th class="breakTime">11:35 - 12:35</th>
-            <th>12:35 - 13:45</th>
-            <th>14:00 - 15:10</th>
-            <th>15:25 - 16:35</th>
-            <th>16:50 - 18:00</th>
+            <th class="first">09:00 - 10:10</th>
+            <th class="second">10:25 - 11:35</th>
+            <th class="third">11:50 - 13:00</th>
+            <th class="breakTime">13:00 - 14:00</th>
+            <th class="fourth">14:00 - 15:10</th>
+            <th class="fifth">15:25 - 16:35</th>
+            <th class="sixth">16:50 - 18:00</th>
           </tr>
           <tr class="mon">
             <th class="weekday">Mon</th>
-            <td class="mon1">
+            <td class="mon1 none">
               <div class="bg"></div>
               <div class="subject bold">Mon1(1-1)</div>
               <div class="room"> room</div>
@@ -249,31 +261,33 @@
             </td>
             <td class="mon2">
               <div class="bg"></div>
-              <div class="subject bold">Mon2(1-2)</div>
-              <div class="room"> room</div>
-              <div class="teacher"></div>
+              <div class="subject bold">3D CAD practice II</div>
+              <div class="room">409 room</div>
+              <div class="teacher">Ms. N.Ito</div>
               <div class="text-tool"></div>
             </td>
-            <td class="breakTime">Recess</td>
             <td class="mon3">
               <div class="bg"></div>
-              <div class="subject bold">Mon3(1-3)</div>
-              <div class="room"> room</div>
-              <div class="teacher"></div>
+              <div class="subject bold">3D CAD practice II</div>
+              <div class="room">411 room</div>
+              <div class="teacher">Ms. N.Ito</div>
               <div class="text-tool"></div>
+            </td>
+            <td class="breakTime">
+              <div>Recess</div>
             </td>
             <td class="mon4">
               <div class="bg"></div>
-              <div class="subject bold">Mon4(1-4)</div>
-              <div class="room"> room</div>
-              <div class="teacher"></div>
+              <div class="subject bold">Survey of car</div>
+              <div class="room">900 room</div>
+              <div class="teacher">Mr. Sakato</div>
               <div class="text-tool"></div>
             </td>
             <td class="mon5">
               <div class="bg"></div>
-              <div class="subject bold">Mon5(1-5)</div>
-              <div class="room"> room</div>
-              <div class="teacher"></div>
+              <div class="subject bold">3D CAD practice II</div>
+              <div class="room">409 room</div>
+              <div class="teacher">Ms. N.Ito</div>
               <div class="text-tool"></div>
             </td>
             <td class="mon6">
@@ -288,25 +302,27 @@
             <th class="weekday">Tue</th>
             <td class="tue1">
               <div class="bg"></div>
-              <div class="subject bold">Tue1(2-1)</div>
-              <div class="room"> room</div>
-              <div class="teacher"></div>
+              <div class="subject bold">CG practice</div>
+              <div class="room">409 room</div>
+              <div class="teacher">Mr Hashimoto</div>
               <div class="text-tool"></div>
             </td>
             <td class="tue2">
               <div class="bg"></div>
-              <div class="subject bold">Tue2(2-2)</div>
-              <div class="room"> room</div>
-              <div class="teacher"></div>
+              <div class="subject bold">3D CAD practice II</div>
+              <div class="room">409 room</div>
+              <div class="teacher">Mr. Takahashi</div>
               <div class="text-tool"></div>
             </td>
-            <td class="breakTime">Recess</td>
             <td class="tue3">
               <div class="bg"></div>
-              <div class="subject bold">Tue3(2-3)</div>
-              <div class="room"> room</div>
-              <div class="teacher"></div>
+              <div class="subject bold">Mechanical design method</div>
+              <div class="room">409 room</div>
+              <div class="teacher">Mr. Takahashi</div>
               <div class="text-tool"></div>
+            </td>
+            <td class="breakTime">
+              <div>Recess</div>
             </td>
             <td class="tue4">
               <div class="bg"></div>
@@ -334,9 +350,9 @@
             <th class="weekday">Wed</th>
             <td class="wed1">
               <div class="bg"></div>
-              <div class="subject bold">Wed1(3-1)</div>
-              <div class="room"> room</div>
-              <div class="teacher"></div>
+              <div class="subject bold">Presentation</div>
+              <div class="room">410 room</div>
+              <div class="teacher">Mr. Hayasaka</div>
               <div class="text-tool"></div>
             </td>
             <td class="wed2">
@@ -346,26 +362,28 @@
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td class="breakTime">Recess</td>
             <td class="wed3">
               <div class="bg"></div>
-              <div class="subject bold">Wed3(3-3)</div>
-              <div class="room"> room</div>
+              <div class="subject bold">Mechnical engineering II</div>
+              <div class="room">900 room</div>
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
+            <td class="breakTime">
+              <div>Recess</div>
+            </td>
             <td class="wed4">
               <div class="bg"></div>
-              <div class="subject bold">Wed4(3-4)</div>
-              <div class="room"> room</div>
-              <div class="teacher"></div>
+              <div class="subject bold">Survey of CG</div>
+              <div class="room">409 room</div>
+              <div class="teacher">Mr. Takahashi</div>
               <div class="text-tool"></div>
             </td>
             <td class="wed5">
               <div class="bg"></div>
-              <div class="subject bold">Wed5(3-5)</div>
-              <div class="room"> room</div>
-              <div class="teacher"></div>
+              <div class="subject bold">3D CAD practice II</div>
+              <div class="room">409 room</div>
+              <div class="teacher">Ms. N.Ito</div>
               <div class="text-tool"></div>
             </td>
             <td class="wed6">
@@ -392,26 +410,28 @@
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td class="breakTime">Recess</td>
             <td class="thu3">
               <div class="bg"></div>
-              <div class="subject bold">Thu3(4-3)</div>
-              <div class="room"> room</div>
-              <div class="teacher"></div>
+              <div class="subject bold">Mechnical engneering II</div>
+              <div class="room">online</div>
+              <div class="teacher">Mr. Takahashi</div>
               <div class="text-tool"></div>
+            </td>
+            <td class="breakTime">
+              <div>Recess</div>
             </td>
             <td class="thu4">
               <div class="bg"></div>
-              <div class="subject bold">Thu4(4-4)</div>
-              <div class="room"> room</div>
-              <div class="teacher"></div>
+              <div class="subject bold">Survey of equipment</div>
+              <div class="room">online</div>
+              <div class="teacher">Mr. K.Ito</div>
               <div class="text-tool"></div>
             </td>
             <td class="thu5">
               <div class="bg"></div>
-              <div class="subject bold">Thu5(4-5)</div>
-              <div class="room"> room</div>
-              <div class="teacher"></div>
+              <div class="subject bold">Employment measures II</div>
+              <div class="room">online</div>
+              <div class="teacher">Mr. Takahashi</div>
               <div class="text-tool"></div>
             </td>
             <td class="thu6">
@@ -433,12 +453,11 @@
             </td>
             <td class="fri2">
               <div class="bg"></div>
-              <div class="subject bold">Fri2(5-2)</div>
-              <div class="room"> room</div>
-              <div class="teacher"></div>
+              <div class="subject bold">Mechanical design method</div>
+              <div class="room">409 room</div>
+              <div class="teacher">Mr. Takahashi</div>
               <div class="text-tool"></div>
             </td>
-            <td class="breakTime">Recess</td>
             <td class="fri3">
               <div class="bg"></div>
               <div class="subject bold">Fri3(5-3)</div>
@@ -446,18 +465,21 @@
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
+            <td class="breakTime">
+              <div>Recess</div>
+            </td>
             <td class="fri4">
               <div class="bg"></div>
-              <div class="subject bold">Fri4(5-4)</div>
-              <div class="room"> room</div>
-              <div class="teacher"></div>
+              <div class="subject bold">3D CAD practice II</div>
+              <div class="room">409 room</div>
+              <div class="teacher">Mr. Takahashi</div>
               <div class="text-tool"></div>
             </td>
             <td class="fri5">
               <div class="bg"></div>
-              <div class="subject bold">Fri5(5-5)</div>
-              <div class="room"> room</div>
-              <div class="teacher"></div>
+              <div class="subject bold">Employment measures II</div>
+              <div class="room">409 room</div>
+              <div class="teacher">Mr. Takahashi</div>
               <div class="text-tool"></div>
             </td>
             <td class="fri6">
@@ -518,7 +540,9 @@
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td class="breakTime">Recess</td>
+            <td class="breakTime">
+              <div>Recess</div>
+            </td>
             <td class="mon4">
               <div class="bg"></div>
               <div class="subject bold">Mon4(1-4)</div>
@@ -564,7 +588,9 @@
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td class="breakTime">Recess</td>
+            <td class="breakTime">
+              <div>Recess</div>
+            </td>
             <td class="tue4">
               <div class="bg"></div>
               <div class="subject bold">Tue4(2-4)</div>
@@ -610,7 +636,9 @@
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td class="breakTime">Recess</td>
+            <td class="breakTime">
+              <div>Recess</div>
+            </td>
             <td class="wed4">
               <div class="bg"></div>
               <div class="subject bold">Wed4(3-4)</div>
@@ -656,7 +684,9 @@
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td class="breakTime">Recess</td>
+            <td class="breakTime">
+              <div>Recess</div>
+            </td>
             <td class="thu4">
               <div class="bg"></div>
               <div class="subject bold">Thu4(4-4)</div>
@@ -702,7 +732,9 @@
               <div class="teacher"></div>
               <div class="text-tool"></div>
             </td>
-            <td class="breakTime">Recess</td>
+            <td class="breakTime">
+              <div>Recess</div>
+            </td>
             <td class="fri4">
               <div class="bg"></div>
               <div class="subject bold">Fri4(5-4)</div>
@@ -768,6 +800,29 @@
             timetable : {
               main : {
                 dom : document.querySelector ( "div.timetable.main" ),
+                cell : {
+                  del : [
+                    document.querySelectorAll ( "div.timetable.main table tr.mon td.mon1 div" ),
+                    document.querySelectorAll ( "div.timetable.main table tr.tue td.breakTime div" ),
+                    // document.querySelector ( "div.timetable.main table tr.tue td.breakTime" ).innerHTML,
+                    document.querySelectorAll ( "div.timetable.main table tr.tue td.tue4" ),
+                    document.querySelectorAll ( "div.timetable.main table tr.tue td.tue5" ),
+                    document.querySelectorAll ( "div.timetable.main table tr.wed td.wed2" ),
+                    document.querySelectorAll ( "div.timetable.main table tr.thu td.thu1 div" ),
+                    document.querySelectorAll ( "div.timetable.main table tr.thu td.thu2" ),
+                    document.querySelectorAll ( "div.timetable.main table tr.fri td.fri1 div" ),
+                    document.querySelectorAll ( "div.timetable.main table tr.fri td.fri3 div" ),
+                    document.querySelectorAll ( "div.timetable.main table tr.fri td.breakTime" ),
+                  ],
+                  col2 : [
+                    document.querySelector ( "div.timetable.main table tr.wed td.wed1" ),
+                    document.querySelector ( "div.timetable.main table tr.thu td.thu1" ),
+                    document.querySelector ( "div.timetable.main table tr.fri td.fri3" ),
+                  ],
+                  col3 : [
+                    document.querySelector ( "div.timetable.main table tr.tue td.breakTime" ),
+                  ],
+                },
               },
               online : {
                 dom : document.querySelector ( "div.timetable.online" ),
@@ -778,42 +833,71 @@
           };
           let htmlwrap = document.querySelector ( "div.htmlWrap" );
           let htmltitle = document.querySelector ( "h1.title.page-title" );
-
           let today = new Date ();
+          set_online_timetable ();
+          set_main_timetable ();
 
-          for ( let i = 0; i < html.timetable.online.domAll_breakTime.length; i++ ) {
+          function set_online_timetable () {
 
-            html.timetable.online.domAll_breakTime [ i ].innerHTML = "";
-            html.timetable.online.domAll_breakTime [ i ].colSpan = 4;
-          }
+            for ( let i = 0; i < html.timetable.online.domAll_breakTime.length; i++ ) {
 
-          for ( let wn = 0; wn < 5; wn++ ) {
+              html.timetable.online.domAll_breakTime [ i ].innerHTML = "";
+              html.timetable.online.domAll_breakTime [ i ].colSpan = 4;
+            }
 
-            for ( let st = 0; st < 7; st++ ) {
+            for ( let wn = 0; wn < 5; wn++ ) {
 
-              switch ( st ) {
-                case 2:
-                  document.querySelector ( "div.timetable.online table tbody" ).children [ wn + 2 ].children [ st ].children [ 1 ].innerHTML = html.timetable.online.subject [ 0 ];
+              for ( let st = 0; st < 7; st++ ) {
 
-                  break;
+                switch ( st ) {
+                  case 2:
+                    document.querySelector ( "div.timetable.online table tbody" ).children [ wn + 2 ].children [ st ].children [ 1 ].innerHTML = html.timetable.online.subject [ 0 ];
 
-                case 3:
-                  document.querySelector ( "div.timetable.online table tbody" ).children [ wn + 2 ].children [ st ].children [ 1 ].innerHTML = html.timetable.online.subject [ 1 ];
+                    break;
 
-                default:
+                  case 3:
+                    document.querySelector ( "div.timetable.online table tbody" ).children [ wn + 2 ].children [ st ].children [ 1 ].innerHTML = html.timetable.online.subject [ 1 ];
 
+                  default:
+
+                }
               }
             }
+
+            if ( ( today.getFullYear () == 2021 && today.getMonth () + 1 == 4 ) && today.getDate () < 15 ) {
+
+              html.timetable.online.dom.style.display = "block";
+
+            } else {
+
+              html.timetable.online.dom.style.display = "none";
+              html.pageBreak.style.display = "none";
+            }
+            console.log ( today.getFullYear () );
           }
 
-          if ( ( today.getFullYear () == 2021 && today.getMonth () + 1 == 4 ) && today.getDate () < 15 ) {
+          function set_main_timetable () {
 
-            html.timetable.online.dom.style.display = "block";
+            // remove cell
+            for ( let delCell = 0; delCell < html.timetable.main.cell.del.length; delCell++ ) {
 
-          } else {
+              for ( let delCellChild = 0; delCellChild < html.timetable.main.cell.del [ delCell ].length; delCellChild++ ) {
 
-            html.timetable.online.dom.style.display = "none";
-            html.pageBreak.style.display = "none";
+                html.timetable.main.cell.del [ delCell ] [ delCellChild ].style.display = "none";
+              }
+            }
+
+            // colspan : 2
+            for ( let cell = 0; cell < html.timetable.main.cell.col2.length; cell++ ) {
+
+              html.timetable.main.cell.col2 [ cell ].colSpan = 2;
+            }
+
+            // colspan : 3
+            for ( let cell = 0; cell < html.timetable.main.cell.col3.length; cell++ ) {
+
+              html.timetable.main.cell.col3 [ cell ].colSpan = 3;
+            }
           }
 
           if ( printFrag ) {
