@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="img/icon/icon.jpg">
-    <title>Timetable 3.3.0</title>
+    <title>Timetable 3.4.0</title>
     <style>
 
       body {
@@ -145,7 +145,7 @@
       /* online timetable (0412 - 0414) */
       div.timetable.online {
 
-        display : none;
+        display : block;
       }
 
       div.timetable.online table tr.time.range th:not(.breakTime) {
@@ -153,11 +153,6 @@
         min-width: 16.45em;
       }
 
-      div.timetable.online table tr.thu,
-      div.timetable.online table tr.fri {
-
-        display : none;
-      }
       div.timetable.online table tr td.mon1 > div,
       div.timetable.online table tr td.mon4,
       div.timetable.online table tr td.mon5,
@@ -496,26 +491,26 @@
       <div class="page-break"></div>  <!-- page break -->
 
       <div class="timetable online">
-        <h2 class="title h2">online timetable ( 04/12 - 04/14 )</h2>
+        <h2 class="title h2">online timetable ( 04/30 )</h2>
         <table>
           <tr class="schoolTime">
             <th rowspan="2" class="botDouble"></th>
-            <th>1</th>
-            <th>2</th>
-            <th>3</th>
-            <th>break</th>
-            <th>4</th>
-            <th>5</th>
-            <th>6</th>
+            <th class="first">1</th>
+            <th class="second">2</th>
+            <th class="third">3</th>
+            <th class="break">break</th>
+            <th class="fourth">4</th>
+            <th class="fifth">5</th>
+            <th class="sixth">6</th>
           </tr>
           <tr class="time range">
-            <th>09:00 - 10:10</th>
-            <th>10:25 - 11:35</th>
-            <th>11:50 - 13:00</th>
+            <th class="first">09:00 - 10:10</th>
+            <th class="second">10:25 - 11:35</th>
+            <th class="third">11:50 - 13:00</th>
             <th class="breakTime">13:00 - 14:00</th>
-            <th>14:00 - 15:10</th>
-            <th>15:25 - 16:35</th>
-            <th>16:50 - 18:00</th>
+            <th class="fourth">14:00 - 15:10</th>
+            <th class="fifth">15:25 - 16:35</th>
+            <th class="sixth">16:50 - 18:00</th>
           </tr>
           <tr class="mon">
             <th class="weekday">4/12<br>Mon</th>
@@ -764,6 +759,19 @@
     <script>
 
       window.addEventListener ( "load", init, false );
+      const date = new Date ();
+      const termOfClassesForOnline = {
+        start : {
+          year : 2021,
+          month : 4,
+          date : 30
+        },
+        end : {
+          year : 2021,
+          month : 4,
+          date : 30
+        }
+      }
 
       function init () {
 
@@ -791,7 +799,7 @@
 
         console.log ( ua );
 
-        function set_timetable ( printFrag ) {
+        function set_timetable ( printFlag ) {
 
           let html = {
             htmlWrap : document.querySelector ( "div.htmlWrap" ),
@@ -833,47 +841,84 @@
           };
           let htmlwrap = document.querySelector ( "div.htmlWrap" );
           let htmltitle = document.querySelector ( "h1.title.page-title" );
-          let today = new Date ();
           set_online_timetable ();
           set_main_timetable ();
+          swDisp ( printFlag );
 
           function set_online_timetable () {
 
-            for ( let i = 0; i < html.timetable.online.domAll_breakTime.length; i++ ) {
+            // startup ();
+            beforeGW ();
 
-              html.timetable.online.domAll_breakTime [ i ].innerHTML = "";
-              html.timetable.online.domAll_breakTime [ i ].colSpan = 4;
-            }
+            function startup () {
 
-            for ( let wn = 0; wn < 5; wn++ ) {
+              for ( let i = 0; i < html.timetable.online.domAll_breakTime.length; i++ ) {
 
-              for ( let st = 0; st < 7; st++ ) {
+                html.timetable.online.domAll_breakTime [ i ].innerHTML = "";
+                html.timetable.online.domAll_breakTime [ i ].colSpan = 4;
+              }
 
-                switch ( st ) {
-                  case 2:
-                    document.querySelector ( "div.timetable.online table tbody" ).children [ wn + 2 ].children [ st ].children [ 1 ].innerHTML = html.timetable.online.subject [ 0 ];
+              for ( let wn = 0; wn < 5; wn++ ) {
 
-                    break;
+                for ( let st = 0; st < 7; st++ ) {
 
-                  case 3:
-                    document.querySelector ( "div.timetable.online table tbody" ).children [ wn + 2 ].children [ st ].children [ 1 ].innerHTML = html.timetable.online.subject [ 1 ];
+                  switch ( st ) {
+                    case 2:
+                      document.querySelector ( "div.timetable.online table tbody" ).children [ wn + 2 ].children [ st ].children [ 1 ].innerHTML = html.timetable.online.subject [ 0 ];
 
-                  default:
+                      break;
 
+                    case 3:
+                      document.querySelector ( "div.timetable.online table tbody" ).children [ wn + 2 ].children [ st ].children [ 1 ].innerHTML = html.timetable.online.subject [ 1 ];
+
+                    default:
+
+                  }
                 }
               }
             }
 
-            if ( ( today.getFullYear () == 2021 && today.getMonth () + 1 == 4 ) && today.getDate () < 15 ) {
+            function beforeGW ( date ) {
 
-              html.timetable.online.dom.style.display = "block";
+              let timetable = {
+                mainThu : document.querySelector ( "div.timetable.main table tr.thu" ),
+                mainThu2onlineFri : function () {
+                  this.online.fri0430 = this.mainThu.cloneNode ( true );
+                  delete this.mainThu;
+                  this.online.fri0430.classList.add ( "fri" );
+                  this.online.fri0430.classList.remove ( "thu" );
+                  timetable.online.fri0430.children [ 0 ].innerHTML = "4/30<br>Fri";
+                },
+                online : {
+                  dom_table : document.querySelector ( "div.timetable.online table tbody" ),
+                },
+              }
+              timetable.mainThu2onlineFri ();
+              timetable.online.dom_table.lastElementChild.remove ();
+              for ( let d = timetable.online.dom_table.children.length; d > 2; d-- ) {
+                timetable.online.dom_table.children [ d - 1 ].remove ();
+              }
+              timetable.online.dom_table.appendChild ( timetable.online.fri0430 );
+              let stCnt = 1;
+              for ( let i = 0; i < timetable.online.fri0430.children.length; i++ ) {
+                if  ( timetable.online.fri0430.children [ i ].className.indexOf ( "thu", 0 ) != -1 ) {
 
-            } else {
+                  timetable.online.fri0430.children [ i ].className = "fri" + stCnt++;
 
-              html.timetable.online.dom.style.display = "none";
-              html.pageBreak.style.display = "none";
+                  switch ( i ) {
+                    case 1:
+                      timetable.online.fri0430.children [ i ].colSpan = 2;
+                      timetable.online.fri0430.children [ i ].innerHTML = "";
+                      break;
+                    case 2:
+                      timetable.online.fri0430.children [ i ].style.display = "none";
+                    default:
+                  }
+                }
+              }
+
+              // timetable.online.dom_table.style.display = "block";
             }
-            console.log ( today.getFullYear () );
           }
 
           function set_main_timetable () {
@@ -900,17 +945,30 @@
             }
           }
 
-          if ( printFrag ) {
+          function swDisp ( printFlag ) {
 
-            //html.htmlWrap.innerHTML = html.title + html.timetable.main.dom + html.pageBreak + html.timetable.online.dom;
-            html.htmlWrap.insertBefore ( html.timetable.main.dom , html.timetable.online.dom );
-            html.htmlWrap.insertBefore ( html.pageBreak , html.timetable.online.dom );
+            if ( printFlag ) {
 
-          } else {
+              html.htmlWrap.insertBefore ( html.timetable.main.dom , html.timetable.online.dom );
+              html.htmlWrap.insertBefore ( html.pageBreak , html.timetable.online.dom );
 
-            // html.htmlWrap.innerHTML = html.title + html.timetable.online.dom + html.pageBreak + html.timetable.main.dom;
-            html.htmlWrap.appendChild ( html.timetable.main.dom );
-            html.htmlWrap.insertBefore ( html.pageBreak , html.timetable.main.dom );
+            } else {
+
+              if ( ( date.getFullYear () <= termOfClassesForOnline.start.year && date.getMonth () + 1 <= termOfClassesForOnline.start.month ) && date.getDate () < termOfClassesForOnline.start.date ) {
+
+                html.htmlWrap.insertBefore ( html.timetable.main.dom , html.timetable.online.dom );
+                html.htmlWrap.insertBefore ( html.pageBreak , html.timetable.online.dom );
+
+              } else if ( ( date.getFullYear () >= termOfClassesForOnline.end.year && date.getMonth () + 1 >= termOfClassesForOnline.end.month ) && date.getDate () > termOfClassesForOnline.end.date ) {
+
+                html.timetable.online.dom.style.display = "none";
+
+              } else {
+
+                html.htmlWrap.appendChild ( html.timetable.main.dom );
+                html.htmlWrap.insertBefore ( html.pageBreak , html.timetable.main.dom );
+              }
+            }
           }
         }
 
