@@ -173,6 +173,11 @@
 
 ### version info
 
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.4.0">3.4.0</a>
+<ul>
+  <li>Add online timetable (0430).</li>
+</ul>
+
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.3.0">3.3.3</a>
 <ul>
   <li>Add courses to main timetable.</li>
