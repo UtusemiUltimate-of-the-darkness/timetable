@@ -176,6 +176,7 @@
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.5.0">3.5.0</a>
 <ul>
   <li>Fixed subject of main timetable.</li>
+  <li>Add distribute pdf file of timetable from school.</li>
 </ul>
 
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.4.0">3.4.0</a>
