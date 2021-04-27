@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="img/icon/icon.jpg">
-    <title>Timetable 3.4.0</title>
+    <title>Timetable 3.5.0</title>
     <style>
 
       body {
@@ -361,7 +361,7 @@
               <div class="bg"></div>
               <div class="subject bold">Mechnical engineering II</div>
               <div class="room">900 room</div>
-              <div class="teacher"></div>
+              <div class="teacher">Mr. Takahashi</div>
               <div class="text-tool"></div>
             </td>
             <td class="breakTime">
@@ -407,7 +407,7 @@
             </td>
             <td class="thu3">
               <div class="bg"></div>
-              <div class="subject bold">Mechnical engneering II</div>
+              <div class="subject bold">Employment measures II</div>
               <div class="room">online</div>
               <div class="teacher">Mr. Takahashi</div>
               <div class="text-tool"></div>
@@ -424,7 +424,7 @@
             </td>
             <td class="thu5">
               <div class="bg"></div>
-              <div class="subject bold">Employment measures II</div>
+              <div class="subject bold">Mechnical engneering II</div>
               <div class="room">online</div>
               <div class="teacher">Mr. Takahashi</div>
               <div class="text-tool"></div>
@@ -441,14 +441,14 @@
             <th class="weekday">Fri</th>
             <td class="fri1">
               <div class="bg"></div>
-              <div class="subject bold">Fri1(5-1)</div>
-              <div class="room"> room</div>
-              <div class="teacher"></div>
+              <div class="subject bold">3D CAD practice II</div>
+              <div class="room">409 room</div>
+              <div class="teacher">Mr. Takahashi</div>
               <div class="text-tool"></div>
             </td>
             <td class="fri2">
               <div class="bg"></div>
-              <div class="subject bold">Mechanical design method</div>
+              <div class="subject bold">Employment measures II</div>
               <div class="room">409 room</div>
               <div class="teacher">Mr. Takahashi</div>
               <div class="text-tool"></div>
@@ -465,14 +465,14 @@
             </td>
             <td class="fri4">
               <div class="bg"></div>
-              <div class="subject bold">3D CAD practice II</div>
+              <div class="subject bold">CG practice</div>
               <div class="room">409 room</div>
-              <div class="teacher">Mr. Takahashi</div>
+              <div class="teacher">Mr. Hashimoto</div>
               <div class="text-tool"></div>
             </td>
             <td class="fri5">
               <div class="bg"></div>
-              <div class="subject bold">Employment measures II</div>
+              <div class="subject bold">Mechanical design method</div>
               <div class="room">409 room</div>
               <div class="teacher">Mr. Takahashi</div>
               <div class="text-tool"></div>
@@ -813,12 +813,13 @@
                     document.querySelectorAll ( "div.timetable.main table tr.mon td.mon1 div" ),
                     document.querySelectorAll ( "div.timetable.main table tr.tue td.breakTime div" ),
                     // document.querySelector ( "div.timetable.main table tr.tue td.breakTime" ).innerHTML,
+                    document.querySelectorAll ( "div.timetable.main table tr.tue td.tue1 div" ),
                     document.querySelectorAll ( "div.timetable.main table tr.tue td.tue4" ),
                     document.querySelectorAll ( "div.timetable.main table tr.tue td.tue5" ),
                     document.querySelectorAll ( "div.timetable.main table tr.wed td.wed2" ),
                     document.querySelectorAll ( "div.timetable.main table tr.thu td.thu1 div" ),
                     document.querySelectorAll ( "div.timetable.main table tr.thu td.thu2" ),
-                    document.querySelectorAll ( "div.timetable.main table tr.fri td.fri1 div" ),
+                    // document.querySelectorAll ( "div.timetable.main table tr.fri td.fri1 div" ),
                     document.querySelectorAll ( "div.timetable.main table tr.fri td.fri3 div" ),
                     document.querySelectorAll ( "div.timetable.main table tr.fri td.breakTime" ),
                   ],
@@ -936,6 +937,10 @@
             for ( let cell = 0; cell < html.timetable.main.cell.col2.length; cell++ ) {
 
               html.timetable.main.cell.col2 [ cell ].colSpan = 2;
+              if ( cell == 2 ) {
+
+                html.timetable.main.cell.col2 [ cell ].innerHTML = "Recess";
+              }
             }
 
             // colspan : 3
