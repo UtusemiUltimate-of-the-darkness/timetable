@@ -173,6 +173,11 @@
 
 ### version info
 
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.6.0">3.6.0</a>
+<ul>
+  <li>Fixed subject of online timetable.</li>
+</ul>
+
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.5.0">3.5.0</a>
 <ul>
   <li>Fixed subject of main timetable.</li>

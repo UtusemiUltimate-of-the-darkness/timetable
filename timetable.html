@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="img/icon/icon.jpg">
-    <title>Timetable 3.5.0</title>
+    <title>Timetable 3.6.0</title>
     <style>
 
       body {
@@ -849,7 +849,9 @@
           function set_online_timetable () {
 
             // startup ();
-            beforeGW ();
+            // beforeGW ();
+            apr30 ();
+            console.log(111);
 
             function startup () {
 
@@ -888,7 +890,7 @@
                   delete this.mainThu;
                   this.online.fri0430.classList.add ( "fri" );
                   this.online.fri0430.classList.remove ( "thu" );
-                  timetable.online.fri0430.children [ 0 ].innerHTML = "4/30<br>Fri";
+                  this.online.fri0430.children [ 0 ].innerHTML = "4/30<br>Fri";
                 },
                 online : {
                   dom_table : document.querySelector ( "div.timetable.online table tbody" ),
@@ -917,8 +919,39 @@
                   }
                 }
               }
+            }
 
-              // timetable.online.dom_table.style.display = "block";
+            function apr30 () {
+
+              let online_timetable = {
+
+                dom : document.querySelector ( "div.timetable.online table tbody" ),
+                main2online : function () {
+                  this.fri0430 = document.querySelector ( "div.timetable.main table tr.fri" ).cloneNode ( true ),
+                  this.dom.appendChild ( online_timetable.fri0430 );
+                  this.fri0430.children [ 0 ].innerHTML = "4/30<br>Fri";
+                },
+                dom_tr : document.querySelectorAll ( "div.timetable.online table tr" ),
+              };
+              for ( let i = 2; i < online_timetable.dom_tr.length; i++ ) {
+
+                online_timetable.dom_tr [ i ].style.display = "none";
+              }
+              online_timetable.main2online ();
+              for ( let i = 1; i < online_timetable.fri0430.children.length; i++ ) {
+
+                if ( i == 1 || i == 3 ) {
+
+                  for ( let j = 0; j < online_timetable.fri0430.children [ i ].children.length; j++ ) {
+
+                    online_timetable.fri0430.children [ i ].children [ j ].style.display = "none";
+                  }
+                } else if ( 3 < i ) {
+
+                  online_timetable.fri0430.children [ i ].style.display = "none";
+                }
+              }
+              online_timetable.fri0430.children [ 3 ].colSpan = 4;
             }
           }
 
@@ -952,10 +985,17 @@
 
           function swDisp ( printFlag ) {
 
+            let timetable = {
+
+              online : document.querySelector ( "div.table.online table" ),
+              main : document.querySelector ( "div.timetable.main table" ),
+            }
+
             if ( printFlag ) {
 
-              html.htmlWrap.insertBefore ( html.timetable.main.dom , html.timetable.online.dom );
-              html.htmlWrap.insertBefore ( html.pageBreak , html.timetable.online.dom );
+              html.htmlWrap.insertBefore ( timetable.main , timetable.online );
+              html.htmlWrap.insertBefore ( html.pageBreak , timetable.online );
+              console.log(123);
 
             } else {
 
