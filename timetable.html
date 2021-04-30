@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="img/icon/icon.jpg">
-    <title>Timetable 3.6.0</title>
+    <title>Timetable 3.6.1</title>
     <style>
 
       body {
@@ -186,7 +186,7 @@
 
           background : none;
           background-color : transparent;
-          color : block
+          color : black;
         }
 
         div.htmlWrap {
@@ -840,8 +840,6 @@
               },
             }
           };
-          let htmlwrap = document.querySelector ( "div.htmlWrap" );
-          let htmltitle = document.querySelector ( "h1.title.page-title" );
           set_online_timetable ();
           set_main_timetable ();
           swDisp ( printFlag );
@@ -851,7 +849,6 @@
             // startup ();
             // beforeGW ();
             apr30 ();
-            console.log(111);
 
             function startup () {
 
@@ -928,8 +925,9 @@
                 dom : document.querySelector ( "div.timetable.online table tbody" ),
                 main2online : function () {
                   this.fri0430 = document.querySelector ( "div.timetable.main table tr.fri" ).cloneNode ( true ),
-                  this.dom.appendChild ( online_timetable.fri0430 );
+                  this.dom.appendChild ( this.fri0430 );
                   this.fri0430.children [ 0 ].innerHTML = "4/30<br>Fri";
+                  this.fri0430.classList.add ( "apr0430" );
                 },
                 dom_tr : document.querySelectorAll ( "div.timetable.online table tr" ),
               };
@@ -951,6 +949,7 @@
                   online_timetable.fri0430.children [ i ].style.display = "none";
                 }
               }
+              online_timetable.fri0430.children [ 3 ].innerHTML = "";
               online_timetable.fri0430.children [ 3 ].colSpan = 4;
             }
           }
@@ -975,27 +974,54 @@
                 html.timetable.main.cell.col2 [ cell ].innerHTML = "Recess";
               }
             }
-
             // colspan : 3
             for ( let cell = 0; cell < html.timetable.main.cell.col3.length; cell++ ) {
 
               html.timetable.main.cell.col3 [ cell ].colSpan = 3;
             }
+
+            html.timetable.main.dom = document.querySelector ( "div.timetable.main" );
+
+            if ( 0 < date.getDay() && date.getDay() < 6 ) {
+
+              for ( let i = 2; i < 7; i++ ) {
+
+                if ( date.getDay() != i - 1 ) {
+
+                  html.timetable.main.dom.children[1].children[0].children[i].style.opacity = 0.7;
+                }
+              }
+
+            } else {
+
+              for ( let i = 2; i < 7; i++ ) {
+
+                if ( date.getDay() != i - 1 ) {
+
+                  html.timetable.main.dom.children[1].children[0].children[i].style.opacity = 1.0;
+                }
+              }
+
+
+            }
           }
 
           function swDisp ( printFlag ) {
 
-            let timetable = {
-
-              online : document.querySelector ( "div.table.online table" ),
-              main : document.querySelector ( "div.timetable.main table" ),
-            }
-
             if ( printFlag ) {
 
-              html.htmlWrap.insertBefore ( timetable.main , timetable.online );
-              html.htmlWrap.insertBefore ( html.pageBreak , timetable.online );
-              console.log(123);
+              for ( let i = 2; i < 7; i++ ) {
+
+                if ( date.getDay() != i - 1 ) {
+
+                  html.timetable.main.dom.children[1].children[0].children[i].style.opacity = 1.0;
+                }
+              }
+
+              // document.querySelector ( "div.timetable.online table tr.fri.apr0430 fri3" )
+
+              html.htmlWrap.insertBefore ( html.timetable.main.dom , html.timetable.online.dom );
+              html.htmlWrap.insertBefore ( html.pageBreak , html.timetable.online.dom );
 
             } else {
 

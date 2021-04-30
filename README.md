@@ -173,6 +173,11 @@
 
 ### version info
 
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.6.1">3.6.1</a>
+<ul>
+  <li>Emphasize today's day of the week line.</li>
+</ul>
+
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.6.0">3.6.0</a>
 <ul>
   <li>Fixed subject of online timetable.</li>
