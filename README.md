@@ -175,9 +175,9 @@
 
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.6.2">3.6.2</a>
 <ul>
-  <li>Hidden online timetable.<li>
+  <li>Hidden online timetable.</li>
 </ul>
-
+
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.6.1">3.6.1</a>
 <ul>
   <li>Emphasize today's day of the week line.</li>
