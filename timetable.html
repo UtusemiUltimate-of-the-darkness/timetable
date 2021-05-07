@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="img/icon/icon.jpg">
-    <title>Timetable 3.6.2</title>
+    <title>Timetable 3.6.3</title>
     <style>
 
       body {
@@ -23,13 +23,18 @@
       div.htmlWrap {
 
         background-color : rgba( 02, 17, 60 , 0.5 );
-        margin : 0;
+        margin : auto;
         font-size : 0.8em;
+        width : 88%;
       }
 
-      h1 {
+      div.header h1.page-title {
 
         text-align : center;
+      }
+      div.header div.date {
+
+        float : right;
       }
 
       h2.title {
@@ -206,7 +211,10 @@
 
   <body>
     <div class="htmlWrap">
-      <h1 class="title page-title"></h1>
+      <div class="header">
+        <h1 class="title page-title"></h1>
+        <div class="date">yyyy/mm/dd</div>
+      </div>
       <div class="timetable main third-semester">
         <h2 class="title">Main</h2>
         <table>
@@ -475,7 +483,7 @@
       <div class="page-break"></div>  <!-- page break -->
 
       <div class="timetable online">
-        <h2 class="title h2">online timetable ( 04/30 )</h2>
+        <h2 class="title h2">online timetable</h2>
         <table>
           <tr class="schoolTime">
             <th rowspan="2" class="botDouble"></th>
@@ -761,8 +769,10 @@
 
         let pageTitle = document.querySelector ( "title" );
         let bodyTitle = document.querySelector ( "div.htmlWrap h1" );
+        let dom_date = document.querySelector ( "div.header div.date" );
+        dom_date.innerHTML = date.getFullYear() + "/" + ( "00" + ( date.getMonth() + 1 ) ).slice ( -2 ) + "/" + ( "00" + date.getDate() ).slice ( -2 );
         bodyTitle.innerHTML = pageTitle.innerHTML;
-
+        set_date ();
         set_timetable ( false );
 
         let username = "hoge";
@@ -779,6 +789,52 @@
 
             browserCrusher ();
           }
+        }
+
+        function set_date ( dom ) {
+
+          let format = {
+
+            yyyy : date.getFullYear (),
+            MM : ( "00" + ( date.getMonth () + 1 ) ).slice ( -2 ),
+            dd : ( "00" + date.getDate () ).slice ( -2 ),
+            day : function () {
+
+              let aaa;
+
+              switch ( date.getDay() ) {
+                case 0:
+                  aaa = "Sun";
+                  break;
+                case 1:
+                  aaa = "Mon";
+                  break;
+                case 2:
+                  aaa = "Tue";
+                  break;
+                case 3:
+                  aaa = "Wed";
+                  break;
+                case 4:
+                  aaa = "Thu";
+                  break;
+                case 5:
+                  aaa = "Fri";
+                  break;
+                case 6:
+                  aaa = "Sat";
+                  break;
+                default:
+                  aaa = "unknown";
+              }
+              return aaa;
+            },
+            HH : ( "00" + date.getHours () ).slice ( -2 ),
+            mm : ( "00" + date.getMinutes () ).slice ( -2 ),
+            ss : ( "00" + date.getSeconds () ).slice ( -2 ),
+          };
+
+          document.querySelector ( "div.header div.date" ).innerHTML = format.yyyy + "/" + format.MM + "/" + format.dd + " (" + format.day () + "), " + format.HH + ":" + format.mm + ":" + format.ss;
         }
 
         console.log ( ua );
@@ -992,6 +1048,8 @@
           function swDisp ( printFlag ) {
 
             if ( printFlag ) {
+
+              document.querySelector ( "div.header div.date" ).style.display = "none";
 
               for ( let i = 2; i < 7; i++ ) {
 
