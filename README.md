@@ -175,7 +175,7 @@
 
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.6.3">3.6.3</a>
 <ul>
-  <li>Add update date and time.</li>
+  <li>Display update date and time.</li>
 </ul>
 
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.6.2">3.6.2</a>

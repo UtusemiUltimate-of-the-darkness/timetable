@@ -31,10 +31,11 @@
       div.header h1.page-title {
 
         text-align : center;
+        margin-bottom : 0;
       }
       div.header div.date {
 
-        float : right;
+        text-align: right;
       }
 
       h2.title {
@@ -181,6 +182,10 @@
         div.htmlWrap {
 
           background-color : transparent;
+        }
+
+        div.header div.date {
+          display : none;
         }
 
         div.page-break {
@@ -769,10 +774,10 @@
 
         let pageTitle = document.querySelector ( "title" );
         let bodyTitle = document.querySelector ( "div.htmlWrap h1" );
-        let dom_date = document.querySelector ( "div.header div.date" );
+        let dom_date = document.querySelector ( "div.header .date" );
         dom_date.innerHTML = date.getFullYear() + "/" + ( "00" + ( date.getMonth() + 1 ) ).slice ( -2 ) + "/" + ( "00" + date.getDate() ).slice ( -2 );
         bodyTitle.innerHTML = pageTitle.innerHTML;
-        set_date ();
+        set_date ( dom_date );
         set_timetable ( false );
 
         let username = "hoge";
@@ -834,7 +839,7 @@
             ss : ( "00" + date.getSeconds () ).slice ( -2 ),
           };
 
-          document.querySelector ( "div.header div.date" ).innerHTML = format.yyyy + "/" + format.MM + "/" + format.dd + " (" + format.day () + "), " + format.HH + ":" + format.mm + ":" + format.ss;
+          dom.innerHTML = format.yyyy + "/" + format.MM + "/" + format.dd + " (" + format.day () + "), " + format.HH + ":" + format.mm + ":" + format.ss;
         }
 
         console.log ( ua );
