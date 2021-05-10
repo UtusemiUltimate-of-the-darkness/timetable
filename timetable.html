@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="img/icon/icon.jpg">
-    <title>Timetable 3.6.3</title>
+    <title>Timetable 3.6.4</title>
     <style>
 
       body {
@@ -147,8 +147,32 @@
         position : relative;
       }
 
+      div.timetable table tr.mon td.mon4 div.bg {
 
-      /* online timetable (0412 - 0414) */
+        width : 100%;
+        height : 100%;
+        position : absolute;
+        top : 0;
+        left : 0%;
+        background : url( "img/text/text_surveyOfCar.png" );
+        background-size : cover;
+        opacity : 0.217;
+      }
+
+      div.timetable table tr.fri td.fri4 div.bg {
+
+        width : 47%;
+        height : 100%;
+        position : absolute;
+        top : 0;
+        left : 26.5%;
+        background : url( "img/text/text_CGpractice.jpg" );
+        background-size : cover;
+        opacity : 0.217;
+      }
+
+
+      /* online timetable */
       div.timetable.online {
 
         display : block;
@@ -755,6 +779,8 @@
 
     <script>
 
+    console.log( document.querySelector ( "div.timetable table tr.mon td.mon4 div.bg" ) );
+
       window.addEventListener ( "load", init, false );
       const date = new Date ();
       const termOfClassesForOnline = {
@@ -1068,8 +1094,11 @@
 
               html.htmlWrap.insertBefore ( html.timetable.main.dom , html.timetable.online.dom );
               html.htmlWrap.insertBefore ( html.pageBreak , html.timetable.online.dom );
+              html.pageBreak.style.display = "none";
 
             } else {
+
+              html.pageBreak.style.display = "none";
 
               if ( ( date.getFullYear () <= termOfClassesForOnline.start.year && date.getMonth () + 1 <= termOfClassesForOnline.start.month ) && date.getDate () < termOfClassesForOnline.start.date ) {
 

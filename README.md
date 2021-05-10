@@ -173,6 +173,11 @@
 
 ### version info
 
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.6.4">3.6.4</a>
+<ul>
+  <li>Add text-image to subject cell background.</li>
+</ul>
+
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.6.3">3.6.3</a>
 <ul>
   <li>Display update date and time.</li>
