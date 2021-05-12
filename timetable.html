@@ -171,6 +171,17 @@
         opacity : 0.217;
       }
 
+      div.timetable table tr.wed td.wed1 div.bg {
+
+        width : 23.5%;
+        height : 100%;
+        position : absolute;
+        top : 0;
+        left : 38.25%;
+        background : url( "img/text/text_ppt.png" );
+        background-size : cover;
+        opacity : 0.217;
+      }
 
       /* online timetable */
       div.timetable.online {
@@ -368,7 +379,7 @@
               <div class="bg"></div>
               <div class="subject bold">Presentation</div>
               <div class="room">410 room</div>
-              <div class="teacher">Mr. Hayasaka</div>
+              <div class="teacher">Ms. Hayasaka</div>
               <div class="text-tool"></div>
             </td>
             <td class="wed2">
@@ -856,7 +867,7 @@
                   aaa = "Sat";
                   break;
                 default:
-                  aaa = "unknown";
+                  aaa = "NaN";
               }
               return aaa;
             },
