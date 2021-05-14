@@ -335,7 +335,7 @@
               <div class="subject bold">Survey of car</div>
               <div class="room">900 room</div>
               <div class="teacher">Mr. Sakato</div>
-              <div class="text-tool">text : <a href="#" onclick="javascript:dispText(mon4); return false;">自動車産業の基礎知識テキスト.pdf</a></div>
+              <div class="text-tool">text : <a href="../semester-3/1-4_surveyOfCar/doc/自動車産業の基礎知識テキスト.pdf" onclick="dispText('mon4'); return false;">自動車産業の基礎知識テキスト.pdf</a></div>
             </td>
             <td class="mon5">
               <div class="bg"></div>
@@ -1396,9 +1396,15 @@
 
       function dispText ( schoolTime ) {
 
+        let ext = "chrome-extension://gfbliohnnapiefjpjlpjnehglfpaknnc/pages/pdfViewer.html?r=";
+        console.log(12345);
+
         switch ( schoolTime ) {
           case 'mon4':
+            // window.open ( ext + "/Users/Utusemi-ultimate/odrive/OneDriveBusiness-School/utusemi-ultimate/semester-3/1-4_surveyOfCar/doc/自動車産業の基礎知識テキスト.pdf" );
             break;
+            default:
+              break;
         }
       }
 
