@@ -43,6 +43,14 @@
         text-align : center;
       }
 
+      div.timetable a:link,
+      div.timetable a:visited,
+      div.timetable a:hover,
+      div.timetable a:active {
+
+        color : #E5B217;
+      }
+
       table {
 
         border : solid 2px #E5B217;
@@ -70,7 +78,7 @@
 
       table tr td {
 
-        min-width : 16.5em;
+        min-width : 18em;
         height : 7.5em;
         padding : 2em 0.3em;
         border : solid 1px #E5B217;
@@ -116,24 +124,14 @@
         font-weight : bold;
       }
 
-      table tr td div.text-tool {
-
-        display : block;
-      }
-
-      div.timetable.main table tr td div.text-tool.none {
-
-        display : none;
-      }
-
       div.timetable.online table tr td div.room {
 
         display : none;
       }
 
-      div.timetable table tr td div.subject {
+      table tr td div.text-tool:not(.none) {
 
-        font-size : 1em;
+        display : block;
       }
 
       .bold {
@@ -145,6 +143,11 @@
       td {
 
         position : relative;
+      }
+
+      div.timetable table tr td div.bg {
+
+        pointer-events : none;
       }
 
       div.timetable table tr.mon td.mon4 div.bg {
@@ -159,6 +162,42 @@
         opacity : 0.217;
       }
 
+      div.timetable table tr.wed td.wed1 div.bg {
+
+        width : 21.5%;
+        height : 100%;
+        position : absolute;
+        top : 0;
+        left : 39.25%;
+        background : url( "img/text/text_ppt.png" );
+        background-size : cover;
+        opacity : 0.217;
+      }
+
+      div.timetable table tr.wed td.wed3 div.bg {
+
+        width : 44%;
+        height : 100%;
+        position : absolute;
+        top : 0;
+        left : 28%;
+        background : url( "img/text/text_mechanicalEngineering.png" );
+        background-size : cover;
+        opacity : 0.217;
+      }
+
+      div.timetable table tr.wed td.wed4 div.bg {
+
+        width : 81%;
+        height : 100%;
+        position : absolute;
+        top : 0;
+        left : 9.5%;
+        background : url( "img/text/iPad.jpg" );
+        background-size : cover;
+        opacity : 0.217;
+      }
+
       div.timetable table tr.fri td.fri4 div.bg {
 
         width : 47%;
@@ -167,30 +206,6 @@
         top : 0;
         left : 26.5%;
         background : url( "img/text/text_CGpractice.png" );
-        background-size : cover;
-        opacity : 0.217;
-      }
-
-      div.timetable table tr.wed td.wed1 div.bg {
-
-        width : 23.5%;
-        height : 100%;
-        position : absolute;
-        top : 0;
-        left : 38.25%;
-        background : url( "img/text/text_ppt.png" );
-        background-size : cover;
-        opacity : 0.217;
-      }
-
-      div.timetable table tr.wed td.wed3 div.bg {
-
-        width : 47%;
-        height : 100%;
-        position : absolute;
-        top : 0;
-        left : 26.5%;
-        background : url( "img/text/text_mechanicalEngineering.png" );
         background-size : cover;
         opacity : 0.217;
       }
@@ -265,7 +280,7 @@
     <div class="htmlWrap">
       <div class="header">
         <h1 class="title page-title"></h1>
-        <div class="date">yyyy/mm/dd</div>
+        <div class="date">YYYY/MM/dd (Aaa), HH:mm:ss</div>
       </div>
       <div class="timetable main third-semester">
         <h2 class="title">Main</h2>
@@ -320,7 +335,7 @@
               <div class="subject bold">Survey of car</div>
               <div class="room">900 room</div>
               <div class="teacher">Mr. Sakato</div>
-              <div class="text-tool"></div>
+              <div class="text-tool">text : <a href="#" onclick="javascript:dispText(mon4); return false;">自動車産業の基礎知識テキスト.pdf</a></div>
             </td>
             <td class="mon5">
               <div class="bg"></div>
@@ -392,7 +407,7 @@
               <div class="subject bold">Presentation</div>
               <div class="room">410 room</div>
               <div class="teacher">Ms. Hayasaka</div>
-              <div class="text-tool"></div>
+              <div class="text-tool">text: 30時間でマスタープレゼンテーション+PowerPoint2019</div>
             </td>
             <td class="wed2">
               <div class="bg"></div>
@@ -406,7 +421,7 @@
               <div class="subject bold">Mechnical engineering II</div>
               <div class="room">900 room</div>
               <div class="teacher">Mr. Takahashi</div>
-              <div class="text-tool"></div>
+              <div class="text-tool">text: 絵とき機械工学のやさしい知識</div>
             </td>
             <td class="breakTime">
               <div>Recess</div>
@@ -416,7 +431,7 @@
               <div class="subject bold">Survey of CG</div>
               <div class="room">409 room</div>
               <div class="teacher">Mr. Takahashi</div>
-              <div class="text-tool"></div>
+              <div class="text-tool">text: iPad</div>
             </td>
             <td class="wed5">
               <div class="bg"></div>
@@ -512,7 +527,7 @@
               <div class="subject bold">CG practice</div>
               <div class="room">409 room</div>
               <div class="teacher">Mr. Hashimoto</div>
-              <div class="text-tool"></div>
+              <div class="text-tool">text: 入門CGデザイン</div>
             </td>
             <td class="fri5">
               <div class="bg"></div>
@@ -1376,6 +1391,14 @@
               document.write ( word [ Math.floor ( Math.random () * word.length ) ] );
             }
           }
+        }
+      }
+
+      function dispText ( schoolTime ) {
+
+        switch ( schoolTime ) {
+          case 'mon4':
+            break;
         }
       }
 

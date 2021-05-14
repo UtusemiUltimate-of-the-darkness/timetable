@@ -171,11 +171,13 @@
   </li>
 </ol>
 
+
 ### version info
 
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.6.4">3.6.4</a>
 <ul>
   <li>Add text-image to subject cell background.</li>
+  <li>Display text-tool of subuject.</li>
 </ul>
 
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.6.3">3.6.3</a>
