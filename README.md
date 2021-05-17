@@ -103,6 +103,7 @@
         </td>
         <td>Hide main timetable.</td>
       </tr>
+      <!--
       <tr>
         <td>
           <div>'online.display:block'</div>
@@ -133,6 +134,7 @@
         </td>
         <td>Hide timetable of online</td>
       </tr>
+      -->
       <tr>
         <td>
           <div>'print'</div>
