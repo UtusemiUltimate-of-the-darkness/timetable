@@ -176,7 +176,7 @@
 
 ### version info
 
-#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.7.0">3.7.0</a>
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.7.1">3.7.1</a>
 <ul>
   <li>Adjusting the appearance.</li>
 </ul>
