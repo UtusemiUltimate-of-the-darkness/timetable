@@ -275,6 +275,8 @@
       }
 
     </style>
+
+    <!-- <script type="text/javascript" src="js/pdf.js/web/viewer.js"></script> -->
   </head>
 
   <body>
@@ -337,7 +339,7 @@
               <div class="room">1004 room</div>
               <div class="teacher">Mr. Sakato</div>
               <div class="text-tool">text: 自動車産業の基礎知識テキスト</div>
-              <!-- <div class="text-tool">text : <a href="#" onclick="dispText('mon4'); return false;">自動車産業の基礎知識テキスト.pdf</a></div> -->
+              <!-- <div class="text-tool">text : <a href="#" target="_brank" onclick="dispText('mon4'); return false;">自動車産業の基礎知識テキスト.pdf</a></div> -->
             </td>
             <td class="mon5">
               <div class="bg"></div>
@@ -1395,7 +1397,7 @@
 
       function dispText ( schoolTime ) {
 
-        let ext = "/Users/Utusemi-ultimate/odrive/OneDriveBusiness-School/utusemi-ultimate/timetable/js/pdf.js/web/viewer-snippet-chrome-extension.html?file=";
+        let ext = "chrome-extension://gfbliohnnapiefjpjlpjnehglfpaknnc/pages/pdf_viewer.html?file=";
         console.log(12345);
 
         switch ( schoolTime ) {
