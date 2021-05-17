@@ -174,6 +174,13 @@
 
 ### version info
 
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.7.0">3.7.0</a>
+<ul>
+  <li>Add text-image to subject cell background.</li>
+  <li>Display text-tool of subuject.</li>
+  <li>Fixed class room of Survey of car.</li>
+</ul>
+
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.6.4">3.6.4</a>
 <ul>
   <li>Add text-image to subject cell background.</li>
