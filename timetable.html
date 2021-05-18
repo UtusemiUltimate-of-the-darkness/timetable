@@ -248,7 +248,14 @@
         }
 
         div.header div.date {
+
           display : none;
+        }
+
+        div.main.timetable h2.title {
+
+          margin-top : 0.7em;
+          text-align : center;
         }
 
         div.page-break {
@@ -1119,6 +1126,8 @@
 
             if ( printFlag ) {
 
+              html.title.style.marginBottom = "0.7em";
+
               document.querySelector ( "div.header div.date" ).style.display = "none";
 
               for ( let i = 2; i < 7; i++ ) {
@@ -1397,15 +1406,15 @@
 
       function dispText ( schoolTime ) {
 
-        let ext = "chrome-extension://gfbliohnnapiefjpjlpjnehglfpaknnc/pages/pdf_viewer.html?file=";
+        let ext = "/Users/Utusemi-ultimate/odrive/OneDriveBusiness-School/utusemi-ultimate/timetable/js/pdf.js/web/viewer.html?file=";
         console.log(12345);
 
         switch ( schoolTime ) {
           case 'mon4':
-            window.open ( ext + "/Users/Utusemi-ultimate/odrive/OneDriveBusiness-School/utusemi-ultimate/timetable/js/pdf.js/web/hoge.pdf", "_blank" );
+            window.open ( "js/pdf.js/web/hoge.pdf", "_blank" );
             break;
-          default:
-            break;
+            default:
+              break;
         }
       }
 
