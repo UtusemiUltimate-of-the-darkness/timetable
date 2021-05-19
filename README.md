@@ -176,6 +176,11 @@
 
 ### version info
 
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.8.0">3.8.0</a>
+<ul>
+  <li>Fixed class room of wed3.</li>
+</ul>
+
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.7.2">3.7.2</a>
 <ul>
   <li>Adjust the appearance.</li>
