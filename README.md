@@ -176,7 +176,7 @@
 
 ### version info
 
-#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.8.0">3.8.0</a>
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.8.1">3.8.1</a>
 <ul>
   <li>Fixed description on README.md.</li>
   <li>Fixed a bug that the date in the header is not displayed when switching from print mode to display mode.</li>
