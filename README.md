@@ -1,6 +1,6 @@
 # Timetable
 
-<div>This is the timetable for the mechanical CAD design department.</div>
+<div>This is the Timetable for the 3rd semester of the Mechanical CAD Design Course at Tohoku Electronics College.</div>
 
 ## How to use this Timetable
 
@@ -175,6 +175,11 @@
 
 
 ### version info
+
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.8.0">3.8.0</a>
+<ul>
+  <li>Fixed description on README.md.</li>
+</ul>
 
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.8.0">3.8.0</a>
 <ul>
