@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="img/icon/icon.jpg">
-    <title>Timetable 3.8.0</title>
+    <title>Timetable 3.8.1</title>
     <style>
 
       body {
@@ -920,6 +920,7 @@
 
           let html = {
             htmlWrap : document.querySelector ( "div.htmlWrap" ),
+            date : document.querySelector ( "div.header div.date" ),
             title : document.querySelector ( "h1.title.page-title" ),
             pageBreak : document.querySelector ( "div.page-break" ),
             timetable : {
@@ -1146,6 +1147,8 @@
 
             } else {
 
+              html.date.style.display = "block";
+              html.title.style.marginBottom = "0";
               html.pageBreak.style.display = "none";
 
               if ( ( date.getFullYear () <= termOfClassesForOnline.start.year && date.getMonth () + 1 <= termOfClassesForOnline.start.month ) && date.getDate () < termOfClassesForOnline.start.date ) {
