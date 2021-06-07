@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="img/icon/icon.jpg">
-    <title>Timetable 3.8.1</title>
+    <title>Timetable 3.8.2</title>
     <style>
 
       body {
@@ -234,6 +234,9 @@
 
 
       @media print {
+        element.style {
+
+        }
 
         body {
 
@@ -269,7 +272,12 @@
         div.timetable table tr th,
         div.timetable table tr td,
         div.timetable table tr.time.range,
-        table .botDouble {
+        table .botDouble,
+        div.timetable table tr td div,
+        div.timetable table tr td div a:link,
+        div.timetable table tr td div a:visited,
+        div.timetable table tr td div a:hover,
+        div.timetable table tr td div a:active {
 
           border-color : #000000;
           color : #000000;
@@ -345,8 +353,8 @@
               <div class="subject bold">Survey of car</div>
               <div class="room">1004 room</div>
               <div class="teacher">Mr. Sakato</div>
-              <div class="text-tool">text: 自動車産業の基礎知識テキスト</div>
-              <!-- <div class="text-tool">text : <a href="#" target="_brank" onclick="dispText('mon4'); return false;">自動車産業の基礎知識テキスト.pdf</a></div> -->
+              <!-- <div class="text-tool">text: 自動車産業の基礎知識テキスト</div> -->
+              <div class="text-tool">text: <a href="javascript:void(0);" onclick="celElemClicked('text', 'mon4'); return false;">自動車産業の基礎知識テキスト.pdf</a></div>
             </td>
             <td class="mon5">
               <div class="bg"></div>
@@ -433,6 +441,7 @@
               <div class="room">1107 room</div>
               <div class="teacher">Mr. Takahashi</div>
               <div class="text-tool">text: 絵とき機械工学のやさしい知識</div>
+              <div class="note"><a href="javascript:void(0);" onclick="celElemClicked('note', 'wed3')">note.html</a></div>
             </td>
             <td class="breakTime">
               <div>Recess</div>
@@ -478,7 +487,7 @@
             <td class="thu3">
               <div class="bg"></div>
               <div class="subject bold">Employment measures II</div>
-              <div class="room">online</div>
+              <div class="room"><a href="javascript:void(0);" onclick="celElemClicked('room', 'thu3')">online</a></div>
               <div class="teacher">Mr. Takahashi</div>
               <div class="text-tool"></div>
             </td>
@@ -488,14 +497,14 @@
             <td class="thu4">
               <div class="bg"></div>
               <div class="subject bold">Survey of equipment</div>
-              <div class="room">online</div>
+              <div class="room"><a href="javascript:void(0);" onclick="celElemClicked('room', 'thu4')">online</a></div>
               <div class="teacher">Mr. K.Ito</div>
               <div class="text-tool"></div>
             </td>
             <td class="thu5">
               <div class="bg"></div>
               <div class="subject bold">Mechnical engneering II</div>
-              <div class="room">online</div>
+              <div class="room"><a href="javascript:void(0);" onclick="celElemClicked('room', 'thu5')">online</a></div>
               <div class="teacher">Mr. Takahashi</div>
               <div class="text-tool"></div>
             </td>
@@ -847,11 +856,12 @@
 
         let pageTitle = document.querySelector ( "title" );
         let bodyTitle = document.querySelector ( "div.htmlWrap h1" );
-        let dom_date = document.querySelector ( "div.header .date" );
-        dom_date.innerHTML = date.getFullYear() + "/" + ( "00" + ( date.getMonth() + 1 ) ).slice ( -2 ) + "/" + ( "00" + date.getDate() ).slice ( -2 );
+        let dom_date = document.querySelector ( "div.header div.date" );
+        // dom_date.innerHTML = date.getFullYear() + "/" + ( "00" + ( date.getMonth() + 1 ) ).slice ( -2 ) + "/" + ( "00" + date.getDate() ).slice ( -2 );
         bodyTitle.innerHTML = pageTitle.innerHTML;
         set_date ( dom_date );
         set_timetable ( false );
+        dom_date.removeAttribute ( "style" );  // clear default css
 
         let username = "hoge";
         let password = "fuga";
@@ -1407,17 +1417,24 @@
         }
       }
 
-      function dispText ( schoolTime ) {
+      function celElemClicked ( elem, cell ) {
 
-        let ext = "/Users/Utusemi-ultimate/odrive/OneDriveBusiness-School/utusemi-ultimate/timetable/js/pdf.js/web/viewer.html?file=";
-        console.log(12345);
-
-        switch ( schoolTime ) {
+        switch ( cell ) {
           case 'mon4':
-            window.open ( "js/pdf.js/web/hoge.pdf", "_blank" );
+            window.open ( "../semester-3/1-4_surveyOfCar/doc/自動車産業の基礎知識テキスト.pdf" );
             break;
-            default:
-              break;
+          case 'wed3':
+            window.open ( "../semester-3/3-3_mechnicalEngineeringII/note/note.html" );
+            break;
+          case 'thu3':
+          case 'thu5':
+            window.open ( "https://teams.microsoft.com/_#/school/conversations/General?threadId=19:7722215fdae5444d9ca800366418b83c@thread.tacv2&ctx=channel" );
+            break;
+          case 'thu4':
+            window.open ( "https://teams.microsoft.com/_#/conversations/%E8%87%AA%E5%8B%95%E8%BB%8A%E6%A6%82%E8%AB%96?threadId=19:cfc8c76aa21d4e57afc030fc26248bd6@thread.tacv2&messageId=1623038887643&replyChainId=1623038887643&ctx=channel" );
+            break;
+          default:
+            break;
         }
       }
 

@@ -176,6 +176,14 @@
 
 ### version info
 
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.8.2">3.8.2</a>
+<ul>
+  <li>Add pdf link to mon4 cell.</li>
+  <li>Add note link to wed3 cell.</li>
+  <li>Add online classroom link to thu3, thu4 and thu5 cell.</li>
+  <li>Fixed a bug that header date is displayed when printing.</li>
+</ul>
+
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.8.1">3.8.1</a>
 <ul>
   <li>Fixed description on README.md.</li>
