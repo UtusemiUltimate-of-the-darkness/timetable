@@ -176,6 +176,13 @@
 
 ### version info
 
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.8.3">3.8.3</a>
+<ul>
+  <li>Correction of classroom number display.</li>
+  <li>Create a seating chart for classroom 1107 (wed3).</li>
+  <li>Update online classroom link that thu3, thu4 and thu5 cell.</li>
+</ul>
+
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.8.2">3.8.2</a>
 <ul>
   <li>Add pdf link to mon4 cell.</li>
