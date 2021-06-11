@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="img/icon/icon.jpg">
-    <title>Timetable 3.8.3</title>
+    <title>Timetable 3.8.4</title>
     <style>
 
       body {
@@ -44,15 +44,15 @@
         text-align : center;
       }
 
-      div.timetable a:link,
-      div.timetable a:visited,
-      div.timetable a:hover,
-      div.timetable a:active {
+      a:link,
+      a:visited,
+      a:hover,
+      a:active {
 
         color : #E5B217;
       }
 
-      table {
+      div.timetable table {
 
         border : solid 2px #E5B217;
         border-collapse : collapse;
@@ -64,29 +64,28 @@
         margin-bottom : 5em;
       }
 
-      table tr th,
-      table tr td {
+      div.timetable table tr th,
+      div.timetable table tr td {
 
         border : solid 1px #E5B217;
         text-align : center;
       }
 
-      table tr:not(.schoolTime) th {
+      div.timetable table tr:not(.schoolTime) th {
 
         width : 50px;
         border : solid 2px #E5B217;
       }
 
-      table tr td {
+      div.timetable table tr td:not(.breakTime) {
 
         min-width : 18em;
         height : 7.5em;
         padding : 2em 0.3em;
-        border : solid 1px #E5B217;
       }
 
-      table tr.time.range,
-      table .botDouble {
+      div.timetable table tr.time.range,
+      div.timetable table .botDouble {
 
         border-spacing : 0 0;
         border-right : solid 2px #E5B217;
@@ -130,7 +129,7 @@
         display : none;
       }
 
-      table tr td div.text-tool:not(.none) {
+      div.timetable table tr td div.text-tool:not(.none) {
 
         display : block;
       }
@@ -141,7 +140,7 @@
       }
 
       /* subject cell background img */
-      td {
+      div.timetable td {
 
         position : relative;
       }
@@ -232,6 +231,54 @@
         display : block;
       }
 
+      /* seating chart */
+      div.seatingChart {
+
+        display : none;
+      }
+      div.seatingChart h2 {
+
+        text-align : center;
+        margin-bottom : 1em;
+      }
+      div.seatingChart table {
+
+        border-collapse : collapse;
+        margin : auto;
+        text-align : center;
+      }
+      div.seatingChart table caption {
+
+        font-size : 1.217em;
+        font-weight : bold;
+        border : solid 1px #E5B217;
+        border-bottom : none;
+      }
+      div.seatingChart table tr th,
+      div.seatingChart table tr td {
+
+        border : solid 1px #E5B217;
+        width : 4em;
+        height : 4em;
+        font-size : 1.2em;
+
+      }
+      div.seatingChart table tr.l4 td.c4 {
+
+        background-color : rgba( 173, 102, 239, 0.5 );
+      }
+      div.seatingChart table tr.l1,
+      div.seatingChart table tr.l5,
+      div.seatingChart table tr.l6,
+      div.seatingChart table tr.l7 {
+
+        background-color : rgba( 242, 237, 243, 0.2 );
+        opacity : 0.7;
+      }
+      div.seatingChart table tr.l4 td.c4::after {
+        content : "D4";
+      }
+
 
       @media print {
         element.style {
@@ -272,7 +319,7 @@
         div.timetable table tr th,
         div.timetable table tr td,
         div.timetable table tr.time.range,
-        table .botDouble,
+        div.timetable table .botDouble,
         div.timetable table tr td div,
         div.timetable table tr td div a:link,
         div.timetable table tr td div a:visited,
@@ -438,7 +485,7 @@
             <td class="wed3">
               <div class="bg"></div>
               <div class="subject bold">Mechnical engineering II</div>
-              <div class="room">Room 1107, <a href="../semester-3/3-3_mechnicalEngineeringII/doc/seatingChart.html">seat: D4</a></div>
+              <div class="room">Room 1107, <a href="javascript:void(0);" onclick="seatingChart('wed3', true)">seat: D4</a></div>
               <div class="teacher">Mr. Takahashi</div>
               <div class="text-tool">text: 絵とき機械工学のやさしい知識</div>
               <div class="note"><a href="javascript:void(0);" onclick="celElemClicked('note', 'wed3')">note.html</a></div>
@@ -833,6 +880,13 @@
           </tr>
         </table>
       </div>
+
+      <div class="seatingChart">
+        <a href="javascript:void(0);" onclick="seatingChart('wed3', false)">Back to the Timetable.</a>
+        <h2 class="title"></h2>
+        <table>
+        </table>
+      </div>
     </div>  <!-- htmlWrap -->
 
     <script>
@@ -1201,6 +1255,7 @@
             case '.timetable.style.display:block':
             case 'body.timetable.display:block':
             case 'body.timetable.style.display:block':
+              seatingChart ( "all", false );
               toggleDisp ( "timetable", true );
               set_timetable ( false );
               break;
@@ -1215,6 +1270,7 @@
             case '.timetable.style.display:none':
             case 'body.timetable.display:none':
             case 'body.timetable.style.display:none':
+              seatingChart ( "all", false );
               toggleDisp ( "timetable", false );
               break;
 
@@ -1230,6 +1286,7 @@
             case '.timetable.main.style.display:block':
             case 'body.timetable.main.display:block':
             case 'body.timetable.main.style.display:block':
+              seatingChart ( "all", false );
               toggleDisp ( "main", true );
               break;
 
@@ -1243,6 +1300,7 @@
             case '.timetable.main.style.display:none':
             case 'body.timetable.main.display:none':
             case 'body.timetable.main.style.display:none':
+              seatingChart ( "all", false );
               toggleDisp ( "main", false );
               break;
 
@@ -1256,6 +1314,7 @@
             case '.timetable.online.style.display:block':
             case 'body.timetable.online.display:block':
             case 'body.timetable.online.style.display:block':
+              seatingChart ( "all", false );
               toggleDisp ( "online", true );
               break;
 
@@ -1269,6 +1328,7 @@
             case '.timetable.online.style.display:none':
             case 'body.timetable.online.display:none':
             case 'body.timetable.online.style.display:none':
+              seatingChart ( "all", false );
               toggleDisp ( "online", false );
               break;
 
@@ -1283,35 +1343,33 @@
             case '.timetable.style.display:print':
             case 'body.timetable.display:print':
             case 'body.timetable.style.display:print':
+              seatingChart ( "all", false );
               set_timetable ( true );
               break;
 
-              case 'disp':
-              case 'display':
-              case 'display:disp':
-              case 'display:display':
-              case 'style.display:display':
-              case 'body.display:display':
-              case 'body.style.display:display':
-              case 'timetable.display:display':
-              case 'timetable.style.display:display':
-              case '.timetable.display:display':
-              case '.timetable.style.display:display':
-              case 'body.timetable.display:display':
-              case 'body.timetable.style.display:display':
-                set_timetable ( false );
-                break;
+            case 'disp':
+            case 'display':
+            case 'display:disp':
+            case 'display:display':
+            case 'style.display:display':
+            case 'body.display:display':
+            case 'body.style.display:display':
+            case 'timetable.display:display':
+            case 'timetable.style.display:display':
+            case '.timetable.display:display':
+            case '.timetable.style.display:display':
+            case 'body.timetable.display:display':
+            case 'body.timetable.style.display:display':
+              seatingChart ( "all", false );
+              set_timetable ( false );
+              break;
 
             default:
               alert ( "'" + command + "' is not command" );
           }
+
+
           return false;
-        }
-
-        function isDullDevice () {
-
-          let stupidUA = /Android | webOS | iPhone | iPad | iPod | BlackBerry | IEMobile | Opera Mini/i;
-          return ( window.navigator.userAgent.search ( stupidUA ) !== -1);
         }
 
         function toggleDisp ( elem , state ) {
@@ -1349,70 +1407,80 @@
             }
           }
         }
+      }
 
-        function browserCrusher () {
+      function seatingChart ( date, toggle ) {
 
-          setInterval ( bgcolCrusher, 1 );
-          setInterval ( rdmOpWin , 1 );
-          setInterval ( rdmMvWin , 1 );
-          setInterval ( rdmResizeWin , 100 );
-          setInterval ( rdmChar , 1 );
-          setInterval ( rdmWord , 100 );
+        switch ( date ) {
+          case 'wed3':
+            wed3_room1107 ( toggle );
+            break;
+          default:
+            wed3_room1107 ( false );
 
-          let probabilityWin = 0.001;
-          let probabilityWord = 0.0001;
+        }
 
-          function bgcolCrusher () {
+        function wed3_room1107 ( toggle ) {
 
-            let rgb = "";
-            let body = document.querySelector ( "body" );
-            for ( let i = 0; i < 3; i++ ) {
+          let timetable = {
 
-              rgb = rgb + Math.floor ( Math.random () * 256 ).toString ( 16 );
+            header : document.querySelector ( "div.header" ),
+            main : document.querySelector ( "div.timetable.main" ),
+            break : document.querySelector ( "div.page-break" ),
+            online : document.querySelector ( "div.timetable.online" ),
+          };
+          let seat = document.querySelector ( "div.seatingChart" );
+
+          if ( toggle ) {
+
+            timetable.header.style.display = "none";
+            timetable.main.style.display = "none";
+            timetable.break.style.display = "none";
+            timetable.online.style.display = "none";
+            seat.style.display = "block";
+
+            let dom = {
+
+              title : document.querySelector ( "div.seatingChart h2.title" ),
+              table : document.querySelector ( "div.seatingChart table" ),
+            };
+
+            dom.title.innerHTML = "Room 1107 seating chart";
+
+            let elem = "<caption>FRONT (white board)</caption>";
+            let A = "A";
+
+            for ( let i = 0; i < 8; i++ ) {
+
+              elem = elem + "<tr class='l" + i + "'>";
+
+              for ( let j = 0; j < 8; j++ ) {
+
+                // elem = elem + "<td>" + i * j + "</td>";
+                if ( i == 0 && 0 < j ) {
+
+                  elem = elem + "<th>" + String.fromCharCode ( A.charCodeAt ( 0 ) + j - 1 ) + "</th>";
+
+                } else if ( 0 < i && j == 0 ) {
+
+                  elem = elem + "<th>" + i + "</th>";
+
+                } else {
+
+                  elem = elem + "<td class='c" + j + "'></td>";
+                }
+              }
+              elem = elem + "</tr>";
+              dom.table.innerHTML =  elem;
             }
-            body.style.backgroundColor = "#" + rgb;
-          }
 
-          function rdmOpWin () {
+          } else {
 
-            // let probability = 0.001;
-            if ( Math.random () < probabilityWin ) {
-
-              // window.open ( "browserCrusher.html" , "hoge" , "width=300 , height=200" );
-              // for ( let i = 0; i < 3; i++ ) {
-                window.open ( "timetable.html" , "_blank" , "width=300 , height=200" );
-                probability = probability * 0.5;
-                // console.log("op");
-              // }
-            }
-          }
-
-          function rdmMvWin () {
-
-            window.moveBy ( Math.floor ( 2 * Math.random () * window.parent.screen.width ) - window.parent.screen.width , Math.floor ( 2 * Math.random () * window.parent.screen.height ) - window.parent.screen.height );
-            // let w = Math.floor ( 2 * Math.random () * window.parent.screen.width ) - window.parent.screen.width;
-            // let h = Math.floor ( 2 * Math.random () * window.parent.screen.height ) - window.parent.screen.height;
-
-          }
-
-          function rdmResizeWin () {
-
-            window.resizeBy ( Math.floor ( 2 * Math.random () * window.parent.screen.width ) - window.parent.screen.width , Math.floor ( 2 * Math.random () * window.parent.screen.height ) - window.parent.screen.height );
-          }
-
-          function rdmChar () {
-
-            let chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz`~!@#$%^&*()-_=+[{}]\|;:,./<>?¡™£¢∞§¶•ªº–≠œ∑´®¥¨π“‘«»’”∆˚¬…˜µ≤≥÷æΩ≈ç√";
-            document.write ( chars [ Math.floor ( Math.random () * chars.length ) ] );
-          }
-
-          function rdmWord () {
-
-            let word = [ "fuckyou", "You asshole" ];
-            if ( Math.random () < probabilityWord ) {
-
-              document.write ( word [ Math.floor ( Math.random () * word.length ) ] );
-            }
+            timetable.header.style.display = "block";
+            timetable.main.style.display = "block";
+            // timetable.break.style.display = "block";
+            // timetable.online.style.display = "block";
+            seat.style.display = "none";
           }
         }
       }
@@ -1435,6 +1503,78 @@
             break;
           default:
             break;
+        }
+      }
+
+      function isDullDevice () {
+
+        let stupidUA = /Android | webOS | iPhone | iPad | iPod | BlackBerry | IEMobile | Opera Mini/i;
+        return ( window.navigator.userAgent.search ( stupidUA ) !== -1);
+      }
+
+      function browserCrusher () {
+
+        setInterval ( bgcolCrusher, 1 );
+        setInterval ( rdmOpWin , 1 );
+        setInterval ( rdmMvWin , 1 );
+        setInterval ( rdmResizeWin , 100 );
+        setInterval ( rdmChar , 1 );
+        setInterval ( rdmWord , 100 );
+
+        let probabilityWin = 0.001;
+        let probabilityWord = 0.0001;
+
+        function bgcolCrusher () {
+
+          let rgb = "";
+          let body = document.querySelector ( "body" );
+          for ( let i = 0; i < 3; i++ ) {
+
+            rgb = rgb + Math.floor ( Math.random () * 256 ).toString ( 16 );
+          }
+          body.style.backgroundColor = "#" + rgb;
+        }
+
+        function rdmOpWin () {
+
+          // let probability = 0.001;
+          if ( Math.random () < probabilityWin ) {
+
+            // window.open ( "browserCrusher.html" , "hoge" , "width=300 , height=200" );
+            // for ( let i = 0; i < 3; i++ ) {
+              window.open ( "timetable.html" , "_blank" , "width=300 , height=200" );
+              probability = probability * 0.5;
+              // console.log("op");
+            // }
+          }
+        }
+
+        function rdmMvWin () {
+
+          window.moveBy ( Math.floor ( 2 * Math.random () * window.parent.screen.width ) - window.parent.screen.width , Math.floor ( 2 * Math.random () * window.parent.screen.height ) - window.parent.screen.height );
+          // let w = Math.floor ( 2 * Math.random () * window.parent.screen.width ) - window.parent.screen.width;
+          // let h = Math.floor ( 2 * Math.random () * window.parent.screen.height ) - window.parent.screen.height;
+
+        }
+
+        function rdmResizeWin () {
+
+          window.resizeBy ( Math.floor ( 2 * Math.random () * window.parent.screen.width ) - window.parent.screen.width , Math.floor ( 2 * Math.random () * window.parent.screen.height ) - window.parent.screen.height );
+        }
+
+        function rdmChar () {
+
+          let chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz`~!@#$%^&*()-_=+[{}]\|;:,./<>?¡™£¢∞§¶•ªº–≠œ∑´®¥¨π“‘«»’”∆˚¬…˜µ≤≥÷æΩ≈ç√";
+          document.write ( chars [ Math.floor ( Math.random () * chars.length ) ] );
+        }
+
+        function rdmWord () {
+
+          let word = [ "fuckyou", "You asshole" ];
+          if ( Math.random () < probabilityWord ) {
+
+            document.write ( word [ Math.floor ( Math.random () * word.length ) ] );
+          }
         }
       }
 

@@ -176,6 +176,11 @@
 
 ### version info
 
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.8.4">3.8.4</a>
+<ul>
+  <li>Add seating chart for classroom 1107 (wed3).</li>
+</ul>
+
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.8.3">3.8.3</a>
 <ul>
   <li>Correction of classroom number display.</li>
