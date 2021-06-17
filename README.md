@@ -10,7 +10,7 @@
     Or run the following in a terminal:
     <pre><code>$ git clone https://github.com/UtusemiUltimate-of-the-darkness/Timetable.git</code></pre>
   </li>
-  <li>If downloaded zipfile, unzip downloaded zip file on your any place.</li>
+  <li>If downloaded zip file, unzip downloaded zip file on your any place.</li>
   <li>Open the html files in the unzipped folder on your browser.</li>
 </ol>
 
