@@ -176,6 +176,12 @@
 
 ### version info
 
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.8.6">3.8.6</a>
+<ul>
+  <li>If display overflow to horizontal direction, modified to only the table scrolls horizontally.</li>
+  <li>Fixed the cell contents of thu5.</li>
+</ul>
+
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.8.5">3.8.5</a>
 <ul>
   <li>Added a link to YearlyEventSchedule.pdf</li>
