@@ -178,7 +178,7 @@
 
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.8.6">3.8.6</a>
 <ul>
-  <li>If display overflow to horizontal direction, modified to only the table scrolls horizontally.</li>
+  <li>Improved only the table can scroll horizontally when page overflow to horizontally.</li>
   <li>Fixed the cell contents of thu5.</li>
 </ul>
 
