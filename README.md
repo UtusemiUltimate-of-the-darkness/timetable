@@ -8,7 +8,7 @@
   <li>
     Download your favorite version of the zip file <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/releases">here</a>.<br>
     Or run the following in a terminal:
-    <pre><code>$ git clone https://github.com/UtusemiUltimate-of-the-darkness/timetable.git</code></pre>
+    <pre><code>$ git clone https://github.com/UtusemiUltimate-of-the-darkness/Timetable.git</code></pre>
   </li>
   <li>Unzip downloaded zip file on your any place.</li>
   <li>Open the html files in the unzipped folder on your browser.</li>
@@ -175,6 +175,11 @@
 
 
 ### version info
+
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.8.5">3.8.5</a>
+<ul>
+  <li>Added a link to YearlyEventSchedule.pdf</li>
+</ul>
 
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/timetable/tree/3.8.4">3.8.4</a>
 <ul>

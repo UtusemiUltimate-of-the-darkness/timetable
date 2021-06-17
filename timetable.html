@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="img/icon/icon.jpg">
-    <title>Timetable 3.8.4</title>
+    <title>Timetable 3.8.5</title>
     <style>
 
       body {
@@ -33,9 +33,17 @@
         text-align : center;
         margin-bottom : 0;
       }
-      div.header div.date {
 
-        text-align: right;
+      div.header div.yes.date {
+        height: 1.5em;
+      }
+      div.header div.yes.date span.date {
+
+        float: right;
+      }
+      div.header div.yes.date span.yes {
+
+        float: left;
       }
 
       h2.title {
@@ -345,7 +353,10 @@
     <div class="htmlWrap">
       <div class="header">
         <h1 class="title page-title"></h1>
-        <div class="date">YYYY/MM/dd (Aaa), HH:mm:ss</div>
+        <div class="yes date">
+          <span class="YearlyEventSchedule"><a href="javascript:void(0);" onclick="celElemClicked('YES', 'YES'); return false;">YearlyEventSchedule.pdf</a></span>
+          <span class="date">YYYY/MM/dd (Aaa), HH:mm:ss</span>
+        </div>
       </div>
       <div class="timetable main third-semester">
         <h2 class="title">Main</h2>
@@ -905,12 +916,16 @@
           date : 30
         }
       }
+      let state = {
+        online : false,
+
+      }
 
       function init () {
 
         let pageTitle = document.querySelector ( "title" );
         let bodyTitle = document.querySelector ( "div.htmlWrap h1" );
-        let dom_date = document.querySelector ( "div.header div.date" );
+        let dom_date = document.querySelector ( "div.header span.date" );
         // dom_date.innerHTML = date.getFullYear() + "/" + ( "00" + ( date.getMonth() + 1 ) ).slice ( -2 ) + "/" + ( "00" + date.getDate() ).slice ( -2 );
         bodyTitle.innerHTML = pageTitle.innerHTML;
         set_date ( dom_date );
@@ -1193,7 +1208,7 @@
 
               html.title.style.marginBottom = "0.7em";
 
-              document.querySelector ( "div.header div.date" ).style.display = "none";
+              document.querySelector ( "div.header div.yes.date" ).style.display = "none";
 
               for ( let i = 2; i < 7; i++ ) {
 
@@ -1229,6 +1244,42 @@
                 html.htmlWrap.appendChild ( html.timetable.main.dom );
                 html.htmlWrap.insertBefore ( html.pageBreak , html.timetable.main.dom );
               }
+            }
+          }
+        }
+
+        function toggleDisp ( elem , state ) {
+
+          let element = [];
+          switch ( elem ) {
+            case 'timetable':
+              element [ 0 ] = document.querySelector ( ".htmlWrap" );
+              element [ 1 ] = document.querySelector ( ".timetable.main" );
+              // element [ 2 ] = document.querySelector ( ".timetable.online" );
+              break;
+
+            case 'main':
+              element = document.querySelectorAll ( ".timetable.main" );
+              break;
+
+            case 'online':
+              element = document.querySelectorAll ( ".timetable.online" );
+              break;
+          }
+
+          if ( state ) {
+
+            for ( let i = 0; i < element.length; i++ ) {
+
+              element [ i ].style.display = "block";
+              document.querySelector ( ".htmlWrap" ).style.display = "block";
+            }
+
+          } else {
+
+            for ( let i = 0; i < element.length; i++ ) {
+
+              element [ i ].style.display = "none";
             }
           }
         }
@@ -1367,45 +1418,7 @@
             default:
               alert ( "'" + command + "' is not command" );
           }
-
-
           return false;
-        }
-
-        function toggleDisp ( elem , state ) {
-
-          let element = [];
-          switch ( elem ) {
-            case 'timetable':
-              element [ 0 ] = document.querySelector ( ".htmlWrap" );
-              element [ 1 ] = document.querySelector ( ".timetable.main" );
-              // element [ 2 ] = document.querySelector ( ".timetable.online" );
-              break;
-
-            case 'main':
-              element = document.querySelectorAll ( ".timetable.main" );
-              break;
-
-            case 'online':
-              element = document.querySelectorAll ( ".timetable.online" );
-              break;
-          }
-
-          if ( state ) {
-
-            for ( let i = 0; i < element.length; i++ ) {
-
-              element [ i ].style.display = "block";
-              document.querySelector ( ".htmlWrap" ).style.display = "block";
-            }
-
-          } else {
-
-            for ( let i = 0; i < element.length; i++ ) {
-
-              element [ i ].style.display = "none";
-            }
-          }
         }
       }
 
@@ -1488,6 +1501,13 @@
       function celElemClicked ( elem, cell ) {
 
         switch ( cell ) {
+          case 'YES':
+            if ( window.navigator.onLine ) {
+              window.open ( "https://github.com/UtusemiUltimate-of-the-darkness/Timetable/blob/main/YearlyEventSchedule.pdf" );
+            } else {
+              window.open ( "YearlyEventSchedule.pdf" );
+            }
+            break;
           case 'mon4':
             window.open ( "../semester-3/1-4_surveyOfCar/doc/自動車産業の基礎知識テキスト.pdf" );
             break;
